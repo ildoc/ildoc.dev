@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="italian" itemscope itemtype="http://schema.org/Person">
+
+<head>
+     <meta charset="utf-8">
+    <!-- Site Meta Data -->
+    <title>Left join "in"?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Doc">
+
+    <link rel="shortcut icon" href="">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="ildoc's">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Style Meta Data -->
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+
+    <!-- Feed Meta Data -->
+    <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    />  
+    <!-- Twitter Feed -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content=""> 
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="http://localhost:8000/2013/11/13/left-join-in/">
+<meta name="twitter:title" content="ildoc's ~ Left join "in"?">
+<meta name="twitter:description" content="Mi sono trovato nella condizione di dover fare una join su più campi. Che stavano in una colonna sola. Separati da punti e virgola. Prima di tentare il suicidio, ho googolato un pò e ho scoperto questo: SELECT * FROM tabella1 LEFT JOIN tabella2 ON tabella2.colonnaA IN ( SELECT REGEXP_SUBSTR(tabella2 …">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="ildoc's ~ Left join "in"?" />
+<meta property="og:description" content="Mi sono trovato nella condizione di dover fare una join su più campi. Che stavano in una colonna sola. Separati da punti e virgola. Prima di tentare il suicidio, ho googolato un pò e ho scoperto questo: SELECT * FROM tabella1 LEFT JOIN tabella2 ON tabella2.colonnaA IN ( SELECT REGEXP_SUBSTR(tabella2 …" />
+<meta property="og:image" content="" /> </head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <!--<center><a href="http://localhost:8000"><img id="avatar" src=""></a></center>-->
+        <h1><a href="/">ildoc's</a></h1>
+
+        <nav class="nav">
+            <ul class="list-bare">
+
+                <li><a class="nav__link" href="/">Home</a></li>
+ 
+            </ul>
+        </nav>
+
+        <p class="social">
+             <a href="https://twitter.com/il_doc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="http://localhost:8000/feeds/all.atom.xml" rel="alternate">
+                <img src="http://localhost:8000/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+            <li><a href="http://localhost:8000/category/2007.html">2007</a></li>
+            <li><a href="http://localhost:8000/category/2009.html">2009</a></li>
+            <li><a href="http://localhost:8000/category/2010.html">2010</a></li>
+            <li><a href="http://localhost:8000/category/2011.html">2011</a></li>
+            <li><a href="http://localhost:8000/category/2012.html">2012</a></li>
+            <li class="active" ><a href="http://localhost:8000/category/2013.html">2013</a></li>
+            <li><a href="http://localhost:8000/category/2014.html">2014</a></li>
+            <li><a href="http://localhost:8000/category/2015.html">2015</a></li>
+            <li><a href="http://localhost:8000/category/2016.html">2016</a></li>
+        </ul>
+ 
+    </aside>
+
+    <!-- Content -->
+    <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="http://localhost:8000/2013/11/13/left-join-in/" rel="bookmark" title="Permalink to Left join "in"?">Left join "in"?</a></h2>
+        <div class="entry-content blog-post">
+            <p>Mi sono trovato nella condizione di dover fare una join su più campi.<br>
+Che stavano in una colonna sola.<br>
+Separati da punti e virgola.</p>
+<p>Prima di tentare il suicidio, ho googolato un pò e ho scoperto questo:</p>
+<div class="highlight"><pre><span></span><span class="k">SELECT</span> <span class="o">*</span>  
+<span class="k">FROM</span> <span class="n">tabella1</span> <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">tabella2</span> <span class="k">ON</span> <span class="n">tabella2</span><span class="p">.</span><span class="n">colonnaA</span> <span class="k">IN</span> <span class="p">(</span>  
+    <span class="k">SELECT</span> <span class="n">REGEXP_SUBSTR</span><span class="p">(</span><span class="n">tabella2</span><span class="p">.</span><span class="n">colonnaB</span><span class="p">,</span><span class="s1">&#39;[\^;]+&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="k">level</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">dual</span>  
+    <span class="k">CONNECT</span> <span class="k">BY</span> <span class="n">REGEXP_SUBSTR</span><span class="p">(</span><span class="n">tabella2</span><span class="p">.</span><span class="n">colonnaB</span><span class="p">,</span> <span class="s1">&#39;[\^;]+&#39;</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="k">level</span><span class="p">)</span> <span class="k">IS</span> <span class="k">NOT</span> <span class="k">NULL</span>  
+<span class="p">);</span>
+</pre></div>
+
+
+<p>Forse è una cosa risaputa, ma non la conoscevo...<br>
+Sicuramente la riutilizzerò tantissimo.</p>
+        </div>
+        <div class="post_list">
+            <span>By </span>
+            <a href="http://localhost:8000/author/doc.html">@Doc</a>
+            <span> in </span>
+            <span class="post_category"><a href="http://localhost:8000/category/2013.html" rel="bookmark"
+                                               title="Permalink to 2013">[ 2013 ]</a></span>
+            <span class="post_date">mer 13 novembre 2013</span>
+            <div><span>Tags : </span>                  <span><a href="http://localhost:8000/tag/join.html">#join, </a></span>                 <span><a href="http://localhost:8000/tag/oracle.html">#oracle, </a></span>                 <span><a href="http://localhost:8000/tag/regex.html">#regex, </a></span>                 <span><a href="http://localhost:8000/tag/sql.html">#sql, </a></span>              </div>
+
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=http://localhost:8000/2013/11/13/left-join-in/&text=Left join "in"?&via="><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=http://localhost:8000/2013/11/13/left-join-in/&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/2013/11/13/left-join-in/&t=Left join "in"?"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/2013/11/13/left-join-in/&title=Left join "in"?"
+                    rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a
+                            href="mailto:?subject=Left join "in"?&amp;body=Viens découvrir un article à propos de [Left join "in"?] sur le site de Doc. http://localhost:8000/2013/11/13/left-join-in/"
+                            title="Share by Email" target="_blank"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+    </article>
+</section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+ 
+</body>
+
+</html>

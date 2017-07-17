@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="italian" itemscope itemtype="http://schema.org/Person">
+
+<head>
+     <meta charset="utf-8">
+    <!-- Site Meta Data -->
+    <title>Spostare Wordpress da locale a live</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Doc">
+
+    <link rel="shortcut icon" href="">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="ildoc's">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Style Meta Data -->
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+
+    <!-- Feed Meta Data -->
+    <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    />  
+    <!-- Twitter Feed -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content=""> 
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/">
+<meta name="twitter:title" content="ildoc's ~ Spostare Wordpress da locale a live">
+<meta name="twitter:description" content="Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come Wamp o EasyPHP per fare prove ed esperimenti. Ma come fare se poi si vuole rendere pubblico il proprio lavoro? Spesso basta semplicemente spostare qualche file nella cartella www del proprio webserver e il gioco è fatto …">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="ildoc's ~ Spostare Wordpress da locale a live" />
+<meta property="og:description" content="Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come Wamp o EasyPHP per fare prove ed esperimenti. Ma come fare se poi si vuole rendere pubblico il proprio lavoro? Spesso basta semplicemente spostare qualche file nella cartella www del proprio webserver e il gioco è fatto …" />
+<meta property="og:image" content="" /> </head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <!--<center><a href="http://localhost:8000"><img id="avatar" src=""></a></center>-->
+        <h1><a href="/">ildoc's</a></h1>
+
+        <nav class="nav">
+            <ul class="list-bare">
+
+                <li><a class="nav__link" href="/">Home</a></li>
+ 
+            </ul>
+        </nav>
+
+        <p class="social">
+             <a href="https://twitter.com/il_doc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="http://localhost:8000/feeds/all.atom.xml" rel="alternate">
+                <img src="http://localhost:8000/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+            <li><a href="http://localhost:8000/category/2007.html">2007</a></li>
+            <li><a href="http://localhost:8000/category/2009.html">2009</a></li>
+            <li><a href="http://localhost:8000/category/2010.html">2010</a></li>
+            <li><a href="http://localhost:8000/category/2011.html">2011</a></li>
+            <li class="active" ><a href="http://localhost:8000/category/2012.html">2012</a></li>
+            <li><a href="http://localhost:8000/category/2013.html">2013</a></li>
+            <li><a href="http://localhost:8000/category/2014.html">2014</a></li>
+            <li><a href="http://localhost:8000/category/2015.html">2015</a></li>
+            <li><a href="http://localhost:8000/category/2016.html">2016</a></li>
+        </ul>
+ 
+    </aside>
+
+    <!-- Content -->
+    <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/" rel="bookmark" title="Permalink to Spostare Wordpress da locale a live">Spostare Wordpress da locale a live</a></h2>
+        <div class="entry-content blog-post">
+            <p>Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come
+<a href="http://www.wampserver.com/en/">Wamp</a> o
+<a href="2012-02-25_easyphp_un_webserver_in_pochi_click.md" title="EasyPHP: un webserver in pochi click">EasyPHP</a>
+per fare prove ed esperimenti.<br>
+Ma come fare se poi si vuole rendere pubblico il proprio lavoro?<br>
+Spesso basta semplicemente spostare qualche file nella cartella www del
+proprio webserver e il gioco è fatto, altre volte bisogna lottare con
+dipendenze di file e database.</p>
+<p>Oggi, dopo vari test, ero riuscito ad ottenere una combinazione di
+plugin ottimale per il mio Wordpress e volevo mettere online quanto
+fatto, senza rischiare di perdere nulla.</p>
+<p>Ed ecco come ho fatto, in pochi e semplici passaggi:</p>
+<ol>
+<li>Ho disabilitato TUTTI i plugin dal Wordpress nell’ambiente di prova</li>
+<li>Ho esportato il database in un file .sql</li>
+<li>Ho editato il file andando a sostituire tutte le occorrenze di
+    “http://127.0.0.1” con “http://miosito.it”</li>
+<li>Ho installato un Wordpress nuovo di zecca sul mio host</li>
+<li>Ho sostituito la cartella wp-content del nuovo Wordpress con quella
+    dell’ambiente di prova</li>
+<li>Ho cancellato il nuovo database e l’ho sostituito con il file .sql
+    che ho esportato ed editato prima</li>
+</ol>
+<p><em>Et voilà!</em><br>
+Il gioco è fatto!</p>
+<p>Dopodichè non mi è rimasto altro da fare che entrare nel pannello di
+controllo del mio nuovo Wordpress, riattivare tutti i plugin e andare a
+impostare tutte le opzioni come meglio pensavo.</p>
+<p>Semplice, no?</p>
+        </div>
+        <div class="post_list">
+            <span>By </span>
+            <a href="http://localhost:8000/author/doc.html">@Doc</a>
+            <span> in </span>
+            <span class="post_category"><a href="http://localhost:8000/category/2012.html" rel="bookmark"
+                                               title="Permalink to 2012">[ 2012 ]</a></span>
+            <span class="post_date">gio 23 febbraio 2012</span>
+            <div><span>Tags : </span>                  <span><a href="http://localhost:8000/tag/wordpress.html">#wordpress, </a></span>                 <span><a href="http://localhost:8000/tag/easyphp.html">#easyphp, </a></span>              </div>
+
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/&text=Spostare Wordpress da locale a live&via="><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/&t=Spostare Wordpress da locale a live"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/&title=Spostare Wordpress da locale a live"
+                    rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a
+                            href="mailto:?subject=Spostare Wordpress da locale a live&amp;body=Viens découvrir un article à propos de [Spostare Wordpress da locale a live] sur le site de Doc. http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/"
+                            title="Share by Email" target="_blank"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+    </article>
+</section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+ 
+</body>
+
+</html>

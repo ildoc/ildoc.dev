@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="italian" itemscope itemtype="http://schema.org/Person">
+
+<head>
+     <meta charset="utf-8">
+    <!-- Site Meta Data -->
+    <title>gitScrape: ottenere un changelog dalle commit su GitHub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Doc">
+
+    <link rel="shortcut icon" href="">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="ildoc's">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Style Meta Data -->
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+
+    <!-- Feed Meta Data -->
+    <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    />  
+    <!-- Twitter Feed -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content=""> 
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/">
+<meta name="twitter:title" content="ildoc's ~ gitScrape: ottenere un changelog dalle commit su GitHub">
+<meta name="twitter:description" content="Attenzione: a prima vista potrebbe sembrare uno script perfettamente inutile (e infatti lo è) Un giorno ho sentito il bisogno di avere un changelog da mettere nel progetto che stavo facendo, ma non avevo voglia di fare OGNI VOLTA copia/incolla delle modifiche, datarle, suddividerle e cazzi vari. Allora ho …">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="ildoc's ~ gitScrape: ottenere un changelog dalle commit su GitHub" />
+<meta property="og:description" content="Attenzione: a prima vista potrebbe sembrare uno script perfettamente inutile (e infatti lo è) Un giorno ho sentito il bisogno di avere un changelog da mettere nel progetto che stavo facendo, ma non avevo voglia di fare OGNI VOLTA copia/incolla delle modifiche, datarle, suddividerle e cazzi vari. Allora ho …" />
+<meta property="og:image" content="" /> </head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <!--<center><a href="http://localhost:8000"><img id="avatar" src=""></a></center>-->
+        <h1><a href="/">ildoc's</a></h1>
+
+        <nav class="nav">
+            <ul class="list-bare">
+
+                <li><a class="nav__link" href="/">Home</a></li>
+ 
+            </ul>
+        </nav>
+
+        <p class="social">
+             <a href="https://twitter.com/il_doc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="http://localhost:8000/feeds/all.atom.xml" rel="alternate">
+                <img src="http://localhost:8000/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+            <li><a href="http://localhost:8000/category/2007.html">2007</a></li>
+            <li><a href="http://localhost:8000/category/2009.html">2009</a></li>
+            <li><a href="http://localhost:8000/category/2010.html">2010</a></li>
+            <li><a href="http://localhost:8000/category/2011.html">2011</a></li>
+            <li><a href="http://localhost:8000/category/2012.html">2012</a></li>
+            <li class="active" ><a href="http://localhost:8000/category/2013.html">2013</a></li>
+            <li><a href="http://localhost:8000/category/2014.html">2014</a></li>
+            <li><a href="http://localhost:8000/category/2015.html">2015</a></li>
+            <li><a href="http://localhost:8000/category/2016.html">2016</a></li>
+        </ul>
+ 
+    </aside>
+
+    <!-- Content -->
+    <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/" rel="bookmark" title="Permalink to gitScrape: ottenere un changelog dalle commit su GitHub">gitScrape: ottenere un changelog dalle commit su GitHub</a></h2>
+        <div class="entry-content blog-post">
+            <p>Attenzione: a prima vista potrebbe sembrare uno script perfettamente
+inutile (e infatti lo è)</p>
+<p>Un giorno ho sentito il bisogno di avere un changelog da mettere nel
+progetto che stavo facendo, ma non avevo voglia di fare OGNI VOLTA
+copia/incolla delle modifiche, datarle, suddividerle e cazzi vari.</p>
+<p>Allora ho scritto questo, facendo uso di
+<a href="http://www.crummy.com/software/BeautifulSoup/" title="BeautifulSoup">BeautifulSoup</a>.</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span>  
+<span class="kn">import</span> <span class="nn">urllib2</span>
+
+<span class="n">url</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/doc90/Organizr/commits/master&#39;</span> <span class="c1"># url delle commit del branch</span>
+
+<span class="n">usock</span> <span class="o">=</span> <span class="n">urllib2</span><span class="o">.</span><span class="n">urlopen</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>  
+<span class="n">data</span> <span class="o">=</span> <span class="n">usock</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>  
+<span class="n">usock</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+
+<span class="n">s</span><span class="o">=</span><span class="n">BeautifulSoup</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  
+<span class="k">for</span> <span class="n">h3</span> <span class="ow">in</span> <span class="n">s</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;h3&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span> <span class="s1">&#39;commit-group-heading&#39;</span><span class="p">}):</span>  
+    <span class="k">print</span> <span class="n">h3</span><span class="o">.</span><span class="n">text</span>  
+    <span class="k">for</span> <span class="n">li</span> <span class="ow">in</span> <span class="n">h3</span><span class="o">.</span><span class="n">next_sibling</span><span class="o">.</span><span class="n">next_sibling</span><span class="o">.</span><span class="n">find_all</span><span class="p">(</span><span class="s1">&#39;li&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span><span class="s1">&#39;commit commit-group-item js-navigation-item js-details-container&#39;</span><span class="p">}):</span>  
+        <span class="k">print</span> <span class="s2">&quot;- </span><span class="si">%s</span><span class="s2"> </span><span class="si">% s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">li</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span><span class="s1">&#39;message&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="p">,</span> <span class="n">li</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s1">&#39;span&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;class&#39;</span><span class="p">:</span><span class="s1">&#39;sha&#39;</span><span class="p">})</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>  
+    <span class="k">print</span> <span class="s1">&#39;&#39;</span>
+</pre></div>
+
+
+<p>Per ottenere una roba tipo:</p>
+<div class="highlight"><pre><span></span>Sep 10, 2013
+- momentaneamente disattivati i recaptcha 26ed8c9216
+
+Sep 09, 2013  
+- fix minori 50763c8827  
+- aggiunta bbcode 917a7c4505
+
+Sep 08, 2013  
+- aggiunte alcune immagini 0ae5963232  
+- fix minori 188e74a37f  
+- finito sistema patch f46744d22c  
+- riscrittura blog 862537bf4e
+
+Sep 07, 2013  
+- inizio scrittura sistema patch 3d455d1bf3
+
+Sep 02, 2013  
+- fine passaggio a pdo 11d1134d30  
+- inizio passaggio a pdo 4d03359967
+
+Sep 01, 2013  
+- cambiamenti minori f88259d247
+
+Aug 30, 2013  
+- inizio aggiunta date negli eventi 472cc4a402
+
+Aug 29, 2013  
+- rimosso globals.php, spostati funzioni e json, alcuni fix 7168c39aeb  
+- aggiunto file di configurazione 166ed5b128  
+- first commit cd1aeccd70&lt;/code&gt;
+</pre></div>
+        </div>
+        <div class="post_list">
+            <span>By </span>
+            <a href="http://localhost:8000/author/doc.html">@Doc</a>
+            <span> in </span>
+            <span class="post_category"><a href="http://localhost:8000/category/2013.html" rel="bookmark"
+                                               title="Permalink to 2013">[ 2013 ]</a></span>
+            <span class="post_date">mar 17 settembre 2013</span>
+            <div><span>Tags : </span>                  <span><a href="http://localhost:8000/tag/beautifulsoup.html">#beautifulsoup, </a></span>                 <span><a href="http://localhost:8000/tag/github.html">#github, </a></span>                 <span><a href="http://localhost:8000/tag/python.html">#python, </a></span>              </div>
+
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/&text=gitScrape: ottenere un changelog dalle commit su GitHub&via="><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/&t=gitScrape: ottenere un changelog dalle commit su GitHub"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/&title=gitScrape: ottenere un changelog dalle commit su GitHub"
+                    rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a
+                            href="mailto:?subject=gitScrape: ottenere un changelog dalle commit su GitHub&amp;body=Viens découvrir un article à propos de [gitScrape: ottenere un changelog dalle commit su GitHub] sur le site de Doc. http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/"
+                            title="Share by Email" target="_blank"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+    </article>
+</section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+ 
+</body>
+
+</html>

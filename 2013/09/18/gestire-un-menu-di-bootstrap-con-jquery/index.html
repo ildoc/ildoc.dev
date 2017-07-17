@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="italian" itemscope itemtype="http://schema.org/Person">
+
+<head>
+     <meta charset="utf-8">
+    <!-- Site Meta Data -->
+    <title>Gestire un menu di bootstrap con jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Doc">
+
+    <link rel="shortcut icon" href="">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="ildoc's">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Style Meta Data -->
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+
+    <!-- Feed Meta Data -->
+    <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    />  
+    <!-- Twitter Feed -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content=""> 
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/">
+<meta name="twitter:title" content="ildoc's ~ Gestire un menu di bootstrap con jQuery">
+<meta name="twitter:description" content="Diciamocelo, Bootstrap è una figata. Avrei qualcosa da ridire in merito alla insensata e inspiegabile scelta di non garantire la retrocompatibilità con la 2.3.2, ma sostanzialmente Bootstrap è una figata. (l&#39;ho già detto?) Permette di realizzare velocemente pagine web senza sapere una mazza di css, ma la gestione …">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="ildoc's ~ Gestire un menu di bootstrap con jQuery" />
+<meta property="og:description" content="Diciamocelo, Bootstrap è una figata. Avrei qualcosa da ridire in merito alla insensata e inspiegabile scelta di non garantire la retrocompatibilità con la 2.3.2, ma sostanzialmente Bootstrap è una figata. (l&#39;ho già detto?) Permette di realizzare velocemente pagine web senza sapere una mazza di css, ma la gestione …" />
+<meta property="og:image" content="" /> </head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <!--<center><a href="http://localhost:8000"><img id="avatar" src=""></a></center>-->
+        <h1><a href="/">ildoc's</a></h1>
+
+        <nav class="nav">
+            <ul class="list-bare">
+
+                <li><a class="nav__link" href="/">Home</a></li>
+ 
+            </ul>
+        </nav>
+
+        <p class="social">
+             <a href="https://twitter.com/il_doc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="http://localhost:8000/feeds/all.atom.xml" rel="alternate">
+                <img src="http://localhost:8000/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+            <li><a href="http://localhost:8000/category/2007.html">2007</a></li>
+            <li><a href="http://localhost:8000/category/2009.html">2009</a></li>
+            <li><a href="http://localhost:8000/category/2010.html">2010</a></li>
+            <li><a href="http://localhost:8000/category/2011.html">2011</a></li>
+            <li><a href="http://localhost:8000/category/2012.html">2012</a></li>
+            <li class="active" ><a href="http://localhost:8000/category/2013.html">2013</a></li>
+            <li><a href="http://localhost:8000/category/2014.html">2014</a></li>
+            <li><a href="http://localhost:8000/category/2015.html">2015</a></li>
+            <li><a href="http://localhost:8000/category/2016.html">2016</a></li>
+        </ul>
+ 
+    </aside>
+
+    <!-- Content -->
+    <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/" rel="bookmark" title="Permalink to Gestire un menu di bootstrap con jQuery">Gestire un menu di bootstrap con jQuery</a></h2>
+        <div class="entry-content blog-post">
+            <p>Diciamocelo, <a href="http://getbootstrap.com/" title="Bootstrap">Bootstrap</a> è una
+figata.<br>
+Avrei qualcosa da ridire in merito alla insensata e inspiegabile scelta
+di non garantire la retrocompatibilità con la 2.3.2, ma sostanzialmente
+Bootstrap è una figata. (l'ho già detto?)</p>
+<p>Permette di realizzare velocemente pagine web senza sapere una mazza di
+css, ma la gestione del menu/nav-tab è abbastanza macchinosa.</p>
+<p>Come fare per gestire gli "active" dei vari pulsanti a seconda della
+parte del sito in cui ci si trova al momento?<br>
+Ma con jQuery, naturalmente, che domande...</p>
+<p>Piazziamo questa funzione nell'head</p>
+<div class="highlight"><pre><span></span><span class="nx">$</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>  
+    <span class="kd">function</span> <span class="nx">stripTrailingSlash</span><span class="p">(</span><span class="nx">str</span><span class="p">)</span> <span class="p">{</span>  
+        <span class="k">if</span><span class="p">(</span><span class="nx">str</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">==</span> <span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="p">{</span>  
+            <span class="k">return</span> <span class="nx">str</span><span class="p">.</span><span class="nx">substr</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nx">str</span><span class="p">.</span><span class="nx">length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">);</span>  
+        <span class="p">}</span>  
+    <span class="k">return</span> <span class="nx">str</span><span class="p">;</span>  
+    <span class="p">}</span>
+
+    <span class="kd">var</span> <span class="nx">url</span> <span class="o">=</span> <span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">substring</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">href</span><span class="p">.</span><span class="nx">lastIndexOf</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>  
+    <span class="kd">var</span> <span class="nx">activePage</span> <span class="o">=</span> <span class="nx">stripTrailingSlash</span><span class="p">(</span><span class="nx">url</span><span class="p">);</span>
+
+    <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.nav li:not(.dropdown) a&#39;</span><span class="p">).</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>  
+        <span class="kd">var</span> <span class="nx">currentPage</span> <span class="o">=</span> <span class="nx">stripTrailingSlash</span><span class="p">(</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;href&#39;</span><span class="p">));</span>  
+        <span class="k">if</span> <span class="p">(</span><span class="nx">activePage</span> <span class="o">==</span> <span class="nx">currentPage</span><span class="p">)</span> <span class="p">{</span>  
+            <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parent</span><span class="p">().</span><span class="nx">addClass</span><span class="p">(</span><span class="s1">&#39;active&#39;</span><span class="p">);</span>  
+        <span class="p">}</span>  
+    <span class="p">});</span>  
+<span class="p">});</span>
+</pre></div>
+
+
+<p>e ta-daaan!</p>
+<p>Alla riga 14 si può modificare la condizione per adattarla ai casi di
+url con parametri (es. blog.php?id=123) utilizzando  </p>
+<div class="highlight"><pre><span></span><span class="k">if</span> <span class="p">(</span><span class="nx">activePage</span><span class="p">.</span><span class="nx">indexOf</span><span class="p">(</span><span class="nx">currentPage</span><span class="p">)</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Comunque, cazzomenefrega, io continuerò a usare la
+<a href="http://getbootstrap.com/2.3.2/">2.3.2</a></p>
+        </div>
+        <div class="post_list">
+            <span>By </span>
+            <a href="http://localhost:8000/author/doc.html">@Doc</a>
+            <span> in </span>
+            <span class="post_category"><a href="http://localhost:8000/category/2013.html" rel="bookmark"
+                                               title="Permalink to 2013">[ 2013 ]</a></span>
+            <span class="post_date">mer 18 settembre 2013</span>
+            <div><span>Tags : </span>                  <span><a href="http://localhost:8000/tag/bootstrap.html">#bootstrap, </a></span>                 <span><a href="http://localhost:8000/tag/jquery.html">#jquery, </a></span>              </div>
+
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/&text=Gestire un menu di bootstrap con jQuery&via="><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/&t=Gestire un menu di bootstrap con jQuery"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/&title=Gestire un menu di bootstrap con jQuery"
+                    rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a
+                            href="mailto:?subject=Gestire un menu di bootstrap con jQuery&amp;body=Viens découvrir un article à propos de [Gestire un menu di bootstrap con jQuery] sur le site de Doc. http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/"
+                            title="Share by Email" target="_blank"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+    </article>
+</section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+ 
+</body>
+
+</html>

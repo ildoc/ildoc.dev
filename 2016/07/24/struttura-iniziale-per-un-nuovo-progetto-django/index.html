@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="italian" itemscope itemtype="http://schema.org/Person">
+
+<head>
+     <meta charset="utf-8">
+    <!-- Site Meta Data -->
+    <title>Struttura iniziale per un nuovo progetto Django</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Doc">
+
+    <link rel="shortcut icon" href="">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="ildoc's">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Style Meta Data -->
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+
+    <!-- Feed Meta Data -->
+    <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    />  
+    <!-- Twitter Feed -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content=""> 
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/">
+<meta name="twitter:title" content="ildoc's ~ Struttura iniziale per un nuovo progetto Django">
+<meta name="twitter:description" content="Stiamo per iniziare un nuovo progetto con Django e la domanda che ci poniamo è: &#34;C&#39;è un modo per strutturare il progetto in maniera che sia modulare, facile da navigare e da manutenere?&#34; Si, e ora vi spiego quello che ho adottato io: L&#39;ambiente virtuale Innanzitutto è necessario contenere e …">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="ildoc's ~ Struttura iniziale per un nuovo progetto Django" />
+<meta property="og:description" content="Stiamo per iniziare un nuovo progetto con Django e la domanda che ci poniamo è: &#34;C&#39;è un modo per strutturare il progetto in maniera che sia modulare, facile da navigare e da manutenere?&#34; Si, e ora vi spiego quello che ho adottato io: L&#39;ambiente virtuale Innanzitutto è necessario contenere e …" />
+<meta property="og:image" content="" /> </head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <!--<center><a href="http://localhost:8000"><img id="avatar" src=""></a></center>-->
+        <h1><a href="/">ildoc's</a></h1>
+
+        <nav class="nav">
+            <ul class="list-bare">
+
+                <li><a class="nav__link" href="/">Home</a></li>
+ 
+            </ul>
+        </nav>
+
+        <p class="social">
+             <a href="https://twitter.com/il_doc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="http://localhost:8000/feeds/all.atom.xml" rel="alternate">
+                <img src="http://localhost:8000/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+            <li><a href="http://localhost:8000/category/2007.html">2007</a></li>
+            <li><a href="http://localhost:8000/category/2009.html">2009</a></li>
+            <li><a href="http://localhost:8000/category/2010.html">2010</a></li>
+            <li><a href="http://localhost:8000/category/2011.html">2011</a></li>
+            <li><a href="http://localhost:8000/category/2012.html">2012</a></li>
+            <li><a href="http://localhost:8000/category/2013.html">2013</a></li>
+            <li><a href="http://localhost:8000/category/2014.html">2014</a></li>
+            <li><a href="http://localhost:8000/category/2015.html">2015</a></li>
+            <li class="active" ><a href="http://localhost:8000/category/2016.html">2016</a></li>
+        </ul>
+ 
+    </aside>
+
+    <!-- Content -->
+    <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/" rel="bookmark" title="Permalink to Struttura iniziale per un nuovo progetto Django">Struttura iniziale per un nuovo progetto Django</a></h2>
+        <div class="entry-content blog-post">
+            <p>Stiamo per iniziare un nuovo progetto con Django e la domanda che ci poniamo è: "C'è un modo per strutturare il progetto in maniera che sia modulare, facile da navigare e da manutenere?"</p>
+<p>Si, e ora vi spiego quello che ho adottato io:</p>
+<h2>L'ambiente virtuale</h2>
+<p>Innanzitutto è necessario contenere e rendere replicabile ovunque il nostro ambiente di sviluppo.</p>
+<p>In python2 c'era un fantastico pacchetto di nome <code>virtualenvwrapper</code>, ma visto che ormai siamo nel 2016 utilizzeremo python3, quindi apriamo una shell e scriviamo (su Linux):</p>
+<div class="highlight"><pre><span></span>python3 -m venv /path/dove/vivrà/il/nostro/ambiente/nomeambiente
+</pre></div>
+
+
+<p>su Windows invece il comando è praticamente uguale:</p>
+<div class="highlight"><pre><span></span>python -m venv C:\path\dove\vivrà\il\nostro\ambiente\nomeambiente
+</pre></div>
+
+
+<p>nel percorso che avete specificato verrà creata una folder che conterrà un'installazione pulita di python3 che andremo a usare per sviluppare il progetto.</p>
+<p>Una volta creato l'ambiente andiamo ad attivarlo, su Linux con:</p>
+<div class="highlight"><pre><span></span>source /path/[...]/nomeambiente/bin/activate
+</pre></div>
+
+
+<p>e su Windows con:</p>
+<div class="highlight"><pre><span></span>C:\path\[...]\nomeambiente\Scripts\activate.bat
+</pre></div>
+
+
+<p>a conferma dell'attivazione troveremo <code>(nomeambiente)</code> all'inizio della riga di comando della nostra shell.</p>
+<p>A questo punto non ci resta che installare Django con:</p>
+<div class="highlight"><pre><span></span>pip install django
+</pre></div>
+
+
+<h2>Creazione del progetto</h2>
+<p>Fin qui ci siamo preparati il "tavolo da lavoro", ora non ci resta che cominciare a costruire.</p>
+<p>Quindi per cominciare iniziamo col creare il nostro progetto:</p>
+<div class="highlight"><pre><span></span>django-admin startproject mioProgetto
+</pre></div>
+
+
+<p>Il comando appena lanciato produrrà lo scheletro di default di Django, in una struttura a mio avviso un po' criptica.</p>
+<div class="highlight"><pre><span></span>mioProgetto/
+|-- manage.py
+`-- postdjango
+    |-- __init__.py
+    |-- settings.py
+    |-- urls.py
+    `-- wsgi.py
+</pre></div>
+
+
+<p>Non ho mai trovato molto senso nel creare una folder col nome del progetto... ...all'interno della folder col nome del progetto!, poi, girovagando su Github, mi sono imbattuto nel sorgente del sito <a href="http://djangopackages.com">djangopackages.com</a> (<a href="https://github.com/pydanny/djangopackages">qui</a> il sorgente) sviluppato da pydanny, l'autore di <a href="http://amzn.to/2aiPUq2">Two Scoops of Django</a>, che a mio avviso è la BIBBIA di Django.</p>
+<p>E ho scoperto che la metodologia usata da pydanny è estremamente funzionale, così ho deciso di adottarla.</p>
+<p>Dunque: il nostro obbiettivo è far fuori la folder col nome del progetto in maniera da rendere il suo contenuto organizzato meglio.</p>
+<p>Quindi cominciamo con lo spostare tutti i file nel livello superiore, e cancelliamo la cartella vuota:</p>
+<div class="highlight"><pre><span></span>postdjango/
+|-- __init__.py
+|-- manage.py
+|-- settings.py
+|-- urls.py
+`-- wsgi.py
+</pre></div>
+
+
+<p>I settings facilmente possono crescere sia di dimensione, sia di numero di file, quindi creiamo una cartella <code>settings</code> apposta, rendiamola un modulo creando al suo interno un file <code>__init__.py</code> e spostiamoci dentro il nostro <code>settings.py</code>, rinominandolo <code>base.py</code>.</p>
+<p>In quest'ultimo file possiamo tenere, ad esempio, tutte le impostazioni che saranno condivide dagli altri settings.</p>
+<p>Giusto per dare un senso a questa suddivisione, possiamo creare un piccolo file <code>nginx.py</code> dove metteremo le configurazioni specifiche al deploy:</p>
+<div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">.base</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">ALLOWED_HOSTS</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;miosito.it&#39;</span><span class="p">]</span>
+</pre></div>
+
+
+<p>La nostra struttura ora sarà così:</p>
+<div class="highlight"><pre><span></span>mioProgetto/
+|-- settings
+|   |-- base.py
+|   |-- __init__.py
+|   `-- nginx.py
+|-- __init__.py
+|-- manage.py
+|-- urls.py
+`-- wsgi.py
+</pre></div>
+
+
+<p>Più comprensibile, no?</p>
+<p>Ora andiamo a sistemare i riferimenti saltati nei vari file:</p>
+<p>In <code>settings/base.py</code>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># ROOT_URLCONF = &#39;mioProgetto.urls&#39;</span>
+<span class="n">ROOT_URLCONF</span> <span class="o">=</span> <span class="s1">&#39;urls&#39;</span>
+
+<span class="p">[</span><span class="o">...</span><span class="p">]</span>
+
+<span class="c1"># WSGI_APPLICATION = &#39;mioProgetto.wsgi.application&#39;</span>
+<span class="n">WSGI_APPLICATION</span> <span class="o">=</span> <span class="s1">&#39;wsgi.application&#39;</span>
+</pre></div>
+
+
+<p>In <code>manage.py</code>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># os.environ.setdefault(&quot;DJANGO_SETTINGS_MODULE&quot;, &quot;mioProgetto.settings&quot;)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;DJANGO_SETTINGS_MODULE&quot;</span><span class="p">,</span> <span class="s2">&quot;settings.base&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>In <code>wsgi.py</code>:</p>
+<div class="highlight"><pre><span></span><span class="c1"># os.environ.setdefault(&quot;DJANGO_SETTINGS_MODULE&quot;, &quot;mioProgetto.settings&quot;)</span>
+<span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="s2">&quot;DJANGO_SETTINGS_MODULE&quot;</span><span class="p">,</span> <span class="s2">&quot;settings.base&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>Fine. Ora abbiamo una base più coprensibile e possiamo cominciare a costruire il nostro progetto.</p>
+        </div>
+        <div class="post_list">
+            <span>By </span>
+            <a href="http://localhost:8000/author/doc.html">@Doc</a>
+            <span> in </span>
+            <span class="post_category"><a href="http://localhost:8000/category/2016.html" rel="bookmark"
+                                               title="Permalink to 2016">[ 2016 ]</a></span>
+            <span class="post_date">dom 24 luglio 2016</span>
+            <div><span>Tags : </span>                  <span><a href="http://localhost:8000/tag/python.html">#python, </a></span>                 <span><a href="http://localhost:8000/tag/django.html">#django, </a></span>                 <span><a href="http://localhost:8000/tag/tutorial.html">#tutorial, </a></span>              </div>
+
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/&text=Struttura iniziale per un nuovo progetto Django&via="><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/&t=Struttura iniziale per un nuovo progetto Django"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/&title=Struttura iniziale per un nuovo progetto Django"
+                    rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a
+                            href="mailto:?subject=Struttura iniziale per un nuovo progetto Django&amp;body=Viens découvrir un article à propos de [Struttura iniziale per un nuovo progetto Django] sur le site de Doc. http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/"
+                            title="Share by Email" target="_blank"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+    </article>
+</section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+ 
+</body>
+
+</html>

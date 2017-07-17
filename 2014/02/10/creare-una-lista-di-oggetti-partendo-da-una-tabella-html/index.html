@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="italian" itemscope itemtype="http://schema.org/Person">
+
+<head>
+     <meta charset="utf-8">
+    <!-- Site Meta Data -->
+    <title>Creare una lista di oggetti partendo da una tabella html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Doc">
+
+    <link rel="shortcut icon" href="">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="ildoc's">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Style Meta Data -->
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="http://localhost:8000/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+
+    <!-- Feed Meta Data -->
+    <link href="http://localhost:8000/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    />  
+    <!-- Twitter Feed -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content=""> 
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/">
+<meta name="twitter:title" content="ildoc's ~ Creare una lista di oggetti partendo da una tabella html">
+<meta name="twitter:description" content="Al momento sto lavorando con i Coded UI (un giorno spiegherò cosa sono e a cosa servono) e ho avuto la necessità di parsare il contenuto di una tabella html. (Abbrevierò il codice con dei [...], tanto sarebbero solo delle ripetizioni) Nella tabella ci sono dei dati filtrati e quello che …">
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="ildoc's ~ Creare una lista di oggetti partendo da una tabella html" />
+<meta property="og:description" content="Al momento sto lavorando con i Coded UI (un giorno spiegherò cosa sono e a cosa servono) e ho avuto la necessità di parsare il contenuto di una tabella html. (Abbrevierò il codice con dei [...], tanto sarebbero solo delle ripetizioni) Nella tabella ci sono dei dati filtrati e quello che …" />
+<meta property="og:image" content="" /> </head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <!--<center><a href="http://localhost:8000"><img id="avatar" src=""></a></center>-->
+        <h1><a href="/">ildoc's</a></h1>
+
+        <nav class="nav">
+            <ul class="list-bare">
+
+                <li><a class="nav__link" href="/">Home</a></li>
+ 
+            </ul>
+        </nav>
+
+        <p class="social">
+             <a href="https://twitter.com/il_doc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="http://localhost:8000/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="http://localhost:8000/feeds/all.atom.xml" rel="alternate">
+                <img src="http://localhost:8000/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+
+        <h2>Categories</h2>
+        <ul class="navbar">
+            <li><a href="http://localhost:8000/category/2007.html">2007</a></li>
+            <li><a href="http://localhost:8000/category/2009.html">2009</a></li>
+            <li><a href="http://localhost:8000/category/2010.html">2010</a></li>
+            <li><a href="http://localhost:8000/category/2011.html">2011</a></li>
+            <li><a href="http://localhost:8000/category/2012.html">2012</a></li>
+            <li><a href="http://localhost:8000/category/2013.html">2013</a></li>
+            <li class="active" ><a href="http://localhost:8000/category/2014.html">2014</a></li>
+            <li><a href="http://localhost:8000/category/2015.html">2015</a></li>
+            <li><a href="http://localhost:8000/category/2016.html">2016</a></li>
+        </ul>
+ 
+    </aside>
+
+    <!-- Content -->
+    <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/" rel="bookmark" title="Permalink to Creare una lista di oggetti partendo da una tabella html">Creare una lista di oggetti partendo da una tabella html</a></h2>
+        <div class="entry-content blog-post">
+            <p>Al momento sto lavorando con i Coded UI (un giorno spiegherò cosa sono
+e a cosa servono) e ho avuto la necessità di parsare il contenuto di una
+tabella html.<br>
+(Abbrevierò il codice con dei [...], tanto sarebbero solo delle
+ripetizioni)</p>
+<p>Nella tabella ci sono dei dati filtrati e quello che dovevo fare era
+verificare il funzionamento del filtro.</p>
+<p>La tabella html era così:  </p>
+<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid&quot;</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Name&quot;</span><span class="p">&gt;</span>aaa<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Description&quot;</span><span class="p">&gt;</span>bbb<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_IndustrySector&quot;</span><span class="p">&gt;</span>ccc<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Industry&quot;</span><span class="p">&gt;</span>ddd<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Status&quot;</span><span class="p">&gt;</span>eee<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Version&quot;</span><span class="p">&gt;</span>fff/td&gt;
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+    [...]
+  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+</pre></div>
+
+
+<p>Ho creato una classe <strong>IndustrySegment</strong> fatta così</p>
+<div class="highlight"><pre><span></span><span class="k">public</span> <span class="k">class</span> <span class="nc">IndustrySegment</span>
+<span class="p">{</span>
+    <span class="k">private</span> <span class="kt">string</span> <span class="n">_name</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Name</span>
+    <span class="p">{</span>
+        <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_name</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">set</span> <span class="p">{</span> <span class="n">_name</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">}</span>
+
+    <span class="k">private</span> <span class="kt">string</span> <span class="n">_description</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kt">string</span> <span class="n">Description</span>
+    <span class="p">{</span>
+        <span class="k">get</span> <span class="p">{</span> <span class="k">return</span> <span class="n">_description</span><span class="p">;</span> <span class="p">}</span>
+        <span class="k">set</span> <span class="p">{</span> <span class="n">_description</span> <span class="p">=</span> <span class="k">value</span><span class="p">;</span> <span class="p">}</span>
+    <span class="p">}</span>
+
+<span class="na">    [...]</span>
+
+    <span class="k">public</span> <span class="nf">IndustrySegment</span><span class="p">(</span><span class="kt">string</span> <span class="n">Name</span><span class="p">,</span> <span class="kt">string</span> <span class="n">Description</span><span class="p">,</span> <span class="kt">string</span> <span class="n">Notes</span><span class="p">,</span> <span class="kt">string</span> <span class="n">Sector</span><span class="p">,</span> <span class="kt">string</span> <span class="n">Industry</span><span class="p">,</span> <span class="kt">string</span> <span class="n">Status</span><span class="p">,</span> <span class="kt">string</span> <span class="n">Version</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">_name</span> <span class="p">=</span> <span class="n">Name</span><span class="p">;</span>
+        <span class="n">_description</span> <span class="p">=</span> <span class="n">Description</span><span class="p">;</span>
+        <span class="n">_notes</span> <span class="p">=</span> <span class="n">Notes</span><span class="p">;</span>
+        <span class="n">_sector</span> <span class="p">=</span> <span class="n">Sector</span><span class="p">;</span>
+        <span class="n">_indusrty</span> <span class="p">=</span> <span class="n">Industry</span><span class="p">;</span>
+        <span class="n">_status</span> <span class="p">=</span> <span class="n">Status</span><span class="p">;</span>
+        <span class="n">_version</span> <span class="p">=</span> <span class="n">Version</span><span class="p">;</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>A questo punto il mio scopo era creare una lista di oggetti
+IndustrySegment contenente tanti oggetti quante righe della tabella e,
+dopo lunghe e articolate bestemmie, sono giunto a questa funzione,
+sfruttando la comodissima libreria
+<a href="http://htmlagilitypack.codeplex.com/">HtmlAgilityPack</a></p>
+<div class="highlight"><pre><span></span><span class="k">public</span> <span class="n">List</span> <span class="nf">GetIndustrySegments</span><span class="p">(</span><span class="kt">string</span> <span class="n">HtmlDellaPagina</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">HtmlAgilityPack</span><span class="p">.</span><span class="n">HtmlDocument</span> <span class="n">doc</span> <span class="p">=</span> <span class="k">new</span> <span class="n">HtmlAgilityPack</span><span class="p">.</span><span class="n">HtmlDocument</span><span class="p">();</span>
+    <span class="n">doc</span><span class="p">.</span><span class="n">LoadHtml</span><span class="p">(</span><span class="n">HtmlDellaPagina</span><span class="p">);</span>
+
+    <span class="n">List</span> <span class="n">Results</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">();</span>
+
+    <span class="kt">var</span> <span class="n">trList</span> <span class="p">=</span> <span class="n">doc</span><span class="p">.</span><span class="n">DocumentNode</span><span class="p">.</span><span class="n">SelectSingleNode</span><span class="p">(</span><span class="s">&quot;//table[@id=&#39;industrySegmentGrid&#39;]&quot;</span><span class="p">).</span><span class="n">Descendants</span><span class="p">(</span><span class="s">&quot;tr&quot;</span><span class="p">);</span>
+    <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">tr</span> <span class="k">in</span> <span class="n">trList</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="kt">var</span> <span class="n">td</span> <span class="p">=</span> <span class="n">tr</span><span class="p">.</span><span class="n">Descendants</span><span class="p">(</span><span class="s">&quot;td&quot;</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">td</span><span class="p">.</span><span class="n">Count</span><span class="p">()</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">Results</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span>
+                <span class="k">new</span> <span class="nf">IndustrySegment</span><span class="p">(</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Name&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Description&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Notes&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_IndustrySector&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Industry&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Status&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Version&quot;</span><span class="p">).</span><span class="n">InnerText</span>
+                    <span class="p">)</span>
+                <span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="n">Results</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Non sarà bellissima da leggere, ma funziona :)</p>
+        </div>
+        <div class="post_list">
+            <span>By </span>
+            <a href="http://localhost:8000/author/doc.html">@Doc</a>
+            <span> in </span>
+            <span class="post_category"><a href="http://localhost:8000/category/2014.html" rel="bookmark"
+                                               title="Permalink to 2014">[ 2014 ]</a></span>
+            <span class="post_date">lun 10 febbraio 2014</span>
+            <div><span>Tags : </span>                  <span><a href="http://localhost:8000/tag/c.html">#c#, </a></span>                 <span><a href="http://localhost:8000/tag/html.html">#html, </a></span>                 <span><a href="http://localhost:8000/tag/htmlagilitypack.html">#htmlagilitypack, </a></span>                 <span><a href="http://localhost:8000/tag/linq.html">#linq, </a></span>                 <span><a href="http://localhost:8000/tag/xpath.html">#xpath, </a></span>              </div>
+
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&text=Creare una lista di oggetti partendo da una tabella html&via="><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&t=Creare una lista di oggetti partendo da una tabella html"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&title=Creare una lista di oggetti partendo da una tabella html"
+                    rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a
+                            href="mailto:?subject=Creare una lista di oggetti partendo da una tabella html&amp;body=Viens découvrir un article à propos de [Creare una lista di oggetti partendo da una tabella html] sur le site de Doc. http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/"
+                            title="Share by Email" target="_blank"><img
+                            src="http://localhost:8000/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+    </article>
+</section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+ 
+</body>
+
+</html>

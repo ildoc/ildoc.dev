@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>ildoc's</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2016-07-24T20:33:16+02:00</updated><entry><title>Struttura iniziale per un nuovo progetto Django</title><link href="/struttura-iniziale-per-un-nuovo-progetto-django.html" rel="alternate"></link><published>2016-07-24T20:33:16+02:00</published><updated>2016-07-24T20:33:16+02:00</updated><author><name>Doc</name></author><id>tag:None,2016-07-24:/struttura-iniziale-per-un-nuovo-progetto-django.html</id><summary type="html">&lt;p&gt;Stiamo per iniziare un nuovo progetto con Django e la domanda che ci poniamo è: "C'è un modo per strutturare il progetto in maniera che sia modulare, facile da navigare e da manutenere?"&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>ildoc's</title><link href="http://localhost:8000/" rel="alternate"></link><link href="http://localhost:8000/feeds/all.atom.xml" rel="self"></link><id>http://localhost:8000/</id><updated>2016-07-24T20:33:16+02:00</updated><entry><title>Struttura iniziale per un nuovo progetto Django</title><link href="http://localhost:8000/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/" rel="alternate"></link><published>2016-07-24T20:33:16+02:00</published><updated>2016-07-24T20:33:16+02:00</updated><author><name>Doc</name></author><id>tag:localhost,2016-07-24:/2016/07/24/struttura-iniziale-per-un-nuovo-progetto-django/</id><summary type="html">&lt;p&gt;Stiamo per iniziare un nuovo progetto con Django e la domanda che ci poniamo è: "C'è un modo per strutturare il progetto in maniera che sia modulare, facile da navigare e da manutenere?"&lt;/p&gt;
 &lt;p&gt;Si, e ora vi spiego quello che ho adottato io:&lt;/p&gt;
 &lt;h2&gt;L'ambiente virtuale&lt;/h2&gt;
 &lt;p&gt;Innanzitutto è necessario contenere e …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Stiamo per iniziare un nuovo progetto con Django e la domanda che ci poniamo è: "C'è un modo per strutturare il progetto in maniera che sia modulare, facile da navigare e da manutenere?"&lt;/p&gt;
@@ -111,13 +111,13 @@
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Fine. Ora abbiamo una base più coprensibile e possiamo cominciare a costruire il nostro progetto.&lt;/p&gt;</content><category term="python"></category><category term="django"></category><category term="tutorial"></category></entry><entry><title>Script per la creazione di un nuovo progetto Django</title><link href="/script-per-la-creazione-di-un-nuovo-progetto-django.html" rel="alternate"></link><published>2015-10-13T09:39:35+02:00</published><updated>2015-10-14T19:46:09+02:00</updated><author><name>Doc</name></author><id>tag:None,2015-10-13:/script-per-la-creazione-di-un-nuovo-progetto-django.html</id><summary type="html">&lt;p&gt;Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da &lt;a href="/django-e-virtualenv-su-windows.html/"&gt;windows&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Fine. Ora abbiamo una base più coprensibile e possiamo cominciare a costruire il nostro progetto.&lt;/p&gt;</content><category term="python"></category><category term="django"></category><category term="tutorial"></category></entry><entry><title>Script per la creazione di un nuovo progetto Django</title><link href="http://localhost:8000/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/" rel="alternate"></link><published>2015-10-13T09:39:35+02:00</published><updated>2015-10-14T19:46:09+02:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-10-13:/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/</id><summary type="html">&lt;p&gt;Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da &lt;a href="http://localhost:8000/2015/03/02/django-e-virtualenv-su-windows/"&gt;windows&lt;/a&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 &lt;span class="nv"&gt;YEAR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date +&lt;span class="s2"&gt;&amp;quot;%Y&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
 
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione env&amp;quot;&lt;/span&gt;
 python3 -m venv /envs/&lt;span class="nv"&gt;$1&lt;/span&gt;
-&lt;span class="nb"&gt;source&lt;/span&gt; /envs/&lt;span class="nv"&gt;$1 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da &lt;a href="/django-e-virtualenv-su-windows.html/"&gt;windows&lt;/a&gt;)&lt;/p&gt;
+&lt;span class="nb"&gt;source&lt;/span&gt; /envs/&lt;span class="nv"&gt;$1 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da &lt;a href="http://localhost:8000/2015/03/02/django-e-virtualenv-su-windows/"&gt;windows&lt;/a&gt;)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
 &lt;span class="nv"&gt;YEAR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date +&lt;span class="s2"&gt;&amp;quot;%Y&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
 
@@ -189,7 +189,7 @@ git add --all
 git commit -m &lt;span class="s2"&gt;&amp;quot;first commit&amp;quot;&lt;/span&gt;
 &lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Avvio di Atom&amp;quot;&lt;/span&gt;
 atom .
-&lt;/pre&gt;&lt;/div&gt;</content><category term="django"></category></entry><entry><title>Script standalone con Django</title><link href="/script-standalone-con-django.html" rel="alternate"></link><published>2015-05-11T04:46:58+02:00</published><updated>2015-05-12T14:58:55+02:00</updated><author><name>Doc</name></author><id>tag:None,2015-05-11:/script-standalone-con-django.html</id><summary type="html">&lt;p&gt;Volendo creare un tool di manutenzione/per operazioni batch/ecc. che necessita di interagire con, ad esempio, i modelli di un'app del nostro progetto con Django, è necessario caricare tutto l'ambiente all'interno del quale Django viene eseguito.&lt;/p&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="django"></category></entry><entry><title>Script standalone con Django</title><link href="http://localhost:8000/2015/05/11/script-standalone-con-django/" rel="alternate"></link><published>2015-05-11T04:46:58+02:00</published><updated>2015-05-12T14:58:55+02:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-05-11:/2015/05/11/script-standalone-con-django/</id><summary type="html">&lt;p&gt;Volendo creare un tool di manutenzione/per operazioni batch/ecc. che necessita di interagire con, ad esempio, i modelli di un'app del nostro progetto con Django, è necessario caricare tutto l'ambiente all'interno del quale Django viene eseguito.&lt;/p&gt;
 &lt;p&gt;Ciò può essere fatto lanciando la shell di Django dal manage.py del …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Volendo creare un tool di manutenzione/per operazioni batch/ecc. che necessita di interagire con, ad esempio, i modelli di un'app del nostro progetto con Django, è necessario caricare tutto l'ambiente all'interno del quale Django viene eseguito.&lt;/p&gt;
 &lt;p&gt;Ciò può essere fatto lanciando la shell di Django dal manage.py del nostro progetto:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;ildoc&lt;span class="p"&gt;)&lt;/span&gt; C:\Projects\ildoc.it&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;python manage.py shell
@@ -231,7 +231,7 @@ Python 2.7.9 (default, Dec 10 2014, 12:28:03) [MSC v.1500 64 bit (AMD64)] on win
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Semplificandoci notevolmente la vita nel caso volessimo schedularne l'esecuzione.&lt;/p&gt;</content><category term="django"></category><category term="virtualenv"></category></entry><entry><title>Nuovo blog?</title><link href="/nuovo-blog.html" rel="alternate"></link><published>2015-03-25T11:06:50+01:00</published><updated>2015-03-25T11:27:06+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-03-25:/nuovo-blog.html</id><summary type="html">&lt;p&gt;Cos'è cambiato? Nulla, &lt;em&gt;sembrerebbe&lt;/em&gt;...
+&lt;p&gt;Semplificandoci notevolmente la vita nel caso volessimo schedularne l'esecuzione.&lt;/p&gt;</content><category term="django"></category><category term="virtualenv"></category></entry><entry><title>Nuovo blog?</title><link href="http://localhost:8000/2015/03/25/nuovo-blog/" rel="alternate"></link><published>2015-03-25T11:06:50+01:00</published><updated>2015-03-25T11:27:06+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-03-25:/2015/03/25/nuovo-blog/</id><summary type="html">&lt;p&gt;Cos'è cambiato? Nulla, &lt;em&gt;sembrerebbe&lt;/em&gt;...
 E invece sono passato da pelican a django, mantenendo quasi lo stesso layout.&lt;/p&gt;
 &lt;p&gt;Il vantaggio pratico è che posso scrivere i post direttamente dal web, ma la parte divertente è che il motore del blog &lt;a href="https://github.com/ildoc/ildoc.it/"&gt;me lo scrivo da solo&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Riprendendo in mano django dopo il …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Cos'è cambiato? Nulla, &lt;em&gt;sembrerebbe&lt;/em&gt;...
@@ -243,7 +243,7 @@ E invece sono passato da pelican a django, mantenendo quasi lo stesso layout.&lt
 &lt;p&gt;I post continuerò a scriverli in markdown, grazie alle magie di python-markdown e django-pagedown, che mi permettono anche di avere un feedback real-time su come uscirà il post.
 La sitemap dovrebbe funzionare, così come l'integrazione con twitter tramite IFTTT.&lt;/p&gt;
 &lt;p&gt;Quello che mi manca è un'interfaccia di scrittura post un po' più comoda del django-admin e un modo per uploadare le immagini da embeddare nei post.&lt;/p&gt;
-&lt;p&gt;Ci sono ancora dei link rotti nei post migrati, ma col tempo sistemerò tutto...&lt;/p&gt;</content><category term="blog"></category><category term="django"></category></entry><entry><title>Sostituzione di un disco degradato su QNAP</title><link href="/sostituzione-di-un-disco-degradato-su-qnap.html" rel="alternate"></link><published>2015-03-07T10:26:00+01:00</published><updated>2015-04-28T12:26:45+02:00</updated><author><name>Doc</name></author><id>tag:None,2015-03-07:/sostituzione-di-un-disco-degradato-su-qnap.html</id><summary type="html">&lt;p&gt;Dopo 2 anni di servizio, il disco 1 del mio QNAP TS-219P II (un  &lt;a href="http://amzn.to/1wo7f8j"&gt;WD Red 3TB&lt;/a&gt;) ha deciso di lasciarmi.&lt;/p&gt;
+&lt;p&gt;Ci sono ancora dei link rotti nei post migrati, ma col tempo sistemerò tutto...&lt;/p&gt;</content><category term="blog"></category><category term="django"></category></entry><entry><title>Sostituzione di un disco degradato su QNAP</title><link href="http://localhost:8000/2015/03/07/sostituzione-di-un-disco-degradato-su-qnap/" rel="alternate"></link><published>2015-03-07T10:26:00+01:00</published><updated>2015-04-28T12:26:45+02:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-03-07:/2015/03/07/sostituzione-di-un-disco-degradato-su-qnap/</id><summary type="html">&lt;p&gt;Dopo 2 anni di servizio, il disco 1 del mio QNAP TS-219P II (un  &lt;a href="http://amzn.to/1wo7f8j"&gt;WD Red 3TB&lt;/a&gt;) ha deciso di lasciarmi.&lt;/p&gt;
 &lt;p&gt;Il QNAP è andato in modalità degraded, lucine rosse e beep ovunque...
 Ho comprato un altro disco e poi mi sono messo a scartabellare l'internet per capire come sostituirlo …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dopo 2 anni di servizio, il disco 1 del mio QNAP TS-219P II (un  &lt;a href="http://amzn.to/1wo7f8j"&gt;WD Red 3TB&lt;/a&gt;) ha deciso di lasciarmi.&lt;/p&gt;
 &lt;p&gt;Il QNAP è andato in modalità degraded, lucine rosse e beep ovunque...
@@ -260,7 +260,7 @@ Recentemente hanno rifatto il sito e non si sono minimamente preoccupati di mant
 &lt;li&gt;si re-inserisce il nuovo disco (ci saranno di nuovo 2 beep da 1.5 secondi)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;e in automatico il sistema comincerà con il ripristino del RAID&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;GOD BLESS RAID 1&lt;/strong&gt;&lt;/p&gt;</content><category term="nas"></category><category term="qnap"></category></entry><entry><title>Django e virtualenv su Windows</title><link href="/django-e-virtualenv-su-windows.html" rel="alternate"></link><published>2015-03-02T10:28:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-03-02:/django-e-virtualenv-su-windows.html</id><summary type="html">&lt;p&gt;Più che un post, questo è un appunto personale...
+&lt;p&gt;&lt;strong&gt;GOD BLESS RAID 1&lt;/strong&gt;&lt;/p&gt;</content><category term="nas"></category><category term="qnap"></category></entry><entry><title>Django e virtualenv su Windows</title><link href="http://localhost:8000/2015/03/02/django-e-virtualenv-su-windows/" rel="alternate"></link><published>2015-03-02T10:28:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-03-02:/2015/03/02/django-e-virtualenv-su-windows/</id><summary type="html">&lt;p&gt;Più che un post, questo è un appunto personale...
 Per usare &lt;a href="https://www.djangoproject.com/"&gt;django&lt;/a&gt; su windows dietro virtualenv occorre settare il path corretto per l'esecuzione dei file .py, altrimenti verrà utilizzato il "python.exe" di default&lt;/p&gt;
 &lt;p&gt;Questa operazione è fattibile con il comando (ovviamente da DENTRO il virtualenv)&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ftype Python.File&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;C …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Più che un post, questo è un appunto personale...
@@ -270,9 +270,9 @@ Per usare &lt;a href="https://www.djangoproject.com/"&gt;django&lt;/a&gt; su win
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Questa roba in teoria dovrebbe risulare automatica alla creazione del virtualenv, resta da capire se sia un baco di django o dell'ambiente...&lt;/p&gt;</content><category term="windows"></category><category term="django"></category><category term="virtualenv"></category></entry><entry><title>Fuga da Ovh</title><link href="/fuga-da-ovh.html" rel="alternate"></link><published>2015-02-17T23:07:00+01:00</published><updated>2015-03-26T13:30:28+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-17:/fuga-da-ovh.html</id><summary type="html">&lt;p&gt;Avevo già &lt;a href="/da-ovh-non-me-laspettavo/"&gt;parlato bene di ovh&lt;/a&gt;, e in questi giorni ho maturato l'idea di completare l'opera e fuggire definitvamente da questo ormai, a mio avviso, scandaloso fornitore di servizi.&lt;/p&gt;
-&lt;p&gt;Rivisitando il blog con &lt;a href="/deploy-di-pelican-su-github-e-githook/"&gt;Pelican&lt;/a&gt; e hostandolo sulle GitHub Pages, puntandoci un custom domain, e quindi mi sono appropinquato sul mio …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Avevo già &lt;a href="/da-ovh-non-me-laspettavo/"&gt;parlato bene di ovh&lt;/a&gt;, e in questi giorni ho maturato l'idea di completare l'opera e fuggire definitvamente da questo ormai, a mio avviso, scandaloso fornitore di servizi.&lt;/p&gt;
-&lt;p&gt;Rivisitando il blog con &lt;a href="/deploy-di-pelican-su-github-e-githook/"&gt;Pelican&lt;/a&gt; e hostandolo sulle GitHub Pages, puntandoci un custom domain, e quindi mi sono appropinquato sul mio bel managerV5 di ovh, tutto figo, fatto con angular con caricamenti asincroni e compagnia bella.
+&lt;p&gt;Questa roba in teoria dovrebbe risulare automatica alla creazione del virtualenv, resta da capire se sia un baco di django o dell'ambiente...&lt;/p&gt;</content><category term="windows"></category><category term="django"></category><category term="virtualenv"></category></entry><entry><title>Fuga da Ovh</title><link href="http://localhost:8000/2015/02/17/fuga-da-ovh/" rel="alternate"></link><published>2015-02-17T23:07:00+01:00</published><updated>2015-03-26T13:30:28+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-02-17:/2015/02/17/fuga-da-ovh/</id><summary type="html">&lt;p&gt;Avevo già &lt;a href="{filename}2013-12-02_da_ovh_non_me_laspettavo.md"&gt;parlato bene di ovh&lt;/a&gt;, e in questi giorni ho maturato l'idea di completare l'opera e fuggire definitvamente da questo ormai, a mio avviso, scandaloso fornitore di servizi.&lt;/p&gt;
+&lt;p&gt;Rivisitando il blog con &lt;a href="http://localhost:8000/2015/02/06/deploy-di-pelican-su-github-e-githook/"&gt;Pelican&lt;/a&gt; e hostandolo sulle GitHub Pages, puntandoci un custom domain, e quindi mi sono appropinquato sul mio …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Avevo già &lt;a href="{filename}2013-12-02_da_ovh_non_me_laspettavo.md"&gt;parlato bene di ovh&lt;/a&gt;, e in questi giorni ho maturato l'idea di completare l'opera e fuggire definitvamente da questo ormai, a mio avviso, scandaloso fornitore di servizi.&lt;/p&gt;
+&lt;p&gt;Rivisitando il blog con &lt;a href="http://localhost:8000/2015/02/06/deploy-di-pelican-su-github-e-githook/"&gt;Pelican&lt;/a&gt; e hostandolo sulle GitHub Pages, puntandoci un custom domain, e quindi mi sono appropinquato sul mio bel managerV5 di ovh, tutto figo, fatto con angular con caricamenti asincroni e compagnia bella.
 Modifico il record dns e mi metto in pace ad aspettare la propagazione.&lt;/p&gt;
 &lt;p&gt;Aspetto.&lt;/p&gt;
 &lt;p&gt;Aspetto.&lt;/p&gt;
@@ -296,7 +296,7 @@ Torno su ovh, aggiorno la pagina del manager, e il codice CAMBIA.&lt;/p&gt;
 Peccato perchè sono cliente da diversi anni, ma nel tempo c'è stato un peggioramento del servizio a dir poco incredibile...
 Che poi scrivendo al supporto rispondono anche in tempi brevi e segnalano di utilizzare il forum, che però non è monitorato da uncazzodinessuno.&lt;/p&gt;
 &lt;p&gt;Ho ancora un dominio su ovh, al momento non mi serve nulla di che, perciò lo lascerò li...
-Ma giusto finchè non scade, e poi bye bye&lt;/p&gt;</content><category term="blog"></category><category term="ovh"></category></entry><entry><title>If programming languages were countries</title><link href="/if-programming-languages-were-countries.html" rel="alternate"></link><published>2015-02-11T10:41:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-11:/if-programming-languages-were-countries.html</id><summary type="html">&lt;p&gt;Ho trovato questo simpatico post...&lt;/p&gt;
+Ma giusto finchè non scade, e poi bye bye&lt;/p&gt;</content><category term="blog"></category><category term="ovh"></category></entry><entry><title>If programming languages were countries</title><link href="http://localhost:8000/2015/02/11/if-programming-languages-were-countries/" rel="alternate"></link><published>2015-02-11T10:41:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-02-11:/2015/02/11/if-programming-languages-were-countries/</id><summary type="html">&lt;p&gt;Ho trovato questo simpatico post...&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Java: USA -- optimistic, powerful, likes to gloss over inconveniences.&lt;/li&gt;
 &lt;li&gt;C++: UK -- strong and exacting, but not so good at actually finishing things and tends to get overtaken by Java.&lt;/li&gt;
@@ -321,7 +321,7 @@ Ma giusto finchè non scade, e poi bye bye&lt;/p&gt;</content><category term="bl
 &lt;li&gt;R: Liechtenstein. Probably really amazing, especially if you're into big numbers, but no-one knows what it actually does.&lt;/li&gt;
 &lt;li&gt;Awk: North Korea. Stubbornly resists change, and its users appear to be unnaturally fond of it for reasons we can only speculate on.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;[&lt;a href="http://www.quora.com/If-programming-languages-were-countries-which-country-would-each-language-represent?srid=KO3"&gt;Fonte&lt;/a&gt;]&lt;/p&gt;</content><category term="linguaggi di programmazione"></category></entry><entry><title>Deploy di Pelican su GitHub e githook</title><link href="/deploy-di-pelican-su-github-e-githook.html" rel="alternate"></link><published>2015-02-06T15:07:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-06:/deploy-di-pelican-su-github-e-githook.html</id><summary type="html">&lt;p&gt;Sto ancora giocherellando con &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; e cercavo un modo per committare i nuovi post UNA volta sola, senza dover committare una seconda volta gli html generati.&lt;/p&gt;
+&lt;p&gt;[&lt;a href="http://www.quora.com/If-programming-languages-were-countries-which-country-would-each-language-represent?srid=KO3"&gt;Fonte&lt;/a&gt;]&lt;/p&gt;</content><category term="linguaggi di programmazione"></category></entry><entry><title>Deploy di Pelican su GitHub e githook</title><link href="http://localhost:8000/2015/02/06/deploy-di-pelican-su-github-e-githook/" rel="alternate"></link><published>2015-02-06T15:07:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-02-06:/2015/02/06/deploy-di-pelican-su-github-e-githook/</id><summary type="html">&lt;p&gt;Sto ancora giocherellando con &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; e cercavo un modo per committare i nuovi post UNA volta sola, senza dover committare una seconda volta gli html generati.&lt;/p&gt;
 &lt;p&gt;Ci sono riuscito abbastanza facilmente, ecco come:&lt;/p&gt;
 &lt;h2&gt;Prerequisiti:&lt;/h2&gt;
 &lt;ul&gt;
@@ -399,7 +399,7 @@ git push origin master
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;e se tutto è ok, dovrebbe partire da sola la seconda commit/push sul repository statico!&lt;/p&gt;</content><category term="git"></category><category term="githook"></category><category term="pelican"></category></entry><entry><title>Hello World?</title><link href="/hello-world-1.html" rel="alternate"></link><published>2015-02-06T10:11:00+01:00</published><updated>2015-03-26T13:29:29+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-06:/hello-world-1.html</id><summary type="html">&lt;p&gt;Questo più che un post è un test per vedere come funziona pelican...&lt;/p&gt;
+&lt;p&gt;e se tutto è ok, dovrebbe partire da sola la seconda commit/push sul repository statico!&lt;/p&gt;</content><category term="git"></category><category term="githook"></category><category term="pelican"></category></entry><entry><title>Hello World?</title><link href="http://localhost:8000/2015/02/06/hello-world-1/" rel="alternate"></link><published>2015-02-06T10:11:00+01:00</published><updated>2015-03-26T13:29:29+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2015-02-06:/2015/02/06/hello-world-1/</id><summary type="html">&lt;p&gt;Questo più che un post è un test per vedere come funziona pelican...&lt;/p&gt;
 &lt;p&gt;Non escludo di poterlo adottare al posto di wordpress in quanto:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;funziona &lt;strong&gt;solo&lt;/strong&gt; da blog&lt;/li&gt;
@@ -413,7 +413,7 @@ git push origin master
 &lt;/ul&gt;
 &lt;p&gt;Effettivamente un blog serve solo pagine statiche, quindi non serve una tonnellata di php, un database, n plugin di caching e quant'altro.&lt;/p&gt;
 &lt;p&gt;Per i commenti userò Disqus, appena capirò come metterli&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;e vabbè, bootstrap mi piace, non ci posso fare niente...&lt;/em&gt;&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>La SEO mi ha rotto i coglioni</title><link href="/la-seo-mi-ha-rotto-i-coglioni.html" rel="alternate"></link><published>2014-11-02T20:47:00+01:00</published><updated>2015-03-26T14:13:31+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-11-02:/la-seo-mi-ha-rotto-i-coglioni.html</id><summary type="html">&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;e vabbè, bootstrap mi piace, non ci posso fare niente...&lt;/em&gt;&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>La SEO mi ha rotto i coglioni</title><link href="http://localhost:8000/2014/11/02/la-seo-mi-ha-rotto-i-coglioni/" rel="alternate"></link><published>2014-11-02T20:47:00+01:00</published><updated>2015-03-26T14:13:31+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-11-02:/2014/11/02/la-seo-mi-ha-rotto-i-coglioni/</id><summary type="html">&lt;blockquote&gt;
 &lt;p&gt;&lt;em&gt;"...è bella e tutto quanto ma alla lunga rompe i coglioni"&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;Cercavo un plugin per dare una sistemata al seo di questo blog e mi sono
@@ -446,7 +446,7 @@ Cosa deve essere valorizzato, il contenuto o la forma?&lt;/p&gt;
 posizionamento: alla fine vince chi riesce ad arrivare in cima alla serp
 A PRESCINDERE dal contenuto del sito.&lt;br&gt;
 Ricordo una gara promossa da giorgiotave (forse instantempo? Si, ci
-avevo provato &lt;a href="http://ildoc.it/26102010/instantempo/"&gt;anch'io&lt;/a&gt;) dove in
+avevo provato anch'io dove in
 un certo momento c'era in testa un blog tenuto da un forum di black hat
 seo il cui contenuto erano tipo due o tre post di NULLA.&lt;/p&gt;
 &lt;p&gt;Andate a vedere &lt;a href="http://www.instantempo.it/"&gt;http://www.instantempo.it/&lt;/a&gt;.&lt;br&gt;
@@ -474,13 +474,13 @@ problemi di Google...&lt;br&gt;
 Io personalmente mi sono rotto i coglioni.&lt;br&gt;
 Non verrò indicizzato, e sticazzi.&lt;br&gt;
 Almeno mi risparmierò la menata di dover aggiungere mezz'ora di meta
-tag per ogni minchiata che posto qui sopra.&lt;/p&gt;</content><category term="wordpress"></category><category term="seo"></category></entry><entry><title>Build di una solution da codice</title><link href="/build-di-una-solution-da-codice.html" rel="alternate"></link><published>2014-03-20T16:05:00+01:00</published><updated>2015-03-26T13:50:42+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-03-20:/build-di-una-solution-da-codice.html</id><summary type="html">&lt;p&gt;Come seguito al &lt;a href="/get-latest-da-codice-di-un-progetto-su-tfs/"&gt;post
+tag per ogni minchiata che posto qui sopra.&lt;/p&gt;</content><category term="wordpress"></category><category term="seo"></category></entry><entry><title>Build di una solution da codice</title><link href="http://localhost:8000/2014/03/20/build-di-una-solution-da-codice/" rel="alternate"></link><published>2014-03-20T16:05:00+01:00</published><updated>2015-03-26T13:50:42+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-03-20:/2014/03/20/build-di-una-solution-da-codice/</id><summary type="html">&lt;p&gt;Come seguito al &lt;a href="http://localhost:8000/2014/03/07/get-latest-da-codice-di-un-progetto-su-tfs/"&gt;post
 precedente&lt;/a&gt;,
 ecco una funzioncina per buildare una solution da codice.&lt;/p&gt;
 &lt;p&gt;Questa funzione NON tiene conto di eventuali build configuration e/o di
 progetti unloadati.&lt;br&gt;
 A mio avviso è un bug dell'msbuild (e non l'unico, direi), in quanto,
-provando a buildare la stessa solution da codice, da …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Come seguito al &lt;a href="/get-latest-da-codice-di-un-progetto-su-tfs/"&gt;post
+provando a buildare la stessa solution da codice, da …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Come seguito al &lt;a href="http://localhost:8000/2014/03/07/get-latest-da-codice-di-un-progetto-su-tfs/"&gt;post
 precedente&lt;/a&gt;,
 ecco una funzioncina per buildare una solution da codice.&lt;/p&gt;
 &lt;p&gt;Questa funzione NON tiene conto di eventuali build configuration e/o di
@@ -553,7 +553,7 @@ soli.&lt;/p&gt;
 sarete nel torto a prescindere.&lt;br&gt;
 Visual Studio non ha bachi, il problema sarà sicuramente sempre colpa
 vostra.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="mabaffanculo" src="/static/images/posts/mabaffanculo.jpg"&gt;&lt;/p&gt;</content><category term="c#"></category><category term="visual studio"></category><category term="msdn"></category></entry><entry><title>Get latest da codice di un progetto su TFS</title><link href="/get-latest-da-codice-di-un-progetto-su-tfs.html" rel="alternate"></link><published>2014-03-07T11:15:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-03-07:/get-latest-da-codice-di-un-progetto-su-tfs.html</id><summary type="html">&lt;p&gt;Sto scrivendo uno scriptino per, nell'ordine, ottenere l'ultima versione
+&lt;p&gt;&lt;img alt="mabaffanculo" src="/images/orsobaffanculo.png"&gt;&lt;/p&gt;</content><category term="c#"></category><category term="visual studio"></category><category term="msdn"></category></entry><entry><title>Get latest da codice di un progetto su TFS</title><link href="http://localhost:8000/2014/03/07/get-latest-da-codice-di-un-progetto-su-tfs/" rel="alternate"></link><published>2014-03-07T11:15:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-03-07:/2014/03/07/get-latest-da-codice-di-un-progetto-su-tfs/</id><summary type="html">&lt;p&gt;Sto scrivendo uno scriptino per, nell'ordine, ottenere l'ultima versione
 di un progetto da TFS, buildarla e farne un publish su IIS.&lt;br&gt;
 Al momento sono riuscito solo a fare il get latest e quasi il build...&lt;/p&gt;
 &lt;p&gt;Comunque ho potuto riscontrare della classicissima mancanza di
@@ -656,7 +656,7 @@ il mio piccolo contributo.&lt;/p&gt;
         &lt;span class="p"&gt;}&lt;/span&gt;
     &lt;span class="p"&gt;}&lt;/span&gt;
 &lt;span class="p"&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="c#"></category><category term="get latest"></category><category term="tfs"></category></entry><entry><title>Parliamo di Telegram</title><link href="/parliamo-di-telegram.html" rel="alternate"></link><published>2014-02-28T14:16:00+01:00</published><updated>2015-03-26T13:55:44+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-28:/parliamo-di-telegram.html</id><summary type="html">&lt;p&gt;Dopo l'&lt;a href="/no-non-voglio-dare-il-mio-numero-di-telefono-a-facebook/"&gt;acquisizione di Whatsapp da parte di
+&lt;/pre&gt;&lt;/div&gt;</content><category term="c#"></category><category term="get latest"></category><category term="tfs"></category></entry><entry><title>Parliamo di Telegram</title><link href="http://localhost:8000/2014/02/28/parliamo-di-telegram/" rel="alternate"></link><published>2014-02-28T14:16:00+01:00</published><updated>2015-03-26T13:55:44+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-28:/2014/02/28/parliamo-di-telegram/</id><summary type="html">&lt;p&gt;Dopo l'&lt;a href="{filename}2014-02-20_no_non_voglio_dare_il_mio-numero_di_telefono_a_facebook.md"&gt;acquisizione di Whatsapp da parte di
 Facebook&lt;/a&gt;,
 in moltissimi sono rimasti scontenti dall'ennesima mossa del grande
 fratello blu, e hanno cercato alternative alla famosissima app.&lt;/p&gt;
@@ -664,7 +664,7 @@ fratello blu, e hanno cercato alternative alla famosissima app.&lt;/p&gt;
 &lt;h3&gt;Ma che cos'è?&lt;/h3&gt;
 &lt;p&gt;Telegram è praticamente un clone di Whatsapp, l'interfaccia grafica è
 mooolto simile.&lt;br&gt;
-Al …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dopo l'&lt;a href="/no-non-voglio-dare-il-mio-numero-di-telefono-a-facebook/"&gt;acquisizione di Whatsapp da parte di
+Al …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dopo l'&lt;a href="{filename}2014-02-20_no_non_voglio_dare_il_mio-numero_di_telefono_a_facebook.md"&gt;acquisizione di Whatsapp da parte di
 Facebook&lt;/a&gt;,
 in moltissimi sono rimasti scontenti dall'ennesima mossa del grande
 fratello blu, e hanno cercato alternative alla famosissima app.&lt;/p&gt;
@@ -715,7 +715,7 @@ con sha3/md5/aes/chiavi a 2048bit/salcazzo".&lt;br&gt;
 A questo rispondo con la seguente domanda: "Hai usato Whatsapp, che in
 quanto a sicurezza è un colabrodo, fino a ieri e improvvisamente adesso
 ti preoccupi che l'NSA possa decriptare i tuoi 'vado a comprare il
-latte'?"&lt;/p&gt;</content><category term="whatsapp"></category><category term="telegram"></category></entry><entry><title>Cambio \"casa\"...</title><link href="/cambio-casa.html" rel="alternate"></link><published>2014-02-27T11:50:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-27:/cambio-casa.html</id><summary type="html">&lt;p&gt;Ecco fatto, con un po' di fatica ho cambiato host.&lt;br&gt;
+latte'?"&lt;/p&gt;</content><category term="whatsapp"></category><category term="telegram"></category></entry><entry><title>Cambio "casa"...</title><link href="http://localhost:8000/2014/02/27/cambio-casa/" rel="alternate"></link><published>2014-02-27T11:50:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-27:/2014/02/27/cambio-casa/</id><summary type="html">&lt;p&gt;Ecco fatto, con un po' di fatica ho cambiato host.&lt;br&gt;
 Da DigitalOcean a Prometeus.&lt;/p&gt;
 &lt;p&gt;DigitalOcean era partita benissimo, costi ridotti e prestazioni
 eccezionali, specialmente per il fatto che hanno tutti dischi SSD e un
@@ -732,7 +732,7 @@ persino loggarsi in ssh.&lt;/p&gt;
 &lt;p&gt;Prometeus ha più o meno le stesse cose, ma pinga moooolto meno.&lt;br&gt;
 Speriamo che regga così!&lt;/p&gt;
 &lt;p&gt;P.S. Sto cercando di buttare giù una pagina con una lista di review di
-tutti gli host sui quali sono passato (web hosting/dedicati/vps)&lt;/p&gt;</content><category term="vps"></category><category term="digitalocean"></category><category term="prometeus"></category></entry><entry><title>No, non voglio dare il mio numero di telefono a Facebook</title><link href="/no-non-voglio-dare-il-mio-numero-di-telefono-a-facebook.html" rel="alternate"></link><published>2014-02-20T11:14:00+01:00</published><updated>2015-03-26T14:01:05+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-20:/no-non-voglio-dare-il-mio-numero-di-telefono-a-facebook.html</id><summary type="html">&lt;p&gt;E invece Facebook si compra tutta la tua rubrica, e tu non ci puoi fare
+tutti gli host sui quali sono passato (web hosting/dedicati/vps)&lt;/p&gt;</content><category term="vps"></category><category term="digitalocean"></category><category term="prometeus"></category></entry><entry><title>No, non voglio dare il mio numero di telefono a Facebook</title><link href="http://localhost:8000/2014/02/20/no-non-voglio-dare-il-mio-numero-di-telefono-a-facebook/" rel="alternate"></link><published>2014-02-20T11:14:00+01:00</published><updated>2015-03-26T14:01:05+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-20:/2014/02/20/no-non-voglio-dare-il-mio-numero-di-telefono-a-facebook/</id><summary type="html">&lt;p&gt;E invece Facebook si compra tutta la tua rubrica, e tu non ci puoi fare
 un cazzo.&lt;/p&gt;
 &lt;p&gt;&lt;a href="http://www.repubblica.it/tecnologia/2014/02/19/news/rivoluzione_sul_web_facebook_compra_whatsapp_per_19_miliardi-79100980/?ref=HREC1-1"&gt;Facebook compra Whatsapp per 19 miliardi di
 dollari&lt;/a&gt;&lt;/p&gt;
@@ -751,7 +751,7 @@ Facebook.&lt;/p&gt;
 A chi frega qualcosa dell'utente finale?&lt;br&gt;
 E' la palese ed ennesima dimostrazione che Facebook non è un servizio
 per gli utenti, ma gli utenti sono un servizio per Facebook.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="mark-zuckerberg" src="/static/images/posts/mark-zuckerberg-160512.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="mark-zuckerberg" src="/images/mark-zuckerberg-glasses.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;Quindi adesso, per sfuggire al sempre più onnipresente controllo di
 Facebook, bisognerà cancellarsi anche da Whatsapp.&lt;/p&gt;
 &lt;p&gt;Meglio orientarsi su una delle millemila alternative opensource che
@@ -764,8 +764,8 @@ Quindi roba pensata dagli utenti per gli utenti.&lt;/p&gt;
 &lt;li&gt;&lt;a href="https://crypto.cat/"&gt;Cryptocat&lt;/a&gt;: per tutti i browser&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3&gt;Update:&lt;/h3&gt;
-&lt;p&gt;Link segnalato da Zipi -&gt; &lt;a href="http://thingsthatarecheaperthanwhatsapp.tumblr.com/"&gt;Things that are cheaper than
-Whatsapp&lt;/a&gt;&lt;/p&gt;</content><category term="facebook"></category><category term="privacy"></category><category term="whatsapp"></category></entry><entry><title>Windows rdp e Ubuntu Server</title><link href="/windows-rdp-e-ubuntu-server.html" rel="alternate"></link><published>2014-02-16T17:04:00+01:00</published><updated>2015-03-26T14:01:29+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-16:/windows-rdp-e-ubuntu-server.html</id><summary type="html">&lt;p&gt;Mettiamo per assurdo che uno voglia connettersi in desktop remoto da
+&lt;p&gt;Link segnalato da Zipi -&amp;gt; &lt;a href="http://thingsthatarecheaperthanwhatsapp.tumblr.com/"&gt;Things that are cheaper than
+Whatsapp&lt;/a&gt;&lt;/p&gt;</content><category term="facebook"></category><category term="privacy"></category><category term="whatsapp"></category></entry><entry><title>Windows rdp e Ubuntu Server</title><link href="http://localhost:8000/2014/02/16/windows-rdp-e-ubuntu-server/" rel="alternate"></link><published>2014-02-16T17:04:00+01:00</published><updated>2015-03-26T14:01:29+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-16:/2014/02/16/windows-rdp-e-ubuntu-server/</id><summary type="html">&lt;p&gt;Mettiamo per assurdo che uno voglia connettersi in desktop remoto da
 Windows a Ubuntu server.  &lt;/p&gt;
 &lt;p&gt;Perchè, ad esempio, non può utilizzare
 &lt;a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html"&gt;PuTTY&lt;/a&gt;
@@ -798,8 +798,7 @@ scritto) che installiamo con  &lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;e, ta-daaaan!&lt;/p&gt;
-&lt;p&gt;&lt;img alt="xrdp" src="/static/images/posts/2014-02-16_17h03_23.png"&gt;&lt;/p&gt;</content><category term="server"></category><category term="ubuntu"></category><category term="windows"></category></entry><entry><title>Disabilitare i pingback interni su Wordpress</title><link href="/disabilitare-i-pingback-interni-su-wordpress.html" rel="alternate"></link><published>2014-02-15T11:24:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-15:/disabilitare-i-pingback-interni-su-wordpress.html</id><summary type="html">&lt;p&gt;Aggiungendo un po' di link interni tra un post e l'altro mi sono accorto
+&lt;p&gt;e, ta-daaaan!&lt;/p&gt;</content><category term="server"></category><category term="ubuntu"></category><category term="windows"></category></entry><entry><title>Disabilitare i pingback interni su Wordpress</title><link href="http://localhost:8000/2014/02/15/disabilitare-i-pingback-interni-su-wordpress/" rel="alternate"></link><published>2014-02-15T11:24:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-15:/2014/02/15/disabilitare-i-pingback-interni-su-wordpress/</id><summary type="html">&lt;p&gt;Aggiungendo un po' di link interni tra un post e l'altro mi sono accorto
 che generavano pingback, pur essendo all'interno dello stesso sito.&lt;br&gt;
 Qualcuno potrebbe trovarlo utile, per dar modo ai visitatori di vedere
 facilmente se un articolo ha dei post correlati, io no. Ho già un plugin
@@ -823,7 +822,7 @@ che si occupa appositamente di questo.&lt;/p&gt;
 
 &lt;p&gt;In pratica non disabilita i pingback, ma li intercetta prima che vengano
 processati da Wordpress e li elimina.&lt;br&gt;
-Alla fine il risultato è quello voluto. Facile, no?&lt;/p&gt;</content><category term="blog"></category><category term="wordpress"></category><category term="pingback"></category></entry><entry><title>Ammazzato un governo, se ne ammazza un altro</title><link href="/ammazzato-un-governo-se-ne-ammazza-un-altro.html" rel="alternate"></link><published>2014-02-14T08:27:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-14:/ammazzato-un-governo-se-ne-ammazza-un-altro.html</id><summary type="html">&lt;p&gt;L'hanno fatta.&lt;br&gt;
+Alla fine il risultato è quello voluto. Facile, no?&lt;/p&gt;</content><category term="blog"></category><category term="wordpress"></category><category term="pingback"></category></entry><entry><title>Ammazzato un governo, se ne ammazza un altro</title><link href="http://localhost:8000/2014/02/14/ammazzato-un-governo-se-ne-ammazza-un-altro/" rel="alternate"></link><published>2014-02-14T08:27:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-14:/2014/02/14/ammazzato-un-governo-se-ne-ammazza-un-altro/</id><summary type="html">&lt;p&gt;L'hanno fatta.&lt;br&gt;
 La peggiore cazzata che potevano fare l'hanno fatta.&lt;br&gt;
 Ci sono riusciti, di nuovo.&lt;/p&gt;
 &lt;p&gt;"Serve un governo che faccia le riforme"&lt;/p&gt;
@@ -898,7 +897,7 @@ riformare un bel niente, se il pane costasse 50 euro al kg tanto
 mangerebbero comunque, non è un problema loro.&lt;br&gt;
 Renzi è la dimostrazione che evidentemente ci meritiamo di affogare
 nella merda.&lt;/p&gt;
-&lt;p&gt;Grazie, Matteo!&lt;/p&gt;</content><category term="berlusconi"></category><category term="casini"></category><category term="governo"></category><category term="m5s"></category><category term="renzi"></category></entry><entry><title>Navigare su internet in sicurezza</title><link href="/navigare-su-internet-in-sicurezza.html" rel="alternate"></link><published>2014-02-12T10:46:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-12:/navigare-su-internet-in-sicurezza.html</id><summary type="html">&lt;p&gt;Oggi è la Giornata della Sicurezza Online, e Google ha contribuito con
+&lt;p&gt;Grazie, Matteo!&lt;/p&gt;</content><category term="berlusconi"></category><category term="casini"></category><category term="governo"></category><category term="m5s"></category><category term="renzi"></category></entry><entry><title>Navigare su internet in sicurezza</title><link href="http://localhost:8000/2014/02/12/navigare-su-internet-in-sicurezza/" rel="alternate"></link><published>2014-02-12T10:46:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-12:/2014/02/12/navigare-su-internet-in-sicurezza/</id><summary type="html">&lt;p&gt;Oggi è la Giornata della Sicurezza Online, e Google ha contribuito con
 questo bel video.&lt;br&gt;
 Ne consiglio la visione a tutti&lt;/p&gt;
 &lt;iframe width="640" height="360" src="//www.youtube.com/embed/fCtLMGod0Ok" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
@@ -910,7 +909,7 @@ Ne consiglio la visione a tutti&lt;/p&gt;
 &lt;iframe width="640" height="360" src="//www.youtube.com/embed/fCtLMGod0Ok" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="http://www.google.it/goodtoknow/"&gt;Buono a sapersi - Guida per la sicurezza
-online&lt;/a&gt;&lt;/p&gt;</content><category term="internet"></category><category term="google"></category><category term="sicurezza"></category></entry><entry><title>Creare una lista di oggetti partendo da una tabella html</title><link href="/creare-una-lista-di-oggetti-partendo-da-una-tabella-html.html" rel="alternate"></link><published>2014-02-10T10:12:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-10:/creare-una-lista-di-oggetti-partendo-da-una-tabella-html.html</id><summary type="html">&lt;p&gt;Al momento sto lavorando con i Coded UI (un giorno spiegherò cosa sono
+online&lt;/a&gt;&lt;/p&gt;</content><category term="internet"></category><category term="google"></category><category term="sicurezza"></category></entry><entry><title>Creare una lista di oggetti partendo da una tabella html</title><link href="http://localhost:8000/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/" rel="alternate"></link><published>2014-02-10T10:12:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-10:/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/</id><summary type="html">&lt;p&gt;Al momento sto lavorando con i Coded UI (un giorno spiegherò cosa sono
 e a cosa servono) e ho avuto la necessità di parsare il contenuto di una
 tabella html.&lt;br&gt;
 (Abbrevierò il codice con dei [...], tanto sarebbero solo delle
@@ -1008,13 +1007,13 @@ sfruttando la comodissima libreria
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Non sarà bellissima da leggere, ma funziona :)&lt;/p&gt;</content><category term="c#"></category><category term="html"></category><category term="htmlagilitypack"></category><category term="linq"></category><category term="xpath"></category></entry><entry><title>Imparare a programmare da zero - 3/3</title><link href="/imparare-a-programmare-da-zero-33.html" rel="alternate"></link><published>2014-02-09T21:09:00+01:00</published><updated>2015-03-26T14:14:47+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-09:/imparare-a-programmare-da-zero-33.html</id><summary type="html">&lt;p&gt;Questa è la terza e ultima parte di un trio di post volto a spiegare le
+&lt;p&gt;Non sarà bellissima da leggere, ma funziona :)&lt;/p&gt;</content><category term="c#"></category><category term="html"></category><category term="htmlagilitypack"></category><category term="linq"></category><category term="xpath"></category></entry><entry><title>Imparare a programmare da zero - 3/3</title><link href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-33/" rel="alternate"></link><published>2014-02-09T21:09:00+01:00</published><updated>2015-03-26T14:14:47+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-09:/2014/02/09/imparare-a-programmare-da-zero-33/</id><summary type="html">&lt;p&gt;Questa è la terza e ultima parte di un trio di post volto a spiegare le
 basi-basi della programmazione.&lt;br&gt;
 Se parlo di torte e non capite perchè, leggete le parti precedenti :)  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
+&lt;li&gt;&lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
 1/3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/imparare-a-programmare-da-zero-23/"&gt;Imparare a programmare da zero
+&lt;li&gt;&lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-23/"&gt;Imparare a programmare da zero
 2/3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Primi passi - Strutture comuni&lt;/h2&gt;
@@ -1022,9 +1021,9 @@ Se parlo di torte e non capite perchè, leggete le parti precedenti :)  &lt;/p&g
 basi-basi della programmazione.&lt;br&gt;
 Se parlo di torte e non capite perchè, leggete le parti precedenti :)  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
+&lt;li&gt;&lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
 1/3&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="/imparare-a-programmare-da-zero-23/"&gt;Imparare a programmare da zero
+&lt;li&gt;&lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-23/"&gt;Imparare a programmare da zero
 2/3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Primi passi - Strutture comuni&lt;/h2&gt;
@@ -1122,11 +1121,11 @@ Il metodo di studio proposto da quei siti funziona benone :)&lt;/p&gt;
 mettere alla prova le conoscenze che avete acquisito, potete cimentarvi
 nelle sfide di &lt;a href="http://projecteuler.net/problems"&gt;Project Euler&lt;/a&gt; o
 &lt;a href="http://codeabbey.com/"&gt;CodeAbbey&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Buon divertimento!&lt;/p&gt;</content><category term="imparare a programmare"></category></entry><entry><title>Imparare a programmare da zero - 2/3</title><link href="/imparare-a-programmare-da-zero-23.html" rel="alternate"></link><published>2014-02-09T21:08:00+01:00</published><updated>2015-03-26T14:15:27+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-09:/imparare-a-programmare-da-zero-23.html</id><summary type="html">&lt;p&gt;Questa è la seconda parte di un trio di post volto a spiegare le
+&lt;p&gt;Buon divertimento!&lt;/p&gt;</content><category term="imparare a programmare"></category></entry><entry><title>Imparare a programmare da zero - 2/3</title><link href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-23/" rel="alternate"></link><published>2014-02-09T21:08:00+01:00</published><updated>2015-03-26T14:15:27+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-09:/2014/02/09/imparare-a-programmare-da-zero-23/</id><summary type="html">&lt;p&gt;Questa è la seconda parte di un trio di post volto a spiegare le
 basi-basi della programmazione.&lt;br&gt;
 Se parlo di torte e non capite perchè, leggete le parti precedenti :)  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
+&lt;li&gt;&lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
 1/3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Linguaggi di programmazione - Cosa sono?&lt;/h2&gt;
@@ -1134,7 +1133,7 @@ Se parlo di torte e non capite perchè, leggete le parti precedenti :)  &lt;/p&g
 basi-basi della programmazione.&lt;br&gt;
 Se parlo di torte e non capite perchè, leggete le parti precedenti :)  &lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
+&lt;li&gt;&lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-13/"&gt;Imparare a programmare da zero
 1/3&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Linguaggi di programmazione - Cosa sono?&lt;/h2&gt;
@@ -1212,8 +1211,8 @@ linguaggio contemporaneamente  &lt;/li&gt;
 pagina di wikipedia sui &lt;a href="http://it.wikipedia.org/wiki/Linguaggio_di_programmazione_esoterico"&gt;linguaggi di programmazione
 esoterici&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Continuiamo il discorso nella terza parte -&amp;gt; &lt;a href="/imparare-a-programmare-da-zero-33/"&gt;Imparare a programmare da
-zero 3/3&lt;/a&gt;&lt;/p&gt;</content><category term="imparare a programmare"></category></entry><entry><title>Imparare a programmare da zero - 1/3</title><link href="/imparare-a-programmare-da-zero-13.html" rel="alternate"></link><published>2014-02-09T21:07:00+01:00</published><updated>2015-03-26T14:15:40+01:00</updated><author><name>Doc</name></author><id>tag:None,2014-02-09:/imparare-a-programmare-da-zero-13.html</id><summary type="html">&lt;p&gt;Il 95% dei lettori di questo post saranno studenti in fascia di età
+&lt;p&gt;Continuiamo il discorso nella terza parte -&amp;gt; &lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-33/"&gt;Imparare a programmare da
+zero 3/3&lt;/a&gt;&lt;/p&gt;</content><category term="imparare a programmare"></category></entry><entry><title>Imparare a programmare da zero - 1/3</title><link href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-13/" rel="alternate"></link><published>2014-02-09T21:07:00+01:00</published><updated>2015-03-26T14:15:40+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2014-02-09:/2014/02/09/imparare-a-programmare-da-zero-13/</id><summary type="html">&lt;p&gt;Il 95% dei lettori di questo post saranno studenti in fascia di età
 12-18 che vogliono creare un videogioco.&lt;br&gt;
 Il rimanente 5% sarà invece equamente suddiviso tra chi è incuriosito
 dall'argomento e chi ha sbagliato a cliccare un link trovato chissà dove
@@ -1264,8 +1263,8 @@ altro che un insieme di 0 e di 1.&lt;br&gt;
 (Si, come nei film)&lt;/p&gt;
 &lt;p&gt;L'interprete (o gli interpreti) che ci verrà in soccorso sarà un
 linguaggio di programmazione.&lt;br&gt;
-Vediamo cosa sono nella seconda parte -&amp;gt; &lt;a href="/imparare-a-programmare-da-zero-23/"&gt;Imparare a programmare da
-zero 2/3&lt;/a&gt;&lt;/p&gt;</content><category term="imparare a programmare"></category></entry><entry><title>Ci risiamo...</title><link href="/ci-risiamo.html" rel="alternate"></link><published>2013-12-14T19:25:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-12-14:/ci-risiamo.html</id><summary type="html">&lt;p&gt;è di nuovo quel periodo dell'anno in cui mi viene quella cosa per cui mi
+Vediamo cosa sono nella seconda parte -&amp;gt; &lt;a href="http://localhost:8000/2014/02/09/imparare-a-programmare-da-zero-23/"&gt;Imparare a programmare da
+zero 2/3&lt;/a&gt;&lt;/p&gt;</content><category term="imparare a programmare"></category></entry><entry><title>Ci risiamo...</title><link href="http://localhost:8000/2013/12/14/ci-risiamo/" rel="alternate"></link><published>2013-12-14T19:25:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-12-14:/2013/12/14/ci-risiamo/</id><summary type="html">&lt;p&gt;è di nuovo quel periodo dell'anno in cui mi viene quella cosa per cui mi
 piacerebbe avere un bel blog.&lt;br&gt;
 forse è la noia, forse capito su qualche sito carino e mi dico "figo,
 potrei farlo anch'io"...&lt;/p&gt;
@@ -1298,7 +1297,7 @@ più di un paragrafo è considerato "troppo lungo da leggere".&lt;/p&gt;
 &lt;p&gt;e per chi lo scrivo? per me?&lt;br&gt;
 già...&lt;/p&gt;
 &lt;p&gt;senza contare poi il mio talento "al contrario" nel riuscire a mettere
-insieme una grafica semi-decente&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>Da OVH non me l'aspettavo...</title><link href="/da-ovh-non-me-laspettavo.html" rel="alternate"></link><published>2013-12-02T17:35:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-12-02:/da-ovh-non-me-laspettavo.html</id><summary type="html">&lt;p&gt;Premessa: sono cliente ovh da circa 3 anni.&lt;/p&gt;
+insieme una grafica semi-decente&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>Da OVH non me l'aspettavo...</title><link href="http://localhost:8000/2013/12/02/da-ovh-non-me-laspettavo/" rel="alternate"></link><published>2013-12-02T17:35:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-12-02:/2013/12/02/da-ovh-non-me-laspettavo/</id><summary type="html">&lt;p&gt;Premessa: sono cliente ovh da circa 3 anni.&lt;/p&gt;
 &lt;p&gt;Mi sono sempre trovato ottimamente e non ho mai sentito la necessità di
 guardarmi in giro alla ricerca di altri host.&lt;br&gt;
 Da qualche mese ho preso una VPS, sul quale, tra le altre cose, ci sta
@@ -1325,7 +1324,7 @@ gamma Kimsufi, ma da settembre risulta tutto "sold out".&lt;br&gt;
 Che cosa minchia è successo?&lt;br&gt;
 Sono stati rapiti e sostituiti da degli alieni?&lt;/p&gt;
 &lt;p&gt;Per inciso, i domini presi da loro non hanno l'oscuramento del whois.&lt;/p&gt;
-&lt;p&gt;Mi sa che a breve toglierò le tende in cerca di posti migliori...&lt;/p&gt;</content><category term="ovh"></category><category term="vps"></category></entry><entry><title>Back on Wordpress!</title><link href="/back-on-wordpress.html" rel="alternate"></link><published>2013-11-22T21:32:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-11-22:/back-on-wordpress.html</id><summary type="html">&lt;p&gt;Dopo molto girovagare, ecco che alla fine ritorno qua...&lt;br&gt;
+&lt;p&gt;Mi sa che a breve toglierò le tende in cerca di posti migliori...&lt;/p&gt;</content><category term="ovh"></category><category term="vps"></category></entry><entry><title>Back on Wordpress!</title><link href="http://localhost:8000/2013/11/22/back-on-wordpress/" rel="alternate"></link><published>2013-11-22T21:32:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-11-22:/2013/11/22/back-on-wordpress/</id><summary type="html">&lt;p&gt;Dopo molto girovagare, ecco che alla fine ritorno qua...&lt;br&gt;
 Ho scoperto come settare i virtualhost in apache, e quindi sono
 riuscito a ottenere più o meno quello che volevo fare...&lt;br&gt;
 (Il codice del sito farebbe accapponare la pelle al più paziente dei
@@ -1333,7 +1332,7 @@ webdesigner, ma sticazzi)&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dopo 
 Ho scoperto come settare i virtualhost in apache, e quindi sono
 riuscito a ottenere più o meno quello che volevo fare...&lt;br&gt;
 (Il codice del sito farebbe accapponare la pelle al più paziente dei
-webdesigner, ma sticazzi)&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>Left join \"in\"?</title><link href="/left-join-in.html" rel="alternate"></link><published>2013-11-13T17:18:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-11-13:/left-join-in.html</id><summary type="html">&lt;p&gt;Mi sono trovato nella condizione di dover fare una join su più campi.&lt;br&gt;
+webdesigner, ma sticazzi)&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>Left join "in"?</title><link href="http://localhost:8000/2013/11/13/left-join-in/" rel="alternate"></link><published>2013-11-13T17:18:00+01:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-11-13:/2013/11/13/left-join-in/</id><summary type="html">&lt;p&gt;Mi sono trovato nella condizione di dover fare una join su più campi.&lt;br&gt;
 Che stavano in una colonna sola.&lt;br&gt;
 Separati da punti e virgola.&lt;/p&gt;
 &lt;p&gt;Prima di tentare il suicidio, ho googolato un pò e ho scoperto questo:&lt;/p&gt;
@@ -1352,7 +1351,7 @@ Separati da punti e virgola.&lt;/p&gt;
 
 
 &lt;p&gt;Forse è una cosa risaputa, ma non la conoscevo...&lt;br&gt;
-Sicuramente la riutilizzerò tantissimo.&lt;/p&gt;</content><category term="join"></category><category term="oracle"></category><category term="regex"></category><category term="sql"></category></entry><entry><title>è davvero-davvero necessario parlare di cyberbullismo?</title><link href="/e-davvero-davvero-necessario-parlare-di-cyberbullismo.html" rel="alternate"></link><published>2013-10-07T15:54:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-10-07:/e-davvero-davvero-necessario-parlare-di-cyberbullismo.html</id><summary type="html">&lt;p&gt;ho appena finito di leggere &lt;a href="http://daily.wired.it/news/media/2013/10/07/necessario-parlare-cyberbullismo-violenza-rete-564732.html"&gt;questo articolo su
+Sicuramente la riutilizzerò tantissimo.&lt;/p&gt;</content><category term="join"></category><category term="oracle"></category><category term="regex"></category><category term="sql"></category></entry><entry><title>è davvero-davvero necessario parlare di cyberbullismo?</title><link href="http://localhost:8000/2013/10/07/e-davvero-davvero-necessario-parlare-di-cyberbullismo/" rel="alternate"></link><published>2013-10-07T15:54:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-10-07:/2013/10/07/e-davvero-davvero-necessario-parlare-di-cyberbullismo/</id><summary type="html">&lt;p&gt;ho appena finito di leggere &lt;a href="http://daily.wired.it/news/media/2013/10/07/necessario-parlare-cyberbullismo-violenza-rete-564732.html"&gt;questo articolo su
 Wired&lt;/a&gt;
 in cui ci si sbraccia ancora per parlare di “cyberbullismo”, una parola
 che richiama sempre molta attenzione.&lt;/p&gt;
@@ -1500,7 +1499,7 @@ fino ad allora è solo aria fritta.&lt;/p&gt;
 sovvenzionata dall’unione europea.&lt;/p&gt;
 &lt;p&gt;tra l’altro il sito è assolutamente a senso unico, senza alcuna
 possibilità di interazione con le persone a cui è rivolto.&lt;/p&gt;
-&lt;p&gt;ottimo esempio di web 2.0.&lt;/p&gt;</content><category term="cyberbullismo"></category></entry><entry><title>Richiedere i permessi di amministratore per l'esecuzione di un programma</title><link href="/richiedere-i-permessi-di-amministratore-per-lesecuzione-di-un-programma.html" rel="alternate"></link><published>2013-09-26T19:22:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-26:/richiedere-i-permessi-di-amministratore-per-lesecuzione-di-un-programma.html</id><summary type="html">&lt;p&gt;Per eseguire alcune funzioni, come ad esempio lanciare o stoppare dei
+&lt;p&gt;ottimo esempio di web 2.0.&lt;/p&gt;</content><category term="cyberbullismo"></category></entry><entry><title>Richiedere i permessi di amministratore per l'esecuzione di un programma</title><link href="http://localhost:8000/2013/09/26/richiedere-i-permessi-di-amministratore-per-lesecuzione-di-un-programma/" rel="alternate"></link><published>2013-09-26T19:22:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-26:/2013/09/26/richiedere-i-permessi-di-amministratore-per-lesecuzione-di-un-programma/</id><summary type="html">&lt;p&gt;Per eseguire alcune funzioni, come ad esempio lanciare o stoppare dei
 servizi, è necessario disporre dei permessi di amministratore del
 sistema.&lt;br&gt;
 Inoltre, è una funzione che può tornare utile se si vuole limitare
@@ -1533,7 +1532,7 @@ selezioniamo "File manifesto applicazione"&lt;/p&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;Ricompiliamo e il gioco è fatto.&lt;/p&gt;</content><category term="c#"></category><category term="permessi"></category><category term="visual studio"></category></entry><entry><title>DCOM e Kepware</title><link href="/dcom-e-kepware.html" rel="alternate"></link><published>2013-09-24T10:08:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-24:/dcom-e-kepware.html</id><summary type="html">&lt;p&gt;Per riuscire a browsare/leggere/scrivere le tag e i loro valori su un
+&lt;p&gt;Ricompiliamo e il gioco è fatto.&lt;/p&gt;</content><category term="c#"></category><category term="permessi"></category><category term="visual studio"></category></entry><entry><title>DCOM e Kepware</title><link href="http://localhost:8000/2013/09/24/dcom-e-kepware/" rel="alternate"></link><published>2013-09-24T10:08:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-24:/2013/09/24/dcom-e-kepware/</id><summary type="html">&lt;p&gt;Per riuscire a browsare/leggere/scrivere le tag e i loro valori su un
 server kepware è necessario:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;registrare la libreria gbda_aut.dll di grey box per la versione di windows che si sta usando (32/64bit) &lt;a href="http://gray-box.net/download_daawrapper.php?lang=en"&gt;Download&lt;/a&gt;&lt;/li&gt;
@@ -1560,7 +1559,7 @@ server kepware è necessario:&lt;/p&gt;
   * apply, ok, e riavviare&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Non sarà esattamente il metodo corretto, però così funziona...&lt;/p&gt;</content><category term="dcom"></category><category term="kepware"></category><category term="matrikon"></category><category term="opc"></category></entry><entry><title>Scomposizione in fattori primi</title><link href="/scomposizione-in-fattori-primi.html" rel="alternate"></link><published>2013-09-18T17:19:00+02:00</published><updated>2015-03-26T14:17:01+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-18:/scomposizione-in-fattori-primi.html</id><summary type="html">&lt;p&gt;Utilizzando il &lt;a href="/crivello-di-eratostene/"&gt;Crivello di
+&lt;p&gt;Non sarà esattamente il metodo corretto, però così funziona...&lt;/p&gt;</content><category term="dcom"></category><category term="kepware"></category><category term="matrikon"></category><category term="opc"></category></entry><entry><title>Scomposizione in fattori primi</title><link href="http://localhost:8000/2013/09/18/scomposizione-in-fattori-primi/" rel="alternate"></link><published>2013-09-18T17:19:00+02:00</published><updated>2015-03-26T14:17:01+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-18:/2013/09/18/scomposizione-in-fattori-primi/</id><summary type="html">&lt;p&gt;Utilizzando il &lt;a href="http://localhost:8000/2013/09/18/crivello-di-eratostene/"&gt;Crivello di
 Eratostene&lt;/a&gt;
 precedentemente mostrato, è possibile scrivere una funzione in grado di
 restituire in una lista i &lt;a href="http://it.wikipedia.org/wiki/Fattorizzazione"&gt;fattori
@@ -1572,7 +1571,7 @@ un numero:&lt;/p&gt;
     &lt;span class="n"&gt;limite&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;math&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;sqrt&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
     &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mi"&gt;3&lt;/span&gt; &lt;span class="p"&gt;):&lt;/span&gt;
         &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="bp"&gt;True&lt;/span&gt;
-    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Utilizzando il &lt;a href="/crivello-di-eratostene/"&gt;Crivello di
+    &lt;span class="k"&gt;if&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt; &lt;span class="mi"&gt;2&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;|&lt;/span&gt; &lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;n …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Utilizzando il &lt;a href="http://localhost:8000/2013/09/18/crivello-di-eratostene/"&gt;Crivello di
 Eratostene&lt;/a&gt;
 precedentemente mostrato, è possibile scrivere una funzione in grado di
 restituire in una lista i &lt;a href="http://it.wikipedia.org/wiki/Fattorizzazione"&gt;fattori
@@ -1602,7 +1601,7 @@ un numero:&lt;/p&gt;
             &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="mi"&gt;0&lt;/span&gt;
         &lt;span class="n"&gt;i&lt;/span&gt; &lt;span class="o"&gt;+=&lt;/span&gt; &lt;span class="mi"&gt;1&lt;/span&gt;
     &lt;span class="k"&gt;return&lt;/span&gt; &lt;span class="n"&gt;l&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="python"></category><category term="numeri primi"></category></entry><entry><title>Crivello di Eratostene</title><link href="/crivello-di-eratostene.html" rel="alternate"></link><published>2013-09-18T15:15:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-18:/crivello-di-eratostene.html</id><summary type="html">&lt;p&gt;C'è poco da dire, con i numeri primi ci ho sempre sballato...&lt;br&gt;
+&lt;/pre&gt;&lt;/div&gt;</content><category term="python"></category><category term="numeri primi"></category></entry><entry><title>Crivello di Eratostene</title><link href="http://localhost:8000/2013/09/18/crivello-di-eratostene/" rel="alternate"></link><published>2013-09-18T15:15:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-18:/2013/09/18/crivello-di-eratostene/</id><summary type="html">&lt;p&gt;C'è poco da dire, con i numeri primi ci ho sempre sballato...&lt;br&gt;
 Qui di seguito c'è una piccola funzioncina per determinare se un numero
 è primo oppure no utilizzando il &lt;a href="http://it.wikipedia.org/wiki/Crivello_di_Eratostene" title="Crivello di Eratostene"&gt;Crivello di
 Eratostene&lt;/a&gt;:&lt;/p&gt;
@@ -1636,7 +1635,7 @@ Eratostene&lt;/a&gt;:&lt;/p&gt;
 &lt;span class="bp"&gt;True&lt;/span&gt;
 &lt;span class="o"&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class="n"&gt;primo&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="mi"&gt;4&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;  
 &lt;span class="bp"&gt;False&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="python"></category><category term="numeri primi"></category><category term="eratostene"></category></entry><entry><title>Gestire un menu di bootstrap con jQuery</title><link href="/gestire-un-menu-di-bootstrap-con-jquery.html" rel="alternate"></link><published>2013-09-18T08:09:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-18:/gestire-un-menu-di-bootstrap-con-jquery.html</id><summary type="html">&lt;p&gt;Diciamocelo, &lt;a href="http://getbootstrap.com/" title="Bootstrap"&gt;Bootstrap&lt;/a&gt; è una
+&lt;/pre&gt;&lt;/div&gt;</content><category term="python"></category><category term="numeri primi"></category><category term="eratostene"></category></entry><entry><title>Gestire un menu di bootstrap con jQuery</title><link href="http://localhost:8000/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/" rel="alternate"></link><published>2013-09-18T08:09:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-18:/2013/09/18/gestire-un-menu-di-bootstrap-con-jquery/</id><summary type="html">&lt;p&gt;Diciamocelo, &lt;a href="http://getbootstrap.com/" title="Bootstrap"&gt;Bootstrap&lt;/a&gt; è una
 figata.&lt;br&gt;
 Avrei qualcosa da ridire in merito alla insensata e inspiegabile scelta
 di non garantire la retrocompatibilità con la 2.3.2, ma sostanzialmente
@@ -1682,7 +1681,7 @@ url con parametri (es. blog.php?id=123) utilizzando  &lt;/p&gt;
 
 
 &lt;p&gt;Comunque, cazzomenefrega, io continuerò a usare la
-&lt;a href="http://getbootstrap.com/2.3.2/"&gt;2.3.2&lt;/a&gt;&lt;/p&gt;</content><category term="bootstrap"></category><category term="jquery"></category></entry><entry><title>Esportare una UltraWinGrid di Infragistic in formato Pdf</title><link href="/esportare-una-ultrawingrid-di-infragistic-in-formato-pdf.html" rel="alternate"></link><published>2013-09-17T14:58:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-17:/esportare-una-ultrawingrid-di-infragistic-in-formato-pdf.html</id><summary type="html">&lt;p&gt;Mi sono dovuto picchiare fortissimo con le
+&lt;a href="http://getbootstrap.com/2.3.2/"&gt;2.3.2&lt;/a&gt;&lt;/p&gt;</content><category term="bootstrap"></category><category term="jquery"></category></entry><entry><title>Esportare una UltraWinGrid di Infragistic in formato Pdf</title><link href="http://localhost:8000/2013/09/17/esportare-una-ultrawingrid-di-infragistic-in-formato-pdf/" rel="alternate"></link><published>2013-09-17T14:58:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-17:/2013/09/17/esportare-una-ultrawingrid-di-infragistic-in-formato-pdf/</id><summary type="html">&lt;p&gt;Mi sono dovuto picchiare fortissimo con le
 &lt;a href="http://www.infragistics.com/" title="Infragisitcs"&gt;Infragistics&lt;/a&gt; per riuscire
 a esportare una UltraWinGrid in un Pdf.&lt;/p&gt;
 &lt;p&gt;Alla fine ho messo insieme una roba che assomiglia a una classe, con una
@@ -1802,7 +1801,7 @@ Landscape anche la PageOrientation della sezione.&lt;br&gt;
 Contattando il supporto è venuto fuori che le due cose si azzerano a
 vicenda, avendo poi come risultato che ci si trova il pdf Portrait.&lt;br&gt;
 Quindi è meglio impostare solo a PageOrientation.Landscape la
-TargetPaperOrientation della griglia (riga 31).&lt;/p&gt;</content><category term="c#"></category><category term="infragistics"></category><category term="pdf"></category></entry><entry><title>gitScrape: ottenere un changelog dalle commit su GitHub</title><link href="/gitscrape-ottenere-un-changelog-dalle-commit-su-github.html" rel="alternate"></link><published>2013-09-17T11:27:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-17:/gitscrape-ottenere-un-changelog-dalle-commit-su-github.html</id><summary type="html">&lt;p&gt;Attenzione: a prima vista potrebbe sembrare uno script perfettamente
+TargetPaperOrientation della griglia (riga 31).&lt;/p&gt;</content><category term="c#"></category><category term="infragistics"></category><category term="pdf"></category></entry><entry><title>gitScrape: ottenere un changelog dalle commit su GitHub</title><link href="http://localhost:8000/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/" rel="alternate"></link><published>2013-09-17T11:27:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-17:/2013/09/17/gitscrape-ottenere-un-changelog-dalle-commit-su-github/</id><summary type="html">&lt;p&gt;Attenzione: a prima vista potrebbe sembrare uno script perfettamente
 inutile (e infatti lo è)&lt;/p&gt;
 &lt;p&gt;Un giorno ho sentito il bisogno di avere un changelog da mettere nel
 progetto che stavo facendo, ma non avevo voglia di fare OGNI VOLTA
@@ -1863,7 +1862,7 @@ Aug 29, 2013
 - rimosso globals.php, spostati funzioni e json, alcuni fix 7168c39aeb  
 - aggiunto file di configurazione 166ed5b128  
 - first commit cd1aeccd70&amp;lt;/code&amp;gt;
-&lt;/pre&gt;&lt;/div&gt;</content><category term="beautifulsoup"></category><category term="github"></category><category term="python"></category></entry><entry><title>mah...</title><link href="/mah.html" rel="alternate"></link><published>2013-09-11T14:10:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-09-11:/mah.html</id><summary type="html">&lt;p&gt;volevo commentare un articolo sull’huffingtonpost ma con mia grande
+&lt;/pre&gt;&lt;/div&gt;</content><category term="beautifulsoup"></category><category term="github"></category><category term="python"></category></entry><entry><title>mah...</title><link href="http://localhost:8000/2013/09/11/mah/" rel="alternate"></link><published>2013-09-11T14:10:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-09-11:/2013/09/11/mah/</id><summary type="html">&lt;p&gt;volevo commentare un articolo sull’huffingtonpost ma con mia grande
 sorpresa ho scoperto di non poterlo fare perchè, come svariati miliardi
 di persone, non possiedo un account facebook.&lt;/p&gt;
 &lt;p&gt;e l’unico metodo di commentare sull’huffpost è linkare un account di
@@ -1876,7 +1875,7 @@ facebook.&lt;/p&gt;
 &lt;p&gt;come se questo servisse a prevenire l’inserimento di commenti “anonimi”…&lt;/p&gt;
 &lt;p&gt;credevo che fosse un sito furbo, ma evidentemente mi sbagliavo…&lt;/p&gt;
 &lt;p&gt;che se li tengano i loro commenti del cazzo, io su facebook non ci
-torno.&lt;/p&gt;</content><category term="facebook"></category><category term="huffingtonpost"></category></entry><entry><title>8 motivi per cui le #quirinarie grilline non potevano essere altro che un fallimento</title><link href="/8-motivi-per-cui-le-quirinarie-grilline-non-potevano-essere-altro-che-un-fallimento.html" rel="alternate"></link><published>2013-04-14T16:01:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:None,2013-04-14:/8-motivi-per-cui-le-quirinarie-grilline-non-potevano-essere-altro-che-un-fallimento.html</id><summary type="html">&lt;p&gt;Dopo mesi di spam molesto sarà il caso di scrivere qualcosa di
+torno.&lt;/p&gt;</content><category term="facebook"></category><category term="huffingtonpost"></category></entry><entry><title>8 motivi per cui le #quirinarie grilline non potevano essere altro che un fallimento</title><link href="http://localhost:8000/2013/04/14/8-motivi-per-cui-le-quirinarie-grilline-non-potevano-essere-altro-che-un-fallimento/" rel="alternate"></link><published>2013-04-14T16:01:00+02:00</published><updated>2015-03-24T16:09:16+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2013-04-14:/2013/04/14/8-motivi-per-cui-le-quirinarie-grilline-non-potevano-essere-altro-che-un-fallimento/</id><summary type="html">&lt;p&gt;Dopo mesi di spam molesto sarà il caso di scrivere qualcosa di
 apparentemente sensato.&lt;br&gt;
 Parliamo delle “quirinarie” dei grillini:&lt;br&gt;
 "Spacchiamo il culo ai politici mortizzombi!" "Siiiii"&lt;br&gt;
@@ -1896,7 +1895,7 @@ Parliamo delle “quirinarie” dei grillini:&lt;br&gt;
 Ma a parte questo, Grillo ha sempre parlato del web come “espressione di
 democrazia diretta” e ha voluto fare un sondaggio pubblico per decidere
 il nuovo presidente della repubblica.&lt;/p&gt;
-&lt;p&gt;&lt;img alt="è una cagata pazzesca" src="http://i.imgur.com/Mzxx9wT.gif"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="è una cagata pazzesca" src="/images/cagata_pazzesca.jpg"&gt;&lt;/p&gt;
 &lt;p&gt;e vi spiego il perchè:&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;1 - si presume che tutti i votanti abbiano una connessione a internet
 e un computer&lt;br&gt;
@@ -1939,7 +1938,7 @@ Si, ok, chiunque può scrivere quello che vuole, ma è anche possibile
 commettere atti di vandalismo o terrorismo e rimanere assolutamente
 impuniti.&lt;br&gt;
 Quindi più che democrazia è anarchia totale.&lt;/p&gt;
-&lt;p&gt;p.p.s. siete dei cazzo di invasati.&lt;/p&gt;</content><category term="grillo"></category><category term="quirinarie"></category></entry><entry><title>Viaggio nel deepweb</title><link href="/viaggio-nel-deepweb.html" rel="alternate"></link><published>2012-11-11T10:25:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-11-11:/viaggio-nel-deepweb.html</id><summary type="html">&lt;p&gt;Qualche anno fa è spuntato fuori Anonymous, il “collettivo hacker” con
+&lt;p&gt;p.p.s. siete dei cazzo di invasati.&lt;/p&gt;</content><category term="grillo"></category><category term="quirinarie"></category></entry><entry><title>Viaggio nel deepweb</title><link href="http://localhost:8000/2012/11/11/viaggio-nel-deepweb/" rel="alternate"></link><published>2012-11-11T10:25:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-11-11:/2012/11/11/viaggio-nel-deepweb/</id><summary type="html">&lt;p&gt;Qualche anno fa è spuntato fuori Anonymous, il “collettivo hacker” con
 cui ormai i giornalisti vanno a nozze, aggiungendolo allo scarso “elenco
 dei paroloni che fanno effetto su chi non ne sa un cazzo”.&lt;/p&gt;
 &lt;p&gt;Non so se ci avete fatto caso, ma leggendo articoli di informatica su
@@ -2035,7 +2034,7 @@ legislazione, è l’internet allo stato puro.&lt;/p&gt;
 partecipo a nessuna community (emi fido poco dei link che trovo).&lt;/p&gt;
 &lt;p&gt;Se volete dare un’occhiata senza dover installare nulla potete farlo
 attraverso questo link:
-&lt;a href="http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page"&gt;&lt;/a&gt;&lt;a href="http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page"&gt;http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="anonymous"></category><category term="deepweb"></category><category term="tor"></category></entry><entry><title>Blue Water Operations - James C. Copertino</title><link href="/blue-water-operations-james-c-copertino.html" rel="alternate"></link><published>2012-04-22T11:28:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-22:/blue-water-operations-james-c-copertino.html</id><summary type="html">&lt;p&gt;Una portacontainer battente bandiera francese viene assaltata dai pirati
+&lt;a href="http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page"&gt;&lt;/a&gt;&lt;a href="http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page"&gt;http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="anonymous"></category><category term="deepweb"></category><category term="tor"></category></entry><entry><title>Blue Water Operations - James C. Copertino</title><link href="http://localhost:8000/2012/04/22/blue-water-operations-james-c-copertino/" rel="alternate"></link><published>2012-04-22T11:28:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-04-22:/2012/04/22/blue-water-operations-james-c-copertino/</id><summary type="html">&lt;p&gt;Una portacontainer battente bandiera francese viene assaltata dai pirati
 al largo della Somalia.&lt;br&gt;
 "Rommel", nome di battaglia di un pilota americano, assiste per caso
 alla scena durante quello che avrebbe dovuto essere un normale volo di
@@ -2057,7 +2056,7 @@ In pochi capitoli sembra quasi di conoscere da sempre la vita di bordo
 su una portaerei ed è un attimo trovarsi sul ponte di comando o seduto
 su un f18 sulla pista di decollo!&lt;/p&gt;
 &lt;p&gt;NOTA: Nella versione Kindle ci sono alcuni refusi che però non
-interferiscono in nessun modo con la scorrevolezza del racconto.&lt;/p&gt;</content><category term="libri"></category><category term="copertino"></category><category term="recensioni"></category></entry><entry><title>Tornatevene su Facebook.</title><link href="/tornatevene-su-facebook.html" rel="alternate"></link><published>2012-04-16T10:59:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-16:/tornatevene-su-facebook.html</id><summary type="html">&lt;p&gt;Da un pò di tempo a questa parte, Twitter si è riempito di una marea di
+interferiscono in nessun modo con la scorrevolezza del racconto.&lt;/p&gt;</content><category term="libri"></category><category term="copertino"></category><category term="recensioni"></category></entry><entry><title>Tornatevene su Facebook.</title><link href="http://localhost:8000/2012/04/16/tornatevene-su-facebook/" rel="alternate"></link><published>2012-04-16T10:59:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-04-16:/2012/04/16/tornatevene-su-facebook/</id><summary type="html">&lt;p&gt;Da un pò di tempo a questa parte, Twitter si è riempito di una marea di
 bimbiminkia che infestano come una piaga ogni angolo del web, spammando
 a raffica i loro “idoli” quali Justin Bieber, Selena Gomez, One
 Direction, Jonas Brothers, Demi Lovato e altra gente della quale a
@@ -2077,7 +2076,7 @@ Facebook e chi ha più iscritti su forumfree/forumcommunity.&lt;/p&gt;
 &lt;p&gt;Lasciate lo spazio a notizie di attualità, cosa a cui serve Twitter.&lt;br&gt;
 Credetemi, al di fuori del vostro mondo fatto di unicorni colorati,
 brillantini e stelle filanti, non frega niente a nessuno di quanti denti
-da latte ha perso Justin Bieber ieri.&lt;/p&gt;</content><category term="facebook"></category><category term="twitter"></category></entry><entry><title>Vietato trollare?</title><link href="/vietato-trollare.html" rel="alternate"></link><published>2012-04-05T08:58:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-05:/vietato-trollare.html</id><summary type="html">&lt;p&gt;In Arizona è al varo una proposta di legge che farà senz’altro
+da latte ha perso Justin Bieber ieri.&lt;/p&gt;</content><category term="facebook"></category><category term="twitter"></category></entry><entry><title>Vietato trollare?</title><link href="http://localhost:8000/2012/04/05/vietato-trollare/" rel="alternate"></link><published>2012-04-05T08:58:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-04-05:/2012/04/05/vietato-trollare/</id><summary type="html">&lt;p&gt;In Arizona è al varo una proposta di legge che farà senz’altro
 discutere.&lt;br&gt;
 Se venisse approvata, i commenti aggressivi e provocatori sui social
 network più famosi (Facebook e Twitter) potrebbero diventare addirittura
@@ -2114,7 +2113,7 @@ per la libertà d’espressione.&lt;/p&gt;
 essere una buona arma da utilizzare contro il fenomeno sempre più
 crescente dello stalking, ma senza dubbio, ora come ora è solo una
 scintilla che rischia di far esplodere proteste da parte di tutta
-internet.&lt;/p&gt;</content><category term="arizona"></category><category term="libertà di parola"></category><category term="news"></category></entry><entry><title>Anonymous: la grande truffa(?)</title><link href="/anonymous-la-grande-truffa.html" rel="alternate"></link><published>2012-04-03T12:58:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-03:/anonymous-la-grande-truffa.html</id><summary type="html">&lt;p&gt;Girovagando per Amazon alla ricerca del prossimo libro da leggere, mi
+internet.&lt;/p&gt;</content><category term="arizona"></category><category term="libertà di parola"></category><category term="news"></category></entry><entry><title>Anonymous: la grande truffa(?)</title><link href="http://localhost:8000/2012/04/03/anonymous-la-grande-truffa/" rel="alternate"></link><published>2012-04-03T12:58:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-04-03:/2012/04/03/anonymous-la-grande-truffa/</id><summary type="html">&lt;p&gt;Girovagando per Amazon alla ricerca del prossimo libro da leggere, mi
 sono imbattuto in questo breve saggio versione kindle: &lt;a href="http://www.amazon.it/gp/product/B007J6Y1KS/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=filippogiomi-21&amp;amp;linkCode=as2&amp;amp;camp=3370&amp;amp;creative=24114&amp;amp;creativeASIN=B007J6Y1KS" title="Anonymous. La grande truffa"&gt;Anonymous. La
 grande
 truffa&lt;/a&gt;&lt;/p&gt;
@@ -2152,7 +2151,7 @@ fantasia di chi ha scritto questo saggio.&lt;/p&gt;
 &lt;p&gt;Comunque ritengo che, nonostante contenga alcuni incredibili
 strafalcioni, il libro sia un ottimo spunto per riflessioni e
 approfondimenti sul “fenomeno Anonymous”.&lt;/p&gt;
-&lt;p&gt;E voi che ne pensate?&lt;/p&gt;</content><category term="anonymous"></category><category term="libri"></category><category term="truffa"></category></entry><entry><title>#kolossalberlusconi</title><link href="/kolossalberlusconi.html" rel="alternate"></link><published>2012-03-28T10:23:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-03-28:/kolossalberlusconi.html</id><summary type="html">&lt;p&gt;L’ex premier è alla disperata ricerca di un regista &lt;a href="http://nonleggerlo.blogspot.it/2012/03/la-mano-giusta.html" title="Non leggere questo blog!: La mano giusta"&gt;per girare un film
+&lt;p&gt;E voi che ne pensate?&lt;/p&gt;</content><category term="anonymous"></category><category term="libri"></category><category term="truffa"></category></entry><entry><title>#kolossalberlusconi</title><link href="http://localhost:8000/2012/03/28/kolossalberlusconi/" rel="alternate"></link><published>2012-03-28T10:23:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-03-28:/2012/03/28/kolossalberlusconi/</id><summary type="html">&lt;p&gt;L’ex premier è alla disperata ricerca di un regista &lt;a href="http://nonleggerlo.blogspot.it/2012/03/la-mano-giusta.html" title="Non leggere questo blog!: La mano giusta"&gt;per girare un film
 sulla sua
 vita&lt;/a&gt;
 (che sarà sicuramente obbiettivissimo e svelerà tutti i retroscena sui
@@ -2219,7 +2218,7 @@ Quo evadis?&lt;br&gt;
 …&lt;/p&gt;
 &lt;p&gt;Scusate ma non ho resistito…&lt;/p&gt;
 &lt;p&gt;(lista by: &lt;a href="http://nonleggerlo.blogspot.it/" title="Non leggere questo Blog!"&gt;Non leggere questo
-Blog!&lt;/a&gt;)&lt;/p&gt;</content><category term="twitter"></category><category term="berlusconi"></category><category term="4 da lulz"></category></entry><entry><title>PHP and MySQL Web Development - Luke Welling, Laura Thomson</title><link href="/php-and-mysql-web-development-luke-welling-laura-thomson.html" rel="alternate"></link><published>2012-02-27T14:13:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-02-27:/php-and-mysql-web-development-luke-welling-laura-thomson.html</id><summary type="html">&lt;p&gt;&lt;a href="http://amzn.to/1aZ9mG6"&gt;PHP and MySQL Web Development: Luke Welling, Laura
+Blog!&lt;/a&gt;)&lt;/p&gt;</content><category term="twitter"></category><category term="berlusconi"></category><category term="4 da lulz"></category></entry><entry><title>PHP and MySQL Web Development - Luke Welling, Laura Thomson</title><link href="http://localhost:8000/2012/02/27/php-and-mysql-web-development-luke-welling-laura-thomson/" rel="alternate"></link><published>2012-02-27T14:13:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-02-27:/2012/02/27/php-and-mysql-web-development-luke-welling-laura-thomson/</id><summary type="html">&lt;p&gt;&lt;a href="http://amzn.to/1aZ9mG6"&gt;PHP and MySQL Web Development: Luke Welling, Laura
 Thomson&lt;/a&gt;&lt;br&gt;
 &lt;strong&gt;Pagine&lt;/strong&gt;: 968&lt;br&gt;
 &lt;strong&gt;Editore&lt;/strong&gt;: Addison Wesley; 4th revised edition. edizione (ottobre
@@ -2289,7 +2288,7 @@ imparare come gestire le sessioni, a comunicare con i database e
 costruire pagine dinamiche.&lt;br&gt;
 E il fatto che sia scritto in inglese non deve scoraggiare, è un inglese
 molto semplice e facilmente “decifrabile”.&lt;/p&gt;
-&lt;p&gt;Veramente consigliato!&lt;/p&gt;</content><category term="libri"></category><category term="mysql"></category><category term="php"></category><category term="programmazione"></category><category term="risorse"></category></entry><entry><title>EasyPHP: un webserver in pochi click</title><link href="/easyphp-un-webserver-in-pochi-click.html" rel="alternate"></link><published>2012-02-25T09:42:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-02-25:/easyphp-un-webserver-in-pochi-click.html</id><summary type="html">&lt;p&gt;Primi passi con la programmazione web?&lt;br&gt;
+&lt;p&gt;Veramente consigliato!&lt;/p&gt;</content><category term="libri"></category><category term="mysql"></category><category term="php"></category><category term="programmazione"></category><category term="risorse"></category></entry><entry><title>EasyPHP: un webserver in pochi click</title><link href="http://localhost:8000/2012/02/25/easyphp-un-webserver-in-pochi-click/" rel="alternate"></link><published>2012-02-25T09:42:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-02-25:/2012/02/25/easyphp-un-webserver-in-pochi-click/</id><summary type="html">&lt;p&gt;Primi passi con la programmazione web?&lt;br&gt;
 Stiamo progettando un sito web?&lt;br&gt;
 Vogliamo prendere confidenza con un software o un CMS per la nostra
 community?&lt;/p&gt;
@@ -2333,15 +2332,15 @@ webserver vero e proprio per mettere online le proprie cose.&lt;br&gt;
 Per quello è bene installare e configurare tutti i componenti uno per
 uno e non accontentarsi di soluzioni già pronte per evitare di incappare
 in spiacevoli inconvenienti, specialmente per quanto riguarda la
-sicurezza dei dati.&lt;/p&gt;</content><category term="risorse"></category><category term="easyphp"></category><category term="guida"></category><category term="guide"></category></entry><entry><title>Spostare Wordpress da locale a live</title><link href="/spostare-wordpress-da-locale-a-live.html" rel="alternate"></link><published>2012-02-23T16:36:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-02-23:/spostare-wordpress-da-locale-a-live.html</id><summary type="html">&lt;p&gt;Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come
+sicurezza dei dati.&lt;/p&gt;</content><category term="risorse"></category><category term="easyphp"></category><category term="guida"></category><category term="guide"></category></entry><entry><title>Spostare Wordpress da locale a live</title><link href="http://localhost:8000/2012/02/23/spostare-wordpress-da-locale-a-live/" rel="alternate"></link><published>2012-02-23T16:36:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2012-02-23:/2012/02/23/spostare-wordpress-da-locale-a-live/</id><summary type="html">&lt;p&gt;Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come
 &lt;a href="http://www.wampserver.com/en/"&gt;Wamp&lt;/a&gt; o
-&lt;a href="http://filippogiomi.it/2012/02/easyphp-un-webserver-in-pochi-click/" title="EasyPHP: un webserver in pochi click"&gt;EasyPHP&lt;/a&gt;
+&lt;a href="2012-02-25_easyphp_un_webserver_in_pochi_click.md" title="EasyPHP: un webserver in pochi click"&gt;EasyPHP&lt;/a&gt;
 per fare prove ed esperimenti.&lt;br&gt;
 Ma come fare se poi si vuole rendere pubblico il proprio lavoro?&lt;br&gt;
 Spesso basta semplicemente spostare qualche file nella cartella www del
 proprio webserver e il gioco è fatto …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come
 &lt;a href="http://www.wampserver.com/en/"&gt;Wamp&lt;/a&gt; o
-&lt;a href="http://filippogiomi.it/2012/02/easyphp-un-webserver-in-pochi-click/" title="EasyPHP: un webserver in pochi click"&gt;EasyPHP&lt;/a&gt;
+&lt;a href="2012-02-25_easyphp_un_webserver_in_pochi_click.md" title="EasyPHP: un webserver in pochi click"&gt;EasyPHP&lt;/a&gt;
 per fare prove ed esperimenti.&lt;br&gt;
 Ma come fare se poi si vuole rendere pubblico il proprio lavoro?&lt;br&gt;
 Spesso basta semplicemente spostare qualche file nella cartella www del
@@ -2367,7 +2366,7 @@ Il gioco è fatto!&lt;/p&gt;
 &lt;p&gt;Dopodichè non mi è rimasto altro da fare che entrare nel pannello di
 controllo del mio nuovo Wordpress, riattivare tutti i plugin e andare a
 impostare tutte le opzioni come meglio pensavo.&lt;/p&gt;
-&lt;p&gt;Semplice, no?&lt;/p&gt;</content><category term="wordpress"></category><category term="easyphp"></category></entry><entry><title>@Marta_Vincenzi e il tutor sulla sopraelevata</title><link href="/marta_vincenzi-e-il-tutor-sulla-sopraelevata.html" rel="alternate"></link><published>2011-12-06T09:54:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2011-12-06:/marta_vincenzi-e-il-tutor-sulla-sopraelevata.html</id><summary type="html">&lt;p&gt;Stamattina prendo la sopraelevata.&lt;/p&gt;
+&lt;p&gt;Semplice, no?&lt;/p&gt;</content><category term="wordpress"></category><category term="easyphp"></category></entry><entry><title>@Marta_Vincenzi e il tutor sulla sopraelevata</title><link href="http://localhost:8000/2011/12/06/marta_vincenzi-e-il-tutor-sulla-sopraelevata/" rel="alternate"></link><published>2011-12-06T09:54:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2011-12-06:/2011/12/06/marta_vincenzi-e-il-tutor-sulla-sopraelevata/</id><summary type="html">&lt;p&gt;Stamattina prendo la sopraelevata.&lt;/p&gt;
 &lt;p&gt;Coda.&lt;/p&gt;
 &lt;p&gt;Sono stati installati i “Tutor”.&lt;/p&gt;
 &lt;p&gt;Invece di mettere in sicurezza la sopraelevata modificando i guardrail
@@ -2409,7 +2408,7 @@ parcheggi?&lt;/p&gt;
 &lt;p&gt;Che servizi offre per giustificare i costi così elevati?&lt;/p&gt;
 &lt;p&gt;Perchè il comune non può occuparsi in prima persona di questa faccenda
 ottenendo il 100% di quanto versato per poterlo reinvestire nello
-sviluppo della città?&lt;/p&gt;</content><category term="genova"></category><category term="sopraelevata"></category></entry><entry><title>Battlefield 4: Columbine</title><link href="/battlefield-4-columbine.html" rel="alternate"></link><published>2011-05-11T17:11:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2011-05-11:/battlefield-4-columbine.html</id><summary type="html">&lt;p&gt;la EA sta preparando un nuovo capitolo della saga?&lt;br&gt;
+sviluppo della città?&lt;/p&gt;</content><category term="genova"></category><category term="sopraelevata"></category></entry><entry><title>Battlefield 4: Columbine</title><link href="http://localhost:8000/2011/05/11/battlefield-4-columbine/" rel="alternate"></link><published>2011-05-11T17:11:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2011-05-11:/2011/05/11/battlefield-4-columbine/</id><summary type="html">&lt;p&gt;la EA sta preparando un nuovo capitolo della saga?&lt;br&gt;
 no, è solo un’anticipazione dei quello che potrà accadere a breve in
 &lt;a href="http://www.blitzquotidiano.it/cronaca-mondo/texas-armi-usa-campus-parlamento-757933/"&gt;Texas&lt;/a&gt;,
 consentendo con una legge di portare armi corte e lunghe all’interno dei
@@ -2434,7 +2433,7 @@ quello che è successo al Virginia Tech, dove un folle ha falciato 32
 persone. Non voglio che pazzi scatenati salgano in cima ad una torre e
 comincino a fare il tiro a segno contro studenti indifesi”.&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;quindi boh,entra in classe, ti copro io&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://img.listal.com/image/1062061/600full-saving-private-ryan-screenshot.jpg"&gt;&lt;img alt="" src="http://img.listal.com/image/1062061/600full-saving-private-ryan-screenshot.jpg"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="armi"></category><category term="battlefield"></category><category term="columbine"></category><category term="texas"></category></entry><entry><title>Portal2: Best game ever.</title><link href="/portal2-best-game-ever.html" rel="alternate"></link><published>2011-04-21T21:31:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2011-04-21:/portal2-best-game-ever.html</id><summary type="html">&lt;p&gt;Ho appena finito il gioco in single player, stamattina ho finito la
+&lt;p&gt;&lt;a href="http://img.listal.com/image/1062061/600full-saving-private-ryan-screenshot.jpg"&gt;&lt;img alt="" src="http://img.listal.com/image/1062061/600full-saving-private-ryan-screenshot.jpg"&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="armi"></category><category term="battlefield"></category><category term="columbine"></category><category term="texas"></category></entry><entry><title>Portal2: Best game ever.</title><link href="http://localhost:8000/2011/04/21/portal2-best-game-ever/" rel="alternate"></link><published>2011-04-21T21:31:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2011-04-21:/2011/04/21/portal2-best-game-ever/</id><summary type="html">&lt;p&gt;Ho appena finito il gioco in single player, stamattina ho finito la
 co-op.&lt;/p&gt;
 &lt;p&gt;è uscito l’altro ieri.&lt;/p&gt;
 &lt;p&gt;è stato il miglior gioco che abbia giocato IN ASSOLUTO.&lt;/p&gt;
@@ -2456,7 +2455,7 @@ cooperare, a volte anche in sincrono.&lt;/p&gt;
 &lt;p&gt;Sono mooooooooolto soddisfatto del gioco, e, anche se prematurissimo,
 spero e aspetto decisamente con ansia un Portal3…&lt;/p&gt;
 &lt;p&gt;Il prossimo pre-order arriverà in autunno e sarà anche quello un gioco
-con i controfiocchi: Battlefield3!!&lt;/p&gt;</content><category term="portal2"></category><category term="videogame"></category></entry><entry><title>I Modena City Ramblers devono cambiare nome</title><link href="/i-modena-city-ramblers-devono-cambiare-nome.html" rel="alternate"></link><published>2011-04-14T19:34:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2011-04-14:/i-modena-city-ramblers-devono-cambiare-nome.html</id><summary type="html">&lt;p&gt;Ho avuto modo, nei giorni scorsi, di ascoltare tre degli ultimi quattro
+con i controfiocchi: Battlefield3!!&lt;/p&gt;</content><category term="portal2"></category><category term="videogame"></category></entry><entry><title>I Modena City Ramblers devono cambiare nome</title><link href="http://localhost:8000/2011/04/14/i-modena-city-ramblers-devono-cambiare-nome/" rel="alternate"></link><published>2011-04-14T19:34:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2011-04-14:/2011/04/14/i-modena-city-ramblers-devono-cambiare-nome/</id><summary type="html">&lt;p&gt;Ho avuto modo, nei giorni scorsi, di ascoltare tre degli ultimi quattro
 album dei Modena City Ramblers.&lt;br&gt;
 Ci sono rimasto malissimo :(&lt;br&gt;
 Senza Cisco alla voce è tutta un’altra cosa, non sono più loro…&lt;br&gt;
@@ -2497,7 +2496,7 @@ la pronuncia è per giunta carente?&lt;br&gt;
 Un conto erano i capolavori di Cisco come “¡Viva la vida, muera la
 muerte!”…&lt;/p&gt;
 &lt;p&gt;"Onda libera" non ho ancora avuto occasione di ascoltarlo, ma sono stato
-a due concerti del tour dell’ultimo album, "Sul tetto del mondo".&lt;/p&gt;</content><category term="modena city ramblers"></category></entry><entry><title>Internet e i pedofili.</title><link href="/internet-e-i-pedofili.html" rel="alternate"></link><published>2010-12-29T17:19:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-12-29:/internet-e-i-pedofili.html</id><summary type="html">&lt;p&gt;Non è un mistero che la pedofilia abbia trovato in internet uno
+a due concerti del tour dell’ultimo album, "Sul tetto del mondo".&lt;/p&gt;</content><category term="modena city ramblers"></category></entry><entry><title>Internet e i pedofili.</title><link href="http://localhost:8000/2010/12/29/internet-e-i-pedofili/" rel="alternate"></link><published>2010-12-29T17:19:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-12-29:/2010/12/29/internet-e-i-pedofili/</id><summary type="html">&lt;p&gt;Non è un mistero che la pedofilia abbia trovato in internet uno
 strumento di diffusione di materiale e e che sia territorio di caccia
 non stop.&lt;/p&gt;
 &lt;p&gt;MA, c’è un ma.&lt;br&gt;
@@ -2593,7 +2592,7 @@ perchè nessuno parla mai delle foto e dei video che si sono scambiati e
 delle conversazioni che hanno avuto?&lt;/p&gt;
 &lt;p&gt;sarò cinico, ma se a 13 anni ti metti nuda su internet e dai numero di
 telefono, indirizzo e codice fiscale a tutti quelli che ti scrivono “ke
-fika k 6” allora ti sta solo che bene.&lt;/p&gt;</content><category term="internet"></category><category term="pedofilia"></category></entry><entry><title>Finalmente è lunedì.</title><link href="/finalmente-e-lunedi.html" rel="alternate"></link><published>2010-12-27T13:33:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-12-27:/finalmente-e-lunedi.html</id><summary type="html">&lt;p&gt;Strano a dirsi ma è così.&lt;br&gt;
+fika k 6” allora ti sta solo che bene.&lt;/p&gt;</content><category term="internet"></category><category term="pedofilia"></category></entry><entry><title>Finalmente è lunedì.</title><link href="http://localhost:8000/2010/12/27/finalmente-e-lunedi/" rel="alternate"></link><published>2010-12-27T13:33:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-12-27:/2010/12/27/finalmente-e-lunedi/</id><summary type="html">&lt;p&gt;Strano a dirsi ma è così.&lt;br&gt;
 Finalmente è passato anche questo natale…&lt;/p&gt;
 &lt;p&gt;Finchè ero piccolo ok, il natale era una figata, regali a pacchi, si
 mangiava abbestia ecc.&lt;br&gt;
@@ -2721,7 +2720,7 @@ cascasse il mondo non riceverai MAI una risposta.&lt;br&gt;
 l’interlocutore è troppo impegnato a mandare il suo “Tanti auguri!” al
 nome sotto al tuo nella sua rubrica.&lt;/p&gt;
 &lt;p&gt;adesso c’è ancora capodanno, e poi fino a pasqua siamo salvi.&lt;br&gt;
-a proposito, mangerò pansoti al sugo di noci e coniglio al sugo.&lt;/p&gt;</content><category term="blog"></category><category term="natale"></category></entry><entry><title>Stasera...</title><link href="/stasera.html" rel="alternate"></link><published>2010-12-20T18:20:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-12-20:/stasera.html</id><summary type="html">&lt;p&gt;stasera un cazzo, questo post sarà online appena troverò una wifi
+a proposito, mangerò pansoti al sugo di noci e coniglio al sugo.&lt;/p&gt;</content><category term="blog"></category><category term="natale"></category></entry><entry><title>Stasera...</title><link href="http://localhost:8000/2010/12/20/stasera/" rel="alternate"></link><published>2010-12-20T18:20:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-12-20:/2010/12/20/stasera/</id><summary type="html">&lt;p&gt;stasera un cazzo, questo post sarà online appena troverò una wifi
 aperta.&lt;br&gt;
 no, chiaramente non sto scrivendo dal pc di casa e no, non sto scrivendo
 dal cell.&lt;br&gt;
@@ -2813,7 +2812,7 @@ a un insulto (su nerdnest.it trovate il video, l’ho postato qualche ora
 fa)&lt;/p&gt;
 &lt;p&gt;pensavo di scrivere due righe e invece ho fatto una conferenza stampa… e
 vabbè, ho recuperato tutto lo spazio vuoto lasciato in questi giorni…&lt;/p&gt;
-&lt;p&gt;saluti.&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>NerdNest!: di nuovo? Si, di nuovo.</title><link href="/nerdnest-di-nuovo-si-di-nuovo.html" rel="alternate"></link><published>2010-11-21T13:30:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-11-21:/nerdnest-di-nuovo-si-di-nuovo.html</id><summary type="html">&lt;p&gt;Avevo iniziato a scrivere questo post un pò di tempo fa dal mio
+&lt;p&gt;saluti.&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>NerdNest!: di nuovo? Si, di nuovo.</title><link href="http://localhost:8000/2010/11/21/nerdnest-di-nuovo-si-di-nuovo/" rel="alternate"></link><published>2010-11-21T13:30:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-11-21:/2010/11/21/nerdnest-di-nuovo-si-di-nuovo/</id><summary type="html">&lt;p&gt;Avevo iniziato a scrivere questo post un pò di tempo fa dal mio
 cellulare, ma poi ho avuto “altre” cose per la testa e l’ho mollato
 li..&lt;br&gt;
 Quindi ora che non ho niente di meglio da fare lo finisco.&lt;/p&gt;
@@ -2873,7 +2872,7 @@ scoprire come creare e gestire un blog o un forum, come si fa un sito
 internet, quali sono le migliori app per il vostro telefonino o
 qualsiasi altra cosa (anche discutere di politica, attualità, video
 divertenti, fatti curiosi…) vi aspettiamo su &lt;a href="http://nerdnest.it"&gt;http://nerdnest.it&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;;)&lt;/p&gt;</content><category term="blog"></category><category term="forum"></category><category term="nerdnest"></category><category term="wantedgov"></category></entry><entry><title>Vieni via con me</title><link href="/vieni-via-con-me.html" rel="alternate"></link><published>2010-11-16T10:20:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-11-16:/vieni-via-con-me.html</id><summary type="html">&lt;p&gt;Avrei voluto, avrei potuto scrivere del concerto che sono andato a
+&lt;p&gt;;)&lt;/p&gt;</content><category term="blog"></category><category term="forum"></category><category term="nerdnest"></category><category term="wantedgov"></category></entry><entry><title>Vieni via con me</title><link href="http://localhost:8000/2010/11/16/vieni-via-con-me/" rel="alternate"></link><published>2010-11-16T10:20:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-11-16:/2010/11/16/vieni-via-con-me/</id><summary type="html">&lt;p&gt;Avrei voluto, avrei potuto scrivere del concerto che sono andato a
 vedere a milano, avrei potuto scrivere del perchè ultimamente non sto
 più considerando molto questo blog e di cosa sia
 &lt;a href="http://nerdnest.it"&gt;NerdNest!&lt;/a&gt;, avrei potuto scrivere dei fatti miei,
@@ -2919,7 +2918,7 @@ di vedere Vieni via con me contro i 7 milioni che hanno deciso di
 spegnere il cervello seguendo il grande fratello se da un lato mi
 rincuora, dall’altro mi preoccupa.&lt;/p&gt;
 &lt;p&gt;7 milioni sono ancora troppi.&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://nerdnest.it/showthread.php?38-Vieni-via-con-me"&gt;&lt;/a&gt;&lt;a href="http://nerdnest.it/showthread.php?38-Vieni-via-con-me"&gt;http://nerdnest.it/showthread.php?38-Vieni-via-con-me&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="accanimento terapeutico"></category><category term="eutanasia"></category><category term="fabio fazio"></category><category term="grande fratello"></category><category term="mafia"></category><category term="rai 3"></category><category term="roberto saviano"></category></entry><entry><title>WordPress o Blogger?</title><link href="/wordpress-o-blogger.html" rel="alternate"></link><published>2010-11-04T23:12:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-11-04:/wordpress-o-blogger.html</id><summary type="html">&lt;p&gt;Eccoci qui a parlare di un’annosa questione, un problema che si pone
+&lt;p&gt;&lt;a href="http://nerdnest.it/showthread.php?38-Vieni-via-con-me"&gt;&lt;/a&gt;&lt;a href="http://nerdnest.it/showthread.php?38-Vieni-via-con-me"&gt;http://nerdnest.it/showthread.php?38-Vieni-via-con-me&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="accanimento terapeutico"></category><category term="eutanasia"></category><category term="fabio fazio"></category><category term="grande fratello"></category><category term="mafia"></category><category term="rai 3"></category><category term="roberto saviano"></category></entry><entry><title>WordPress o Blogger?</title><link href="http://localhost:8000/2010/11/04/wordpress-o-blogger/" rel="alternate"></link><published>2010-11-04T23:12:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-11-04:/2010/11/04/wordpress-o-blogger/</id><summary type="html">&lt;p&gt;Eccoci qui a parlare di un’annosa questione, un problema che si pone
 chiunque abbia voglia di condividere pensieri e opinioni su internet, ad
 esempio un blogger.&lt;/p&gt;
 &lt;p&gt;qual’è meglio? quale dei due software risponde meglio alle nostre
@@ -3000,7 +2999,7 @@ wordpress.org ha possibilità limitatissime rispetto alla versione
 self-hosted: numero di temi ristretto, impossibilità di installare
 plugin e widget, impossibilità di inserire javascript personalizzato.&lt;/p&gt;
 &lt;p&gt;e dopo tutta sta pappardella che idea vi siete fatti? meglio blogger o
-wordpress? ;)&lt;/p&gt;</content><category term="blog"></category><category term="blogger"></category><category term="software"></category><category term="wordpress"></category></entry><entry><title>Un pò di roba - Aggiornamenti al sito/blog ecc.</title><link href="/un-po-di-roba-aggiornamenti-al-sitoblog-ecc.html" rel="alternate"></link><published>2010-11-02T20:46:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-11-02:/un-po-di-roba-aggiornamenti-al-sitoblog-ecc.html</id><summary type="html">&lt;p&gt;Come si usa dire da qualche parte: buonsalve.&lt;br&gt;
+wordpress? ;)&lt;/p&gt;</content><category term="blog"></category><category term="blogger"></category><category term="software"></category><category term="wordpress"></category></entry><entry><title>Un pò di roba - Aggiornamenti al sito/blog ecc.</title><link href="http://localhost:8000/2010/11/02/un-po-di-roba-aggiornamenti-al-sitoblog-ecc/" rel="alternate"></link><published>2010-11-02T20:46:00+01:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-11-02:/2010/11/02/un-po-di-roba-aggiornamenti-al-sitoblog-ecc/</id><summary type="html">&lt;p&gt;Come si usa dire da qualche parte: buonsalve.&lt;br&gt;
 si, è successo un pò di casino sul sito, è vero…&lt;br&gt;
 ieri stavo giocherellando/bestemmiando perchè non riuscivo a mettere
 insieme due o tre pagine decenti e nel casino generale ho ranzato via il
@@ -3060,7 +3059,7 @@ ma prima un santo backup! :D&lt;/p&gt;
 &lt;p&gt;ah mi dimenticavo una cosa importantissima!!&lt;br&gt;
 ho installato sul blog un plugin che permette la visualizzazione del
 sito anche con iphone e android!!&lt;br&gt;
-dovreste provarla perchè è una figata pazzesca!!!&lt;/p&gt;</content><category term="blog"></category><category term="twitter"></category><category term="backup"></category><category term="drupal"></category><category term="joomla"></category><category term="live spaces"></category><category term="msn"></category><category term="twippo"></category></entry><entry><title>Lavori in corso...</title><link href="/lavori-in-corso.html" rel="alternate"></link><published>2010-08-19T17:16:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-08-19:/lavori-in-corso.html</id><summary type="html">&lt;p&gt;Lo sapevo.&lt;/p&gt;
+dovreste provarla perchè è una figata pazzesca!!!&lt;/p&gt;</content><category term="blog"></category><category term="twitter"></category><category term="backup"></category><category term="drupal"></category><category term="joomla"></category><category term="live spaces"></category><category term="msn"></category><category term="twippo"></category></entry><entry><title>Lavori in corso...</title><link href="http://localhost:8000/2010/08/19/lavori-in-corso/" rel="alternate"></link><published>2010-08-19T17:16:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-08-19:/2010/08/19/lavori-in-corso/</id><summary type="html">&lt;p&gt;Lo sapevo.&lt;/p&gt;
 &lt;p&gt;lo sapevo che sarebbe andata così.&lt;/p&gt;
 &lt;p&gt;tanta la smania di aprire un blog per scrivere cazzate e poi dopo 2
 giorni l’ho già abbandonato…&lt;/p&gt;
@@ -3114,7 +3113,7 @@ ti viene mal di testa a leggerli, io invece eccedo nell’altro verso…&lt;/p&g
 messaggi, perchè non sai se il discorso finisce o sta per finire…&lt;/p&gt;
 &lt;p&gt;e quindi lasci li tutto in sospeso, a metà…&lt;/p&gt;
 &lt;p&gt;cazzo, mica parlaimo come terminator, con il punto in fondo alle frasi!&lt;/p&gt;
-&lt;p&gt;eccristo…&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>Perchè un blog?</title><link href="/perche-un-blog.html" rel="alternate"></link><published>2010-08-12T08:03:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-08-12:/perche-un-blog.html</id><summary type="html">&lt;p&gt;qualche anno fa ce ne avevo uno, ce l’avevamo tutti.&lt;/p&gt;
+&lt;p&gt;eccristo…&lt;/p&gt;</content><category term="blog"></category></entry><entry><title>Perchè un blog?</title><link href="http://localhost:8000/2010/08/12/perche-un-blog/" rel="alternate"></link><published>2010-08-12T08:03:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-08-12:/2010/08/12/perche-un-blog/</id><summary type="html">&lt;p&gt;qualche anno fa ce ne avevo uno, ce l’avevamo tutti.&lt;/p&gt;
 &lt;p&gt;su live space, una merda di sito…&lt;/p&gt;
 &lt;p&gt;pagine e pagine riempite di gif glitterate e sbrilluccicose, 18 canzoni
 che partivano all’unisono e 400 video di youtube che caricavano ad ogni
@@ -3163,7 +3162,7 @@ msn, un thread su un forum, un messaggio su steam…&lt;/p&gt;
 direttamente alle dita senza passare dal cervello… lasciar correre le
 dita sulla tastiera e veder cosa ne viene fuori…&lt;/p&gt;
 &lt;p&gt;uno “stream of consciousness” dgitale, diciamo…&lt;/p&gt;
-&lt;p&gt;e così ecco il perchè di un blog…&lt;/p&gt;</content><category term="blog"></category><category term="facebook"></category><category term="social network"></category><category term="twitter"></category></entry><entry><title>Ed eccoci di nuovo qui...</title><link href="/ed-eccoci-di-nuovo-qui.html" rel="alternate"></link><published>2010-08-11T07:55:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:None,2010-08-11:/ed-eccoci-di-nuovo-qui.html</id><summary type="html">&lt;p&gt;Anno nuovo vita nuova no?&lt;/p&gt;
+&lt;p&gt;e così ecco il perchè di un blog…&lt;/p&gt;</content><category term="blog"></category><category term="facebook"></category><category term="social network"></category><category term="twitter"></category></entry><entry><title>Ed eccoci di nuovo qui...</title><link href="http://localhost:8000/2010/08/11/ed-eccoci-di-nuovo-qui/" rel="alternate"></link><published>2010-08-11T07:55:00+02:00</published><updated>2015-03-24T16:09:15+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2010-08-11:/2010/08/11/ed-eccoci-di-nuovo-qui/</id><summary type="html">&lt;p&gt;Anno nuovo vita nuova no?&lt;/p&gt;
 &lt;p&gt;mah, neanche tanto…&lt;/p&gt;
 &lt;p&gt;come?
 un riassuntino delle puntate precedenti?&lt;/p&gt;
@@ -3192,7 +3191,7 @@ prossimi giorni mi attiverò…&lt;/p&gt;
 &lt;p&gt;ma torniamo qua, bello il layout eh? 2 click di numero, altro che quella
 merda di myspace… :D&lt;/p&gt;
 &lt;p&gt;perchè riportare in vita questo blog?&lt;/p&gt;
-&lt;p&gt;mah, sinceramente non lo so, si vede che avevo voglia di scrivere un pò…&lt;/p&gt;</content><category term="blog"></category><category term="università"></category></entry><entry><title>Hello world?</title><link href="/hello-world.html" rel="alternate"></link><published>2009-10-02T11:22:00+02:00</published><updated>2015-03-24T16:09:14+01:00</updated><author><name>Doc</name></author><id>tag:None,2009-10-02:/hello-world.html</id><summary type="html">&lt;p&gt;eccomi qui… ho creato sto blog…&lt;br&gt;
+&lt;p&gt;mah, sinceramente non lo so, si vede che avevo voglia di scrivere un pò…&lt;/p&gt;</content><category term="blog"></category><category term="università"></category></entry><entry><title>Hello world?</title><link href="http://localhost:8000/2009/10/02/hello-world/" rel="alternate"></link><published>2009-10-02T11:22:00+02:00</published><updated>2015-03-24T16:09:14+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2009-10-02:/2009/10/02/hello-world/</id><summary type="html">&lt;p&gt;eccomi qui… ho creato sto blog…&lt;br&gt;
 "ma bravo!"&lt;br&gt;
 grazie…&lt;/p&gt;
 &lt;p&gt;in teoria a quest’ora dovrei uscire dall’uni, in pratica stamattina sono
@@ -3216,7 +3215,7 @@ c’è tempo e poi tra 3 mesi iniziano gli esami&lt;br&gt;
 quindi…&lt;br&gt;
 non c’è poi così tanto tempo…&lt;br&gt;
 ri-amen…&lt;/p&gt;
-&lt;p&gt;in qualche modo si farà…&lt;/p&gt;</content><category term="blog"></category><category term="università"></category></entry><entry><title>Consigli per rimanere in vita</title><link href="/consigli-per-rimanere-in-vita.html" rel="alternate"></link><published>2007-08-31T13:55:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2007-08-31:/consigli-per-rimanere-in-vita.html</id><summary type="html">&lt;p&gt;Non infastidire mai un metallaro, perchè vi ucciderà sicuramente.
+&lt;p&gt;in qualche modo si farà…&lt;/p&gt;</content><category term="blog"></category><category term="università"></category></entry><entry><title>Consigli per rimanere in vita</title><link href="http://localhost:8000/2007/08/31/consigli-per-rimanere-in-vita/" rel="alternate"></link><published>2007-08-31T13:55:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2007-08-31:/2007/08/31/consigli-per-rimanere-in-vita/</id><summary type="html">&lt;p&gt;Non infastidire mai un metallaro, perchè vi ucciderà sicuramente.
 Ma lo potrebbe fare in vari modi, a seconda del suo sottogenere
 preferito:&lt;/p&gt;
 &lt;ul&gt;
@@ -3258,7 +3257,7 @@ infastidirlo.&lt;/li&gt;
 &lt;li&gt;Se ascolta hard rock, è così vecchio che ti ammazza di bastonate o ti
 lancia la dentiera&lt;br&gt;
 &lt;/li&gt;
-&lt;/ul&gt;</content><category term="cazzate"></category></entry><entry><title>Il blog secondo me</title><link href="/il-blog-secondo-me.html" rel="alternate"></link><published>2007-08-09T21:15:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2007-08-09:/il-blog-secondo-me.html</id><summary type="html">&lt;p&gt;Eccolo!!&lt;/p&gt;
+&lt;/ul&gt;</content><category term="cazzate"></category></entry><entry><title>Il blog secondo me</title><link href="http://localhost:8000/2007/08/09/il-blog-secondo-me/" rel="alternate"></link><published>2007-08-09T21:15:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:localhost,2007-08-09:/2007/08/09/il-blog-secondo-me/</id><summary type="html">&lt;p&gt;Eccolo!!&lt;/p&gt;
 &lt;p&gt;è troppo tempo ke nn scrivo qua...&lt;/p&gt;
 &lt;p&gt;d'altro canto mi vengono in mente sl cazzate... ma secondo me un blog è
 fatto x questo e nn x raccontare la tua vita a milioni di persone (nel
