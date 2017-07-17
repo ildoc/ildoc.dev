@@ -4,903 +4,903 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>http://localhost:8000/</loc>
-<lastmod>2017-07-17T20:54:01-00:00</lastmod>
+<loc>/</loc>
+<lastmod>2017-07-17T20:57:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/archives.html</loc>
-<lastmod>2017-07-17T20:54:01-00:00</lastmod>
+<loc>/archives.html</loc>
+<lastmod>2017-07-17T20:57:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tags.html</loc>
-<lastmod>2017-07-17T20:54:01-00:00</lastmod>
+<loc>/tags.html</loc>
+<lastmod>2017-07-17T20:57:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/categories.html</loc>
-<lastmod>2017-07-17T20:54:01-00:00</lastmod>
+<loc>/categories.html</loc>
+<lastmod>2017-07-17T20:57:34-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2007.html</loc>
+<loc>/category/2007.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2009.html</loc>
+<loc>/category/2009.html</loc>
 <lastmod>2015-03-24T16:09:14+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2010.html</loc>
+<loc>/category/2010.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2011.html</loc>
+<loc>/category/2011.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2012.html</loc>
+<loc>/category/2012.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2013.html</loc>
+<loc>/category/2013.html</loc>
 <lastmod>2015-03-26T14:17:01+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2014.html</loc>
+<loc>/category/2014.html</loc>
 <lastmod>2015-03-26T14:15:40+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2015.html</loc>
+<loc>/category/2015.html</loc>
 <lastmod>2015-10-14T19:46:09+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/category/2016.html</loc>
+<loc>/category/2016.html</loc>
 <lastmod>2016-07-24T20:33:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/python.html</loc>
+<loc>/tag/python.html</loc>
 <lastmod>2016-07-24T20:33:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/django.html</loc>
+<loc>/tag/django.html</loc>
 <lastmod>2016-07-24T20:33:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/tutorial.html</loc>
+<loc>/tag/tutorial.html</loc>
 <lastmod>2016-07-24T20:33:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/virtualenv.html</loc>
+<loc>/tag/virtualenv.html</loc>
 <lastmod>2015-05-12T14:58:55+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/blog.html</loc>
+<loc>/tag/blog.html</loc>
 <lastmod>2015-03-26T13:30:28+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/nas.html</loc>
+<loc>/tag/nas.html</loc>
 <lastmod>2015-04-28T12:26:45+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/qnap.html</loc>
+<loc>/tag/qnap.html</loc>
 <lastmod>2015-04-28T12:26:45+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/windows.html</loc>
+<loc>/tag/windows.html</loc>
 <lastmod>2015-03-26T14:01:29+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/ovh.html</loc>
+<loc>/tag/ovh.html</loc>
 <lastmod>2015-03-26T13:30:28+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/linguaggi-di-programmazione.html</loc>
+<loc>/tag/linguaggi-di-programmazione.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/git.html</loc>
+<loc>/tag/git.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/githook.html</loc>
+<loc>/tag/githook.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/pelican.html</loc>
+<loc>/tag/pelican.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/wordpress.html</loc>
+<loc>/tag/wordpress.html</loc>
 <lastmod>2015-03-26T14:13:31+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/seo.html</loc>
+<loc>/tag/seo.html</loc>
 <lastmod>2015-03-26T14:13:31+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/c.html</loc>
+<loc>/tag/c.html</loc>
 <lastmod>2015-03-26T13:50:42+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/visual-studio.html</loc>
+<loc>/tag/visual-studio.html</loc>
 <lastmod>2015-03-26T13:50:42+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/msdn.html</loc>
+<loc>/tag/msdn.html</loc>
 <lastmod>2015-03-26T13:50:42+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/get-latest.html</loc>
+<loc>/tag/get-latest.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/tfs.html</loc>
+<loc>/tag/tfs.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/whatsapp.html</loc>
+<loc>/tag/whatsapp.html</loc>
 <lastmod>2015-03-26T14:01:05+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/telegram.html</loc>
+<loc>/tag/telegram.html</loc>
 <lastmod>2015-03-26T13:55:44+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/vps.html</loc>
+<loc>/tag/vps.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/digitalocean.html</loc>
+<loc>/tag/digitalocean.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/prometeus.html</loc>
+<loc>/tag/prometeus.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/facebook.html</loc>
+<loc>/tag/facebook.html</loc>
 <lastmod>2015-03-26T14:01:05+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/privacy.html</loc>
+<loc>/tag/privacy.html</loc>
 <lastmod>2015-03-26T14:01:05+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/server.html</loc>
+<loc>/tag/server.html</loc>
 <lastmod>2015-03-26T14:01:29+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/ubuntu.html</loc>
+<loc>/tag/ubuntu.html</loc>
 <lastmod>2015-03-26T14:01:29+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/pingback.html</loc>
+<loc>/tag/pingback.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/berlusconi.html</loc>
+<loc>/tag/berlusconi.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/casini.html</loc>
+<loc>/tag/casini.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/governo.html</loc>
+<loc>/tag/governo.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/m5s.html</loc>
+<loc>/tag/m5s.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/renzi.html</loc>
+<loc>/tag/renzi.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/internet.html</loc>
+<loc>/tag/internet.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/google.html</loc>
+<loc>/tag/google.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/sicurezza.html</loc>
+<loc>/tag/sicurezza.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/html.html</loc>
+<loc>/tag/html.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/htmlagilitypack.html</loc>
+<loc>/tag/htmlagilitypack.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/linq.html</loc>
+<loc>/tag/linq.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/xpath.html</loc>
+<loc>/tag/xpath.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/imparare-a-programmare.html</loc>
+<loc>/tag/imparare-a-programmare.html</loc>
 <lastmod>2015-03-26T14:15:40+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/join.html</loc>
+<loc>/tag/join.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/oracle.html</loc>
+<loc>/tag/oracle.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/regex.html</loc>
+<loc>/tag/regex.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/sql.html</loc>
+<loc>/tag/sql.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/cyberbullismo.html</loc>
+<loc>/tag/cyberbullismo.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/permessi.html</loc>
+<loc>/tag/permessi.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/dcom.html</loc>
+<loc>/tag/dcom.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/kepware.html</loc>
+<loc>/tag/kepware.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/matrikon.html</loc>
+<loc>/tag/matrikon.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/opc.html</loc>
+<loc>/tag/opc.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/numeri-primi.html</loc>
+<loc>/tag/numeri-primi.html</loc>
 <lastmod>2015-03-26T14:17:01+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/eratostene.html</loc>
+<loc>/tag/eratostene.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/bootstrap.html</loc>
+<loc>/tag/bootstrap.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/jquery.html</loc>
+<loc>/tag/jquery.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/infragistics.html</loc>
+<loc>/tag/infragistics.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/pdf.html</loc>
+<loc>/tag/pdf.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/beautifulsoup.html</loc>
+<loc>/tag/beautifulsoup.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/github.html</loc>
+<loc>/tag/github.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/huffingtonpost.html</loc>
+<loc>/tag/huffingtonpost.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/grillo.html</loc>
+<loc>/tag/grillo.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/quirinarie.html</loc>
+<loc>/tag/quirinarie.html</loc>
 <lastmod>2015-03-24T16:09:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/anonymous.html</loc>
+<loc>/tag/anonymous.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/deepweb.html</loc>
+<loc>/tag/deepweb.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/tor.html</loc>
+<loc>/tag/tor.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/libri.html</loc>
+<loc>/tag/libri.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/copertino.html</loc>
+<loc>/tag/copertino.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/recensioni.html</loc>
+<loc>/tag/recensioni.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/twitter.html</loc>
+<loc>/tag/twitter.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/arizona.html</loc>
+<loc>/tag/arizona.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/liberta-di-parola.html</loc>
+<loc>/tag/liberta-di-parola.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/news.html</loc>
+<loc>/tag/news.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/truffa.html</loc>
+<loc>/tag/truffa.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/4-da-lulz.html</loc>
+<loc>/tag/4-da-lulz.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/mysql.html</loc>
+<loc>/tag/mysql.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/php.html</loc>
+<loc>/tag/php.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/programmazione.html</loc>
+<loc>/tag/programmazione.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/risorse.html</loc>
+<loc>/tag/risorse.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/easyphp.html</loc>
+<loc>/tag/easyphp.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/guida.html</loc>
+<loc>/tag/guida.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/guide.html</loc>
+<loc>/tag/guide.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/genova.html</loc>
+<loc>/tag/genova.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/sopraelevata.html</loc>
+<loc>/tag/sopraelevata.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/armi.html</loc>
+<loc>/tag/armi.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/battlefield.html</loc>
+<loc>/tag/battlefield.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/columbine.html</loc>
+<loc>/tag/columbine.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/texas.html</loc>
+<loc>/tag/texas.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/portal2.html</loc>
+<loc>/tag/portal2.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/videogame.html</loc>
+<loc>/tag/videogame.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/modena-city-ramblers.html</loc>
+<loc>/tag/modena-city-ramblers.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/pedofilia.html</loc>
+<loc>/tag/pedofilia.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/natale.html</loc>
+<loc>/tag/natale.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/forum.html</loc>
+<loc>/tag/forum.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/nerdnest.html</loc>
+<loc>/tag/nerdnest.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/wantedgov.html</loc>
+<loc>/tag/wantedgov.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/accanimento-terapeutico.html</loc>
+<loc>/tag/accanimento-terapeutico.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/eutanasia.html</loc>
+<loc>/tag/eutanasia.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/fabio-fazio.html</loc>
+<loc>/tag/fabio-fazio.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/grande-fratello.html</loc>
+<loc>/tag/grande-fratello.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/mafia.html</loc>
+<loc>/tag/mafia.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/rai-3.html</loc>
+<loc>/tag/rai-3.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/roberto-saviano.html</loc>
+<loc>/tag/roberto-saviano.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/blogger.html</loc>
+<loc>/tag/blogger.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/software.html</loc>
+<loc>/tag/software.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/backup.html</loc>
+<loc>/tag/backup.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/drupal.html</loc>
+<loc>/tag/drupal.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/joomla.html</loc>
+<loc>/tag/joomla.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/live-spaces.html</loc>
+<loc>/tag/live-spaces.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/msn.html</loc>
+<loc>/tag/msn.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/twippo.html</loc>
+<loc>/tag/twippo.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/social-network.html</loc>
+<loc>/tag/social-network.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/universita.html</loc>
+<loc>/tag/universita.html</loc>
 <lastmod>2015-03-24T16:09:15+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/tag/cazzate.html</loc>
+<loc>/tag/cazzate.html</loc>
 <lastmod>2015-03-24T16:09:17+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>http://localhost:8000/author/doc.html</loc>
+<loc>/author/doc.html</loc>
 <lastmod>2016-07-24T20:33:16+00:50</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>

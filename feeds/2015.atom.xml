@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>ildoc's - 2015</title><link href="/" rel="alternate"></link><link href="/feeds/2015.atom.xml" rel="self"></link><id>/</id><updated>2015-10-14T19:46:09+02:00</updated><entry><title>Script per la creazione di un nuovo progetto Django</title><link href="/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/" rel="alternate"></link><published>2015-10-13T09:39:35+02:00</published><updated>2015-10-14T19:46:09+02:00</updated><author><name>Doc</name></author><id>tag:None,2015-10-13:/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/</id><summary type="html">&lt;p&gt;Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da &lt;a href="/2015/03/02/django-e-virtualenv-su-windows/"&gt;windows&lt;/a&gt;)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nv"&gt;YEAR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date +&lt;span class="s2"&gt;&amp;quot;%Y&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione env&amp;quot;&lt;/span&gt;
+python3 -m venv /envs/&lt;span class="nv"&gt;$1&lt;/span&gt;
+&lt;span class="nb"&gt;source&lt;/span&gt; /envs/&lt;span class="nv"&gt;$1 …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da &lt;a href="/2015/03/02/django-e-virtualenv-su-windows/"&gt;windows&lt;/a&gt;)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/bash&lt;/span&gt;
+&lt;span class="nv"&gt;YEAR&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="k"&gt;$(&lt;/span&gt;date +&lt;span class="s2"&gt;&amp;quot;%Y&amp;quot;&lt;/span&gt;&lt;span class="k"&gt;)&lt;/span&gt;
+
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione env&amp;quot;&lt;/span&gt;
+python3 -m venv /envs/&lt;span class="nv"&gt;$1&lt;/span&gt;
+&lt;span class="nb"&gt;source&lt;/span&gt; /envs/&lt;span class="nv"&gt;$1&lt;/span&gt;/bin/activate
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Aggiornamento pip&amp;quot;&lt;/span&gt;
+pip install -q -U pip
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Installazione Django&amp;quot;&lt;/span&gt;
+pip install -q django
+&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$HOME&lt;/span&gt;/Projects/
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione progetto&amp;quot;&lt;/span&gt;
+django-admin startproject &lt;span class="nv"&gt;$1&lt;/span&gt;
+&lt;span class="nb"&gt;cd&lt;/span&gt; &lt;span class="nv"&gt;$1&lt;/span&gt;
+
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione cartelle&amp;quot;&lt;/span&gt;
+mkdir static
+mkdir templates
+mkdir templates/admin
+
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione .gitignore&amp;quot;&lt;/span&gt;
+cat &lt;span class="s"&gt;&amp;lt;&amp;lt;EOF &amp;gt; .gitignore&lt;/span&gt;
+&lt;span class="s"&gt;*.py[cod]&lt;/span&gt;
+&lt;span class="s"&gt;*.sqlite3&lt;/span&gt;
+
+&lt;span class="s"&gt;assets/&lt;/span&gt;
+&lt;span class="s"&gt;*/__pycache__&lt;/span&gt;
+
+&lt;span class="s"&gt;access.log&lt;/span&gt;
+&lt;span class="s"&gt;error.log&lt;/span&gt;
+&lt;span class="s"&gt;EOF&lt;/span&gt;
+
+cat &lt;span class="s"&gt;&amp;lt;&amp;lt;EOF &amp;gt; windows.bat&lt;/span&gt;
+&lt;span class="s"&gt;start c:\Envs\$1\Scripts\activate.bat&lt;/span&gt;
+&lt;span class="s"&gt;atom .&lt;/span&gt;
+&lt;span class="s"&gt;EOF&lt;/span&gt;
+
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione LICENSE&amp;quot;&lt;/span&gt;
+cat &lt;span class="s"&gt;&amp;lt;&amp;lt;EOF &amp;gt; LICENSE&lt;/span&gt;
+&lt;span class="s"&gt;The MIT License (MIT)&lt;/span&gt;
+
+&lt;span class="s"&gt;Copyright (c) $YEAR $1 (ildoc.it)&lt;/span&gt;
+
+&lt;span class="s"&gt;Permission is hereby granted, free of charge, to any person obtaining a copy&lt;/span&gt;
+&lt;span class="s"&gt;of this software and associated documentation files (the &amp;quot;Software&amp;quot;), to deal&lt;/span&gt;
+&lt;span class="s"&gt;in the Software without restriction, including without limitation the rights&lt;/span&gt;
+&lt;span class="s"&gt;to use, copy, modify, merge, publish, distribute, sublicense, and/or sell&lt;/span&gt;
+&lt;span class="s"&gt;copies of the Software, and to permit persons to whom the Software is&lt;/span&gt;
+&lt;span class="s"&gt;furnished to do so, subject to the following conditions:&lt;/span&gt;
+
+&lt;span class="s"&gt;The above copyright notice and this permission notice shall be included in all&lt;/span&gt;
+&lt;span class="s"&gt;copies or substantial portions of the Software.&lt;/span&gt;
+
+&lt;span class="s"&gt;THE SOFTWARE IS PROVIDED &amp;quot;AS IS&amp;quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR&lt;/span&gt;
+&lt;span class="s"&gt;IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,&lt;/span&gt;
+&lt;span class="s"&gt;FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE&lt;/span&gt;
+&lt;span class="s"&gt;AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER&lt;/span&gt;
+&lt;span class="s"&gt;LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,&lt;/span&gt;
+&lt;span class="s"&gt;OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE&lt;/span&gt;
+&lt;span class="s"&gt;SOFTWARE.&lt;/span&gt;
+&lt;span class="s"&gt;EOF&lt;/span&gt;
+
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Creazione requirements.txt&amp;quot;&lt;/span&gt;
+pip freeze &amp;gt; requirements.txt
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Init del repository&amp;quot;&lt;/span&gt;
+git init
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Commit iniziale&amp;quot;&lt;/span&gt;
+git add --all
+git commit -m &lt;span class="s2"&gt;&amp;quot;first commit&amp;quot;&lt;/span&gt;
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;[+]Avvio di Atom&amp;quot;&lt;/span&gt;
+atom .
+&lt;/pre&gt;&lt;/div&gt;</content><category term="django"></category></entry><entry><title>Script standalone con Django</title><link href="/2015/05/11/script-standalone-con-django/" rel="alternate"></link><published>2015-05-11T04:46:58+02:00</published><updated>2015-05-12T14:58:55+02:00</updated><author><name>Doc</name></author><id>tag:None,2015-05-11:/2015/05/11/script-standalone-con-django/</id><summary type="html">&lt;p&gt;Volendo creare un tool di manutenzione/per operazioni batch/ecc. che necessita di interagire con, ad esempio, i modelli di un'app del nostro progetto con Django, è necessario caricare tutto l'ambiente all'interno del quale Django viene eseguito.&lt;/p&gt;
+&lt;p&gt;Ciò può essere fatto lanciando la shell di Django dal manage.py del …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Volendo creare un tool di manutenzione/per operazioni batch/ecc. che necessita di interagire con, ad esempio, i modelli di un'app del nostro progetto con Django, è necessario caricare tutto l'ambiente all'interno del quale Django viene eseguito.&lt;/p&gt;
+&lt;p&gt;Ciò può essere fatto lanciando la shell di Django dal manage.py del nostro progetto:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;ildoc&lt;span class="p"&gt;)&lt;/span&gt; C:\Projects\ildoc.it&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;python manage.py shell
+Python 2.7.9 (default, Dec 10 2014, 12:28:03) [MSC v.1500 64 bit (AMD64)] on win32
+&lt;span class="k"&gt;Type&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;help&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;copyright&amp;quot;&lt;/span&gt;, &lt;span class="s2"&gt;&amp;quot;credits&amp;quot;&lt;/span&gt; or &lt;span class="s2"&gt;&amp;quot;license&amp;quot;&lt;/span&gt; for more information.
+&lt;span class="p"&gt;(&lt;/span&gt;InteractiveConsole&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="p"&gt;&amp;gt;&amp;gt;&lt;/span&gt;&amp;gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;e da li poi utilizzare la funzione execfile() per lanciare il file che ci interessa&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;&amp;gt;&amp;gt;&lt;/span&gt;&amp;gt; execfile(&lt;span class="s2"&gt;&amp;quot;tools/manutenzione.py&amp;quot;&lt;/span&gt;)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;però questa cosa è abbastanza complessa, specialmente se si punta ad automatizzare il processo con dei jobs o dei trigger.&lt;/p&gt;
+&lt;p&gt;Quindi serve un modo per poter lanciare &lt;strong&gt;direttamente&lt;/strong&gt; il nostro script.&lt;/p&gt;
+&lt;p&gt;La soluzione consiste nell'inserire queste righe all'inizio del nostro tool:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;os&lt;/span&gt;&lt;span class="o"&gt;,&lt;/span&gt; &lt;span class="nn"&gt;sys&lt;/span&gt;
+
+&lt;span class="n"&gt;BASE_DIR&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;dirname&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;abspath&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="vm"&gt;__file__&lt;/span&gt;&lt;span class="p"&gt;)))&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Serve a specificare che ambiente usare&lt;/span&gt;
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;environ&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;setdefault&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;DJANGO_SETTINGS_MODULE&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;mioprogetto.settings&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;sys&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;path&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;append&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BASE_DIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Serve per caricare il settings.py&lt;/span&gt;
+&lt;span class="n"&gt;os&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;chdir&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;BASE_DIR&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+
+&lt;span class="c1"&gt;# Serve a poter importare i modelli&lt;/span&gt;
+&lt;span class="kn"&gt;from&lt;/span&gt; &lt;span class="nn"&gt;django.core.wsgi&lt;/span&gt; &lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="n"&gt;get_wsgi_application&lt;/span&gt;
+&lt;span class="n"&gt;application&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;get_wsgi_application&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;A questo punto potremo procedere importando quello che ci serve, esattamente come se stessimo lavorando all'interno del progetto.&lt;/p&gt;
+&lt;p&gt;E potremo finalmente eseguire il nostro tool scrivendo semplicemente in console&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;ildoc&lt;span class="p"&gt;)&lt;/span&gt; C:\Projects\ildoc.it\tools&lt;span class="p"&gt;&amp;gt;&lt;/span&gt;python manutenzione.py
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Semplificandoci notevolmente la vita nel caso volessimo schedularne l'esecuzione.&lt;/p&gt;</content><category term="django"></category><category term="virtualenv"></category></entry><entry><title>Nuovo blog?</title><link href="/2015/03/25/nuovo-blog/" rel="alternate"></link><published>2015-03-25T11:06:50+01:00</published><updated>2015-03-25T11:27:06+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-03-25:/2015/03/25/nuovo-blog/</id><summary type="html">&lt;p&gt;Cos'è cambiato? Nulla, &lt;em&gt;sembrerebbe&lt;/em&gt;...
+E invece sono passato da pelican a django, mantenendo quasi lo stesso layout.&lt;/p&gt;
+&lt;p&gt;Il vantaggio pratico è che posso scrivere i post direttamente dal web, ma la parte divertente è che il motore del blog &lt;a href="https://github.com/ildoc/ildoc.it/"&gt;me lo scrivo da solo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Riprendendo in mano django dopo il …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Cos'è cambiato? Nulla, &lt;em&gt;sembrerebbe&lt;/em&gt;...
+E invece sono passato da pelican a django, mantenendo quasi lo stesso layout.&lt;/p&gt;
+&lt;p&gt;Il vantaggio pratico è che posso scrivere i post direttamente dal web, ma la parte divertente è che il motore del blog &lt;a href="https://github.com/ildoc/ildoc.it/"&gt;me lo scrivo da solo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Riprendendo in mano django dopo il primo faticosissimo approccio dell'anno scorso, mi sono reso conto che in realtà è molto più facile da usare di quanto ricordassi, probabilmente anche per le conoscenze acquisite in quest'ultimo anno.&lt;/p&gt;
+&lt;p&gt;I post su pelican erano scritti in markdown, per cui mi sono anche divertito a scrivere un &lt;a href="https://github.com/ildoc/ildoc.it/blob/master/tools/migrate.py"&gt;parser&lt;/a&gt; che bene o male ha funzionato sui post pubblicati, in modo da non perdere niente.&lt;/p&gt;
+&lt;p&gt;Mi sto portando dietro roba del 2007 che, per quanto agghiacciante, sarebbe un peccato perdere...&lt;/p&gt;
+&lt;p&gt;I post continuerò a scriverli in markdown, grazie alle magie di python-markdown e django-pagedown, che mi permettono anche di avere un feedback real-time su come uscirà il post.
+La sitemap dovrebbe funzionare, così come l'integrazione con twitter tramite IFTTT.&lt;/p&gt;
+&lt;p&gt;Quello che mi manca è un'interfaccia di scrittura post un po' più comoda del django-admin e un modo per uploadare le immagini da embeddare nei post.&lt;/p&gt;
+&lt;p&gt;Ci sono ancora dei link rotti nei post migrati, ma col tempo sistemerò tutto...&lt;/p&gt;</content><category term="blog"></category><category term="django"></category></entry><entry><title>Sostituzione di un disco degradato su QNAP</title><link href="/2015/03/07/sostituzione-di-un-disco-degradato-su-qnap/" rel="alternate"></link><published>2015-03-07T10:26:00+01:00</published><updated>2015-04-28T12:26:45+02:00</updated><author><name>Doc</name></author><id>tag:None,2015-03-07:/2015/03/07/sostituzione-di-un-disco-degradato-su-qnap/</id><summary type="html">&lt;p&gt;Dopo 2 anni di servizio, il disco 1 del mio QNAP TS-219P II (un  &lt;a href="http://amzn.to/1wo7f8j"&gt;WD Red 3TB&lt;/a&gt;) ha deciso di lasciarmi.&lt;/p&gt;
+&lt;p&gt;Il QNAP è andato in modalità degraded, lucine rosse e beep ovunque...
+Ho comprato un altro disco e poi mi sono messo a scartabellare l'internet per capire come sostituirlo …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Dopo 2 anni di servizio, il disco 1 del mio QNAP TS-219P II (un  &lt;a href="http://amzn.to/1wo7f8j"&gt;WD Red 3TB&lt;/a&gt;) ha deciso di lasciarmi.&lt;/p&gt;
+&lt;p&gt;Il QNAP è andato in modalità degraded, lucine rosse e beep ovunque...
+Ho comprato un altro disco e poi mi sono messo a scartabellare l'internet per capire come sostituirlo senza perdere i dati.&lt;/p&gt;
+&lt;p&gt;Incredibile ma vero, la documentazione di QNAP è la più agghiacciante della storia.
+Recentemente hanno rifatto il sito e non si sono minimamente preoccupati di mantenere i vecchi link, o almeno di reindirizzarli su pagine funzionanti -.-&lt;/p&gt;
+&lt;p&gt;Il forum poi, come sempre, non è d'aiuto per un cazzo (&lt;a href="http://forum.qnap.com/viewtopic.php?f=25&amp;amp;t=89512"&gt;questa discussione&lt;/a&gt; ne è l'esempio)&lt;/p&gt;
+&lt;p&gt;Un &lt;a href="http://www.hwupgrade.it/forum/showthread.php?p=40434840"&gt;altro thread&lt;/a&gt; su HWUpgrade mi ha fatto troppo tornare in mente questo&lt;/p&gt;
+&lt;p&gt;&lt;center&gt;&lt;img alt="Wisdom of the Ancients" src="http://imgs.xkcd.com/comics/wisdom_of_the_ancients.png" title="All long help threads should have a sticky globally-editable post at the top saying 'DEAR PEOPLE FROM THE FUTURE: Here's what we've figured out so far ..."&gt;&lt;/center&gt;&lt;/p&gt;
+&lt;p&gt;Comunque, alla fine ho scoperto che non è nemmeno necessario spegnere il qnap: la sostituzione può essere fatta al volo!&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;si rimuove il disco danneggiato (ci saranno 2 beep da 1.5 secondi)&lt;/li&gt;
+&lt;li&gt;si svitano le 4 viti che lo fissano a supporto e si sostituisce con uno nuovo&lt;/li&gt;
+&lt;li&gt;si re-inserisce il nuovo disco (ci saranno di nuovo 2 beep da 1.5 secondi)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;e in automatico il sistema comincerà con il ripristino del RAID&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;GOD BLESS RAID 1&lt;/strong&gt;&lt;/p&gt;</content><category term="nas"></category><category term="qnap"></category></entry><entry><title>Django e virtualenv su Windows</title><link href="/2015/03/02/django-e-virtualenv-su-windows/" rel="alternate"></link><published>2015-03-02T10:28:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-03-02:/2015/03/02/django-e-virtualenv-su-windows/</id><summary type="html">&lt;p&gt;Più che un post, questo è un appunto personale...
+Per usare &lt;a href="https://www.djangoproject.com/"&gt;django&lt;/a&gt; su windows dietro virtualenv occorre settare il path corretto per l'esecuzione dei file .py, altrimenti verrà utilizzato il "python.exe" di default&lt;/p&gt;
+&lt;p&gt;Questa operazione è fattibile con il comando (ovviamente da DENTRO il virtualenv)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ftype Python.File&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;C …&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;p&gt;Più che un post, questo è un appunto personale...
+Per usare &lt;a href="https://www.djangoproject.com/"&gt;django&lt;/a&gt; su windows dietro virtualenv occorre settare il path corretto per l'esecuzione dei file .py, altrimenti verrà utilizzato il "python.exe" di default&lt;/p&gt;
+&lt;p&gt;Questa operazione è fattibile con il comando (ovviamente da DENTRO il virtualenv)&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;ftype Python.File&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;C:\Users\NOMEUTENTE\Envs\NOMEAMBIENTE\Scripts\python.exe&amp;quot;&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;%1&amp;quot;&lt;/span&gt; %*
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Questa roba in teoria dovrebbe risulare automatica alla creazione del virtualenv, resta da capire se sia un baco di django o dell'ambiente...&lt;/p&gt;</content><category term="windows"></category><category term="django"></category><category term="virtualenv"></category></entry><entry><title>Fuga da Ovh</title><link href="/2015/02/17/fuga-da-ovh/" rel="alternate"></link><published>2015-02-17T23:07:00+01:00</published><updated>2015-03-26T13:30:28+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-17:/2015/02/17/fuga-da-ovh/</id><summary type="html">&lt;p&gt;Avevo già &lt;a href="{filename}2013-12-02_da_ovh_non_me_laspettavo.md"&gt;parlato bene di ovh&lt;/a&gt;, e in questi giorni ho maturato l'idea di completare l'opera e fuggire definitvamente da questo ormai, a mio avviso, scandaloso fornitore di servizi.&lt;/p&gt;
+&lt;p&gt;Rivisitando il blog con &lt;a href="/2015/02/06/deploy-di-pelican-su-github-e-githook/"&gt;Pelican&lt;/a&gt; e hostandolo sulle GitHub Pages, puntandoci un custom domain, e quindi mi sono appropinquato sul mio …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Avevo già &lt;a href="{filename}2013-12-02_da_ovh_non_me_laspettavo.md"&gt;parlato bene di ovh&lt;/a&gt;, e in questi giorni ho maturato l'idea di completare l'opera e fuggire definitvamente da questo ormai, a mio avviso, scandaloso fornitore di servizi.&lt;/p&gt;
+&lt;p&gt;Rivisitando il blog con &lt;a href="/2015/02/06/deploy-di-pelican-su-github-e-githook/"&gt;Pelican&lt;/a&gt; e hostandolo sulle GitHub Pages, puntandoci un custom domain, e quindi mi sono appropinquato sul mio bel managerV5 di ovh, tutto figo, fatto con angular con caricamenti asincroni e compagnia bella.
+Modifico il record dns e mi metto in pace ad aspettare la propagazione.&lt;/p&gt;
+&lt;p&gt;Aspetto.&lt;/p&gt;
+&lt;p&gt;Aspetto.&lt;/p&gt;
+&lt;p&gt;E aspetto.&lt;/p&gt;
+&lt;p&gt;NIENTE.&lt;/p&gt;
+&lt;p&gt;Provo a modificare i TTL.&lt;/p&gt;
+&lt;p&gt;NIENTE.&lt;/p&gt;
+&lt;p&gt;A sto punto comincio a spulciare l'internet per cercare altri registrar per trasferire il dominio, e capito su &lt;a href="https://gandi.net"&gt;gandi.net&lt;/a&gt;, il cui motto è "no bullshit".
+Mi sembra un ottimo punto di partenza.&lt;/p&gt;
+&lt;p&gt;Mi registro, comincio la procedura per il trasferimento, e torno al managerV5 di ovh in cerca dell'auth-info code.
+NESSUNA TRACCIA.&lt;/p&gt;
+&lt;p&gt;Ricordo che dal managerV3 c'era, e difatti lo trovo.
+Bell'avanzamento demmerda che han fatto...&lt;/p&gt;
+&lt;p&gt;Poi, così per curiosità vado a vedere i record dns dal managerV3, e scopro con mia grandissima sorpresa che delle modifiche fatte dal managerV5 non c'è traccia.
+(Bell'avanzamento demmerda che han fatto...)^2&lt;/p&gt;
+&lt;p&gt;Vabbè, sblocco il dominio, copio l'auth-info code e lo dò in pasto a gandi.net.
+Bam, errore, codice "auth-info errato".
+Torno su ovh, aggiorno la pagina del manager, e il codice CAMBIA.&lt;/p&gt;
+&lt;p&gt;Mah...&lt;/p&gt;
+&lt;p&gt;Dopo molti patimenti, lacrime e sangue sono riuscito a strappare ildoc.it dalle grinfie di ovh.
+Peccato perchè sono cliente da diversi anni, ma nel tempo c'è stato un peggioramento del servizio a dir poco incredibile...
+Che poi scrivendo al supporto rispondono anche in tempi brevi e segnalano di utilizzare il forum, che però non è monitorato da uncazzodinessuno.&lt;/p&gt;
+&lt;p&gt;Ho ancora un dominio su ovh, al momento non mi serve nulla di che, perciò lo lascerò li...
+Ma giusto finchè non scade, e poi bye bye&lt;/p&gt;</content><category term="blog"></category><category term="ovh"></category></entry><entry><title>If programming languages were countries</title><link href="/2015/02/11/if-programming-languages-were-countries/" rel="alternate"></link><published>2015-02-11T10:41:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-11:/2015/02/11/if-programming-languages-were-countries/</id><summary type="html">&lt;p&gt;Ho trovato questo simpatico post...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java: USA -- optimistic, powerful, likes to gloss over inconveniences.&lt;/li&gt;
+&lt;li&gt;C++: UK -- strong and exacting, but not so good at actually finishing things and tends to get overtaken by Java.&lt;/li&gt;
+&lt;li&gt;Python: The Netherlands. "Hey no problem, let'sh do it guysh!"&lt;/li&gt;
+&lt;li&gt;Ruby: France. Powerful, stylish and convinced …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Ho trovato questo simpatico post...&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Java: USA -- optimistic, powerful, likes to gloss over inconveniences.&lt;/li&gt;
+&lt;li&gt;C++: UK -- strong and exacting, but not so good at actually finishing things and tends to get overtaken by Java.&lt;/li&gt;
+&lt;li&gt;Python: The Netherlands. "Hey no problem, let'sh do it guysh!"&lt;/li&gt;
+&lt;li&gt;Ruby: France. Powerful, stylish and convinced of its own correctness, but somewhat ignored by everyone else.&lt;/li&gt;
+&lt;li&gt;Assembly language: India. Massive, deep, vitally important but full of problems.&lt;/li&gt;
+&lt;li&gt;Cobol: Russia. Once very powerful and written with managers in mind; but has ended up losing out.&lt;/li&gt;
+&lt;li&gt;SQL and PL/SQL: Germany. A solid, reliable workhorse of a language.&lt;/li&gt;
+&lt;li&gt;Javascript: Italy. Massively influential and loved by everyone, but breaks down easily.&lt;/li&gt;
+&lt;li&gt;Scala: Hungary. Technically pure and correct, but suffers from an unworkable obsession with grammar that will limit its future success.&lt;/li&gt;
+&lt;li&gt;C: Norway. Tough and dynamic, but not very exciting.&lt;/li&gt;
+&lt;li&gt;PHP: Brazil. A lot of beauty springs from it and it flaunts itself a lot, but it's secretly very conservative.&lt;/li&gt;
+&lt;li&gt;LISP: Iceland. Incredibly clever and well-organised, but icy and remote.&lt;/li&gt;
+&lt;li&gt;Perl: China. Able to do apparently almost anything, but rather inscrutable.&lt;/li&gt;
+&lt;li&gt;Swift: Japan. One minute it's nowhere, the next it's everywhere and your mobile phone relies on it.&lt;/li&gt;
+&lt;li&gt;C#: Switzerland. Beautiful and well thought-out, but expect to pay a lot if you want to get seriously involved.&lt;/li&gt;
+&lt;li&gt;R: Liechtenstein. Probably really amazing, especially if you're into big numbers, but no-one knows what it actually does.&lt;/li&gt;
+&lt;li&gt;Awk: North Korea. Stubbornly resists change, and its users appear to be unnaturally fond of it for reasons we can only speculate on.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;[&lt;a href="http://www.quora.com/If-programming-languages-were-countries-which-country-would-each-language-represent?srid=KO3"&gt;Fonte&lt;/a&gt;]&lt;/p&gt;</content><category term="linguaggi di programmazione"></category></entry><entry><title>Deploy di Pelican su GitHub e githook</title><link href="/2015/02/06/deploy-di-pelican-su-github-e-githook/" rel="alternate"></link><published>2015-02-06T15:07:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-06:/2015/02/06/deploy-di-pelican-su-github-e-githook/</id><summary type="html">&lt;p&gt;Sto ancora giocherellando con &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; e cercavo un modo per committare i nuovi post UNA volta sola, senza dover committare una seconda volta gli html generati.&lt;/p&gt;
+&lt;p&gt;Ci sono riuscito abbastanza facilmente, ecco come:&lt;/p&gt;
+&lt;h2&gt;Prerequisiti:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.python.org/downloads/"&gt;Python&lt;/a&gt; &amp;gt;= 2.7&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://git-scm.com/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;un account su &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;tanta pazienza&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cominciamo:&lt;/p&gt;
+&lt;h2&gt;Setup dell'ambiente&lt;/h2&gt;
+&lt;p&gt;Apriamo una shell …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Sto ancora giocherellando con &lt;a href="http://blog.getpelican.com/"&gt;Pelican&lt;/a&gt; e cercavo un modo per committare i nuovi post UNA volta sola, senza dover committare una seconda volta gli html generati.&lt;/p&gt;
+&lt;p&gt;Ci sono riuscito abbastanza facilmente, ecco come:&lt;/p&gt;
+&lt;h2&gt;Prerequisiti:&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.python.org/downloads/"&gt;Python&lt;/a&gt; &amp;gt;= 2.7&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://git-scm.com/"&gt;Git&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;un account su &lt;a href="https://github.com/"&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;tanta pazienza&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Cominciamo:&lt;/p&gt;
+&lt;h2&gt;Setup dell'ambiente&lt;/h2&gt;
+&lt;p&gt;Apriamo una shell e scriviamo&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;pip install virtualenvwrapper
+mkvirtualenv pelican
+pip install pelican markdown
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;e dovremmo avere un virtualenv con pelican pronto all'installazione.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;God bless virtualenvwrapper&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Ora creaimo la cartella dove installeremo pelican:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;mkdir pelican
+&lt;span class="nb"&gt;cd&lt;/span&gt; pelican
+pelican-quickstart
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;a sto punto partirà l'installazione vera e propria, rispondete a tutte le domande ed è fatta.&lt;/p&gt;
+&lt;h2&gt;Deploy su GitHub&lt;/h2&gt;
+&lt;p&gt;Su GitHub creiamo due nuovi repository con nome &lt;strong&gt;&lt;em&gt;username&lt;/em&gt;.github.io&lt;/strong&gt; e &lt;strong&gt;&lt;em&gt;username&lt;/em&gt;.github.io-source&lt;/strong&gt;, (dove &lt;em&gt;username&lt;/em&gt; è chiaramente il vostro username di github).&lt;/p&gt;
+&lt;p&gt;Quello "-source" potete chiamarlo come vi pare.&lt;/p&gt;
+&lt;p&gt;Ora linkiamo il "-source" alla folder nella quale abbiamo appena installato pelican e committiamo tutto&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git init
+&lt;span class="nb"&gt;echo&lt;/span&gt; &lt;span class="s2"&gt;&amp;quot;output&amp;quot;&lt;/span&gt; &amp;gt; .gitignore
+git remote add origin git@github.com:username/username.github.io-source.git
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;dopodichè creiamo un submodule nella cartella output con&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git submodule add -f git@github.com:username/username.github.io.git output
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;a questo punto entriamo nella folder .git\hooks e creiamo il "trigger" che rigenererà il sito ad ogni push e committerà i file statici sul repository html&lt;/p&gt;
+&lt;p&gt;creiamo quindi un nuovo file "pre-push"&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="ch"&gt;#!/bin/sh&lt;/span&gt;
+&lt;span class="nb"&gt;cd&lt;/span&gt; output
+git fetch --all
+find * -maxdepth &lt;span class="m"&gt;0&lt;/span&gt; -name &lt;span class="s1"&gt;&amp;#39;.git&amp;#39;&lt;/span&gt; -prune -o -exec rm -rf &lt;span class="s1"&gt;&amp;#39;{}&amp;#39;&lt;/span&gt; &lt;span class="s1"&gt;&amp;#39;;&amp;#39;&lt;/span&gt;
+&lt;span class="nb"&gt;cd&lt;/span&gt; ..
+pelican content -s publishconf.py
+&lt;span class="nb"&gt;cd&lt;/span&gt; output
+git add --all .
+git commit -am &lt;span class="s2"&gt;&amp;quot;automatic commit&amp;quot;&lt;/span&gt;
+git push origin master
+
+&lt;span class="nb"&gt;exit&lt;/span&gt; &lt;span class="m"&gt;0&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;adesso, tornando nella root di pelican potremmo fare&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git add .
+git commit -am &lt;span class="s2"&gt;&amp;quot;hello pelican&amp;quot;&lt;/span&gt;
+git push origin master
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;e se tutto è ok, dovrebbe partire da sola la seconda commit/push sul repository statico!&lt;/p&gt;</content><category term="git"></category><category term="githook"></category><category term="pelican"></category></entry><entry><title>Hello World?</title><link href="/2015/02/06/hello-world-1/" rel="alternate"></link><published>2015-02-06T10:11:00+01:00</published><updated>2015-03-26T13:29:29+01:00</updated><author><name>Doc</name></author><id>tag:None,2015-02-06:/2015/02/06/hello-world-1/</id><summary type="html">&lt;p&gt;Questo più che un post è un test per vedere come funziona pelican...&lt;/p&gt;
+&lt;p&gt;Non escludo di poterlo adottare al posto di wordpress in quanto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;funziona &lt;strong&gt;solo&lt;/strong&gt; da blog&lt;/li&gt;
+&lt;li&gt;è scritto in python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Effettivamente un blog serve solo pagine statiche, quindi non serve una tonnellata di php, un database, n plugin …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Questo più che un post è un test per vedere come funziona pelican...&lt;/p&gt;
+&lt;p&gt;Non escludo di poterlo adottare al posto di wordpress in quanto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;funziona &lt;strong&gt;solo&lt;/strong&gt; da blog&lt;/li&gt;
+&lt;li&gt;è scritto in python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Effettivamente un blog serve solo pagine statiche, quindi non serve una tonnellata di php, un database, n plugin di caching e quant'altro.&lt;/p&gt;
+&lt;p&gt;Per i commenti userò Disqus, appena capirò come metterli&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;e vabbè, bootstrap mi piace, non ci posso fare niente...&lt;/em&gt;&lt;/p&gt;</content><category term="blog"></category></entry></feed>

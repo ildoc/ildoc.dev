@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>ildoc's - 2012</title><link href="/" rel="alternate"></link><link href="/feeds/2012.atom.xml" rel="self"></link><id>/</id><updated>2015-03-24T16:09:17+01:00</updated><entry><title>Viaggio nel deepweb</title><link href="/2012/11/11/viaggio-nel-deepweb/" rel="alternate"></link><published>2012-11-11T10:25:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-11-11:/2012/11/11/viaggio-nel-deepweb/</id><summary type="html">&lt;p&gt;Qualche anno fa è spuntato fuori Anonymous, il “collettivo hacker” con
+cui ormai i giornalisti vanno a nozze, aggiungendolo allo scarso “elenco
+dei paroloni che fanno effetto su chi non ne sa un cazzo”.&lt;/p&gt;
+&lt;p&gt;Non so se ci avete fatto caso, ma leggendo articoli di informatica su
+siti e giornali …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Qualche anno fa è spuntato fuori Anonymous, il “collettivo hacker” con
+cui ormai i giornalisti vanno a nozze, aggiungendolo allo scarso “elenco
+dei paroloni che fanno effetto su chi non ne sa un cazzo”.&lt;/p&gt;
+&lt;p&gt;Non so se ci avete fatto caso, ma leggendo articoli di informatica su
+siti e giornali vari come repubblica/giornale/unità/libero/secolo
+xix/ecc. ci sono sempre parole in corsivo, come a voler dire che il
+giornalista le ha scritte perchè sa che fanno figo ma non ne sa il
+significato.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Hacker&lt;br&gt;
+Anonymous&lt;br&gt;
+Wikileaks&lt;br&gt;
+Proxy&lt;br&gt;
+Deep web&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Parole che il giornalista preferirebbe non inserire e piuttosto fare un
+giro di parole assurdo, ma che invece è costretto a mettere.&lt;/p&gt;
+&lt;p&gt;Sono articoli di informatica?&lt;br&gt;
+Quindi si presume che chi legge sappia un minimo della materia, o che
+comunque sia in grado di approfondire su dizionario/wikipedia/salcazzo i
+termini che non capisce.&lt;/p&gt;
+&lt;p&gt;Comunque, ho divagato.&lt;/p&gt;
+&lt;p&gt;Ero già stato su 4chan prima che Anonymous diventasse l’entità che è
+ora, e qualcosa (poco) già sapevo delle origini e del proliferare.&lt;br&gt;
+Avendo poi seguito lo svolgersi delle operazioni, ho deciso di
+approfondire, affascinato dall’organizzazione di questa gente.&lt;/p&gt;
+&lt;p&gt;L’anonimato.&lt;br&gt;
+Una cosa che su internet tende ad essere sempre più difficile mantenere,
+tutto grazie alla spasmodica necessità di stipare ogni singolo fottuto
+pixel con della pubblicità sempre più mirata all’utente, presentata in
+contenuti e maniere differenti a seconda dei visitatori, calcolata sulla
+loro cronologia, sulle loro abitudini, sui loro dati anagrafici e
+preferenze, raccolte click dopo click.&lt;/p&gt;
+&lt;p&gt;Certo, se compi azioni poco lecite questo grande fratello risulta essere
+un dettaglio fastidioso, ecco uno dei motivi che porta la gente a
+trasferire le proprie attività nel deep web.&lt;/p&gt;
+&lt;p&gt;Il deep web è una sorta di “internet parallelo”, dove l’anonimato e la
+sicurezza sono fondamentali.&lt;br&gt;
+Si dice che il surface web, ossia la parte di internet in chiaro, quella
+che frequentiamo tutti i giorni, sia solo il 20% del web, quindi provate
+a immaginare l’estensione della rete nascosta.&lt;br&gt;
+Non essendo indicizzabile dai motori di ricerca, permette la creazione
+di community legate ad argomenti delicati, come ad esempio il carding,
+ossia le frodi con le carte di credito.&lt;/p&gt;
+&lt;p&gt;In merito ho avuto l’occasione di leggere il libro
+&lt;a href="http://www.amazon.it/gp/product/8804619368/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=ner08-21&amp;amp;linkCode=as2&amp;amp;camp=3370&amp;amp;creative=24114&amp;amp;creativeASIN=8804619368"&gt;Mafia.com&lt;/a&gt;
+in cui si racconta dei siti di carding russi e ucraini, della loro
+storia e delle vicende di personaggi importanti di quelle community.
+Consigliato.&lt;/p&gt;
+&lt;p&gt;Quindi come funziona?&lt;br&gt;
+Ci sono vari sistemi: reti decentralizzate (freenet), protocolli di
+onion routing (tor), software di distribuzione p2p (osiris) e molti
+altri, noti, meno noti e completamente sconosciuti.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://it.wikipedia.org/wiki/Tor_(software)"&gt;Tor&lt;/a&gt; forse è la più
+estesa, anche perchè è relativamente facile da raggiungere, infatti è
+sufficiente scaricare il pacchetto dal sito del progetto
+(&lt;a href="https://www.torproject.org/"&gt;&lt;/a&gt;&lt;a href="https://www.torproject.org/"&gt;https://www.torproject.org/&lt;/a&gt;&lt;/a&gt;,
+estrarlo e avviarlo.&lt;/p&gt;
+&lt;p&gt;Il software, cifra la nostra connessione e la fa rimbalzare in giro per
+il mondo attraverso n nodi, rendendoci di fatto difficilmente
+rintracciabili.&lt;br&gt;
+Inoltre ci permette di accedere agli hidden services, ossia domini con
+estenzione .onion, il cuore della rete tor.&lt;/p&gt;
+&lt;p&gt;Bene, ma ora che siamo connessi dove andiamo? Cosa cerchiamo?&lt;br&gt;
+Non esiste un motore di ricerca, e google sicuramente non ci può
+aiutare, quindi come si fa?&lt;br&gt;
+Alla vecchia maniera, con le liste di link.&lt;/p&gt;
+&lt;p&gt;Per questo possiamo fare riferimento a “The hidden wiki”
+(&lt;a href="http://kpvz7ki2v5agwt35.onion/wiki/index.php/Main_Page"&gt;kpvz7ki2v5agwt35.onion/wiki/index.php/Main_Page&lt;/a&gt;),
+una lunga lista di link suddivisi bene o male in categorie.&lt;br&gt;
+Una buon’anima ne ha messo online una versione aggiornata, mantenuta e
+meglio organizzata
+(&lt;a href="http://3suaolltfj2xjksb.onion/hiddenwiki/index.php/Main_Page"&gt;&lt;/a&gt;&lt;a href="http://3suaolltfj2xjksb.onion/hiddenwiki/index.php/Main_Page"&gt;http://3suaolltfj2xjksb.onion/hiddenwiki/index.php/Main_Page&lt;/a&gt;&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Da qui possiamo cominciare a dare un’occhiata di quello che si può
+trovare nel deep web.&lt;/p&gt;
+&lt;p&gt;Purtroppo a fare da padrona è la pedopornografia (&lt;a href="http://it.wikipedia.org/wiki/Anonymous#Operazione_Darknet"&gt;ma attenzione ad
+associarla agli
+anon&lt;/a&gt;), ma si
+trovano anche tantissime attività commerciali di &lt;u&gt;qualsiasi&lt;/u&gt; tipo
+(carte di credito, account, droghe, oggetti rubati, armi, omicidi su
+commissione, traffico di organi, identità false, documenti falsi, ecc.),
+community di estremisti o dissidenti, community di hacker.&lt;br&gt;
+Ci sono anche social network, servizi di chat e mail, rigorosamente
+tutto anonimo.&lt;/p&gt;
+&lt;p&gt;Ovviamente i siti raggiungibili tramite la wiki sono abbastanza fuffa,
+le community che non si vogliono far trovare non si trovano, o comunque
+hanno rigidissime selezioni all’ingresso…&lt;/p&gt;
+&lt;p&gt;Personalmente trovo la cosa estremamente interessante, è la libertà di
+azione e pensiero senza il dover sottostare a nessuna regola o
+legislazione, è l’internet allo stato puro.&lt;/p&gt;
+&lt;p&gt;Per ora mi sono limitato al “guardare e non toccare”, nel senso che non
+partecipo a nessuna community (emi fido poco dei link che trovo).&lt;/p&gt;
+&lt;p&gt;Se volete dare un’occhiata senza dover installare nulla potete farlo
+attraverso questo link:
+&lt;a href="http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page"&gt;&lt;/a&gt;&lt;a href="http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page"&gt;http://3suaolltfj2xjksb.onion.to/hiddenwiki/index.php/Main_Page&lt;/a&gt;&lt;/a&gt;&lt;/p&gt;</content><category term="anonymous"></category><category term="deepweb"></category><category term="tor"></category></entry><entry><title>Blue Water Operations - James C. Copertino</title><link href="/2012/04/22/blue-water-operations-james-c-copertino/" rel="alternate"></link><published>2012-04-22T11:28:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-22:/2012/04/22/blue-water-operations-james-c-copertino/</id><summary type="html">&lt;p&gt;Una portacontainer battente bandiera francese viene assaltata dai pirati
+al largo della Somalia.&lt;br&gt;
+"Rommel", nome di battaglia di un pilota americano, assiste per caso
+alla scena durante quello che avrebbe dovuto essere un normale volo di
+ricognizione e decide di intervenire.&lt;br&gt;
+Il suo aereo viene però abbattuto, e il pilota …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Una portacontainer battente bandiera francese viene assaltata dai pirati
+al largo della Somalia.&lt;br&gt;
+"Rommel", nome di battaglia di un pilota americano, assiste per caso
+alla scena durante quello che avrebbe dovuto essere un normale volo di
+ricognizione e decide di intervenire.&lt;br&gt;
+Il suo aereo viene però abbattuto, e il pilota, eiettatosi prima dello
+schianto, viene rapito da uno dei pirati, un pericoloso terrorista di
+Al-Quaeda.&lt;br&gt;
+Parte quindi una rocambolesca missione di soccorso alla ricerca
+dell’ostaggio, con colpo di scena finale.&lt;/p&gt;
+&lt;p&gt;Un romanzo molto adrenalinico, descritto nei minimi particolari da
+Copertino, ex ufficiale dei corpi speciali che, un pò sullo stile di Tom
+Clancy, non lascia indietro nessun dettaglio.&lt;br&gt;
+In pochi capitoli sembra quasi di conoscere da sempre la vita di bordo
+su una portaerei ed è un attimo trovarsi sul ponte di comando o seduto
+su un f18 sulla pista di decollo!&lt;/p&gt;
+&lt;p&gt;NOTA: Nella versione Kindle ci sono alcuni refusi che però non
+interferiscono in nessun modo con la scorrevolezza del racconto.&lt;/p&gt;</content><category term="libri"></category><category term="copertino"></category><category term="recensioni"></category></entry><entry><title>Tornatevene su Facebook.</title><link href="/2012/04/16/tornatevene-su-facebook/" rel="alternate"></link><published>2012-04-16T10:59:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-16:/2012/04/16/tornatevene-su-facebook/</id><summary type="html">&lt;p&gt;Da un pò di tempo a questa parte, Twitter si è riempito di una marea di
+bimbiminkia che infestano come una piaga ogni angolo del web, spammando
+a raffica i loro “idoli” quali Justin Bieber, Selena Gomez, One
+Direction, Jonas Brothers, Demi Lovato e altra gente della quale a
+NESSUNO …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Da un pò di tempo a questa parte, Twitter si è riempito di una marea di
+bimbiminkia che infestano come una piaga ogni angolo del web, spammando
+a raffica i loro “idoli” quali Justin Bieber, Selena Gomez, One
+Direction, Jonas Brothers, Demi Lovato e altra gente della quale a
+NESSUNO importa niente.&lt;/p&gt;
+&lt;p&gt;Questi “fan” sono convinti che fare arrivare i nomi delle loro star
+preferite nei trending topics serva a convincerle a farle venire in
+Italia, e quindi ogni santissimo giorno ci tocca vedere nei TT spazio
+rubato a notizie che sarebbero senza dubbio più utili e interessanti.&lt;/p&gt;
+&lt;p&gt;Quindi, cari “fan”, Twitter non è il luogo adatto a dimostrare il vostro
+affetto alle vostre star e dare battaglia a chiunque dica il contrario.&lt;/p&gt;
+&lt;p&gt;Tornatevene a fare le gare di chi ha più “mi piace” sulle pagine di
+Facebook e chi ha più iscritti su forumfree/forumcommunity.&lt;/p&gt;
+&lt;p&gt;Lasciate lo spazio a notizie di attualità, cosa a cui serve Twitter.&lt;br&gt;
+Credetemi, al di fuori del vostro mondo fatto di unicorni colorati,
+brillantini e stelle filanti, non frega niente a nessuno di quanti denti
+da latte ha perso Justin Bieber ieri.&lt;/p&gt;</content><category term="facebook"></category><category term="twitter"></category></entry><entry><title>Vietato trollare?</title><link href="/2012/04/05/vietato-trollare/" rel="alternate"></link><published>2012-04-05T08:58:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-05:/2012/04/05/vietato-trollare/</id><summary type="html">&lt;p&gt;In Arizona è al varo una proposta di legge che farà senz’altro
+discutere.&lt;br&gt;
+Se venisse approvata, i commenti aggressivi e provocatori sui social
+network più famosi (Facebook e Twitter) potrebbero diventare addirittura
+un reato.&lt;/p&gt;
+&lt;p&gt;Nello stato americano infatti, da diverse settimane si discute sul
+riformare il sistema di leggi …&lt;/p&gt;</summary><content type="html">&lt;p&gt;In Arizona è al varo una proposta di legge che farà senz’altro
+discutere.&lt;br&gt;
+Se venisse approvata, i commenti aggressivi e provocatori sui social
+network più famosi (Facebook e Twitter) potrebbero diventare addirittura
+un reato.&lt;/p&gt;
+&lt;p&gt;Nello stato americano infatti, da diverse settimane si discute sul
+riformare il sistema di leggi riguardante lo stalking e le minacce
+telefoniche, cercando di adattarle ai mezzi di comunicazione attualmente
+più utilizzati, ossia i social network.&lt;br&gt;
+L’idea potrebbe essere anche buona, ma come giustamente è stato fatto
+notare, si tratta di una legge troppo generica nel suo voler fermare i
+commenti “offensivi” o “fastidiosi” diventando inequivocabilmente uno
+strumento di censura.&lt;/p&gt;
+&lt;p&gt;David Horowitz, CEO del gruppo Media Coalition in difesa del Primo
+Emendamento, ha messo per iscritto le proprie critiche in una lettera
+indirizzata al governatore dell’Arizona, Jan Brewer:&lt;br&gt;
+“Il governo potrebbe criminalizzare parole che arrivino al livello di
+minaccia e molti stati hanno leggi che lo fanno. Ma questo disegno
+prende una legge concepita per fronteggiare chiamate telefoniche
+fastidiose applicandola a siti web, blog, gruppi e altri tipi di
+comunicazione via Internet.”&lt;/p&gt;
+&lt;p&gt;In sintesi quindi, questa legge potrebbe portare a ottenere cause nei
+confronti di chi posta commenti per così dire “scomodi” sulla rete.&lt;br&gt;
+Comunque la proposta potrebbe diventare effettiva entro pochi giorni, e,
+secondo Associated Press, ci sarebbero altri paesi intenzionati a
+seguire la strada aperta dall’Arizona: una strada sicuramente pericolosa
+per la libertà d’espressione.&lt;/p&gt;
+&lt;p&gt;Forse, se opportunamente rivista e adeguatamente corretta, potrebbe
+essere una buona arma da utilizzare contro il fenomeno sempre più
+crescente dello stalking, ma senza dubbio, ora come ora è solo una
+scintilla che rischia di far esplodere proteste da parte di tutta
+internet.&lt;/p&gt;</content><category term="arizona"></category><category term="libertà di parola"></category><category term="news"></category></entry><entry><title>Anonymous: la grande truffa(?)</title><link href="/2012/04/03/anonymous-la-grande-truffa/" rel="alternate"></link><published>2012-04-03T12:58:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-04-03:/2012/04/03/anonymous-la-grande-truffa/</id><summary type="html">&lt;p&gt;Girovagando per Amazon alla ricerca del prossimo libro da leggere, mi
+sono imbattuto in questo breve saggio versione kindle: &lt;a href="http://www.amazon.it/gp/product/B007J6Y1KS/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=filippogiomi-21&amp;amp;linkCode=as2&amp;amp;camp=3370&amp;amp;creative=24114&amp;amp;creativeASIN=B007J6Y1KS" title="Anonymous. La grande truffa"&gt;Anonymous. La
+grande
+truffa&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Un pò scettico e un pò curioso l’ho acquistato, spinto anche dal
+bassissimo prezzo (solo 89 centesimi).&lt;br&gt;
+Tra le recensioni si vocifera che il libro sia …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Girovagando per Amazon alla ricerca del prossimo libro da leggere, mi
+sono imbattuto in questo breve saggio versione kindle: &lt;a href="http://www.amazon.it/gp/product/B007J6Y1KS/ref=as_li_ss_tl?ie=UTF8&amp;amp;tag=filippogiomi-21&amp;amp;linkCode=as2&amp;amp;camp=3370&amp;amp;creative=24114&amp;amp;creativeASIN=B007J6Y1KS" title="Anonymous. La grande truffa"&gt;Anonymous. La
+grande
+truffa&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Un pò scettico e un pò curioso l’ho acquistato, spinto anche dal
+bassissimo prezzo (solo 89 centesimi).&lt;br&gt;
+Tra le recensioni si vocifera che il libro sia scritto dall’FBI o
+proprio da un Anonymous allo scopo di sviare le tracce.&lt;br&gt;
+Ma poco importa, tanto 99 su 100 è stato scritto da qualcuno che non fa
+parte di nessuna dei due “schieramenti”.&lt;/p&gt;
+&lt;p&gt;Il libro mette a fuoco le varie contraddizioni all’interno del
+movimento, tra cui la principale: è solo una questione di marketing?
+Ogni anno vengono stampate centinaia di migliaia di maschere, magliette,
+felpe, adesivi e chi più ne ha ne metta, tutti recanti il volto di Guy
+Fawkes o frasi del film “V per Vendetta”.&lt;br&gt;
+E che percentuale arriva alla Warner di queste vendite?&lt;/p&gt;
+&lt;p&gt;E l’altro grande interrogativo: e se fosse tutto organizzato da qualche
+agenzia/servizio?&lt;br&gt;
+Per far riflettere su questo aspetto, l’autore spiega come i fratelli
+Wachowski abbiano scelto proprio Hugo Weaving per interpretare V, lo
+stesso attore che in “Matrix” interpreta l’agente Smith.&lt;/p&gt;
+&lt;p&gt;Il senso di ciò, secondo l’autore è che dietro la maschera
+dell’anarchico potrebbe celarsi proprio il sistema che il movimento
+cerca (o sembra?) combattere.&lt;/p&gt;
+&lt;p&gt;Fino a che punto è anarchico Anonymous?&lt;/p&gt;
+&lt;p&gt;Personalmente credo che Anonymous sia più genuino di come lo si dipinge,
+e pur considerando che al suo interno quasi sicuramente c’è del marcio,
+penso che la storia della “macchinazione del governo” sia solamente una
+fantasia di chi ha scritto questo saggio.&lt;/p&gt;
+&lt;p&gt;Comunque ritengo che, nonostante contenga alcuni incredibili
+strafalcioni, il libro sia un ottimo spunto per riflessioni e
+approfondimenti sul “fenomeno Anonymous”.&lt;/p&gt;
+&lt;p&gt;E voi che ne pensate?&lt;/p&gt;</content><category term="anonymous"></category><category term="libri"></category><category term="truffa"></category></entry><entry><title>#kolossalberlusconi</title><link href="/2012/03/28/kolossalberlusconi/" rel="alternate"></link><published>2012-03-28T10:23:00+02:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-03-28:/2012/03/28/kolossalberlusconi/</id><summary type="html">&lt;p&gt;L’ex premier è alla disperata ricerca di un regista &lt;a href="http://nonleggerlo.blogspot.it/2012/03/la-mano-giusta.html" title="Non leggere questo blog!: La mano giusta"&gt;per girare un film
+sulla sua
+vita&lt;/a&gt;
+(che sarà sicuramente obbiettivissimo e svelerà tutti i retroscena sui
+punti meno chiari di questi ultimi 18 anni alla faccia dei sui
+detrattori, SICURAMENTE)&lt;/p&gt;
+&lt;p&gt;Twitter si è mobilitato cercando di andare incontro all …&lt;/p&gt;</summary><content type="html">&lt;p&gt;L’ex premier è alla disperata ricerca di un regista &lt;a href="http://nonleggerlo.blogspot.it/2012/03/la-mano-giusta.html" title="Non leggere questo blog!: La mano giusta"&gt;per girare un film
+sulla sua
+vita&lt;/a&gt;
+(che sarà sicuramente obbiettivissimo e svelerà tutti i retroscena sui
+punti meno chiari di questi ultimi 18 anni alla faccia dei sui
+detrattori, SICURAMENTE)&lt;/p&gt;
+&lt;p&gt;Twitter si è mobilitato cercando di andare incontro all’esigenza di
+trovare un titolo adatto…&lt;/p&gt;
+&lt;p&gt;Seguite l’hashtag
+&lt;a href="https://twitter.com/#!/search/%23kolossalberlusconi" title="#kolossalberlusconi"&gt;#kolossalberlusconi&lt;/a&gt;
+per trovare delle perle di rara bellezza: eccone alcune&lt;/p&gt;
+&lt;p&gt;Craxi driver&lt;br&gt;
+Altrimenti c’arrapiamo&lt;br&gt;
+Palp Fiction&lt;br&gt;
+Lavitola è bella&lt;br&gt;
+O nan il Barbaro&lt;br&gt;
+V come Valletta&lt;br&gt;
+Il Mills verde&lt;br&gt;
+A qualcuno piace calvo&lt;br&gt;
+Analconda&lt;br&gt;
+Il Signore dei Bordelli&lt;br&gt;
+Banana Jones&lt;br&gt;
+Qualcuno volò sul nido del culo&lt;br&gt;
+Lo chiamavano impunità&lt;br&gt;
+Una notte al mausoleo&lt;br&gt;
+La gang del losco&lt;br&gt;
+Harry Fotter&lt;br&gt;
+Kill Mills&lt;br&gt;
+Da Tremonti all’alba&lt;br&gt;
+Io speriamo che me la chiavo&lt;br&gt;
+Tutti pazzi per Ruby&lt;br&gt;
+Angelino e demoni&lt;br&gt;
+Ruby Nud&lt;br&gt;
+20 mila seghe sotto i mari&lt;br&gt;
+Settant’anni in Tupet&lt;br&gt;
+Fotto e mezzo&lt;br&gt;
+Il braccio violento della loggia&lt;br&gt;
+Come rubavamo&lt;br&gt;
+Mara dentro&lt;br&gt;
+Pensavo fosse Mora invece era un calesse&lt;br&gt;
+Vieni avanti Ghedini&lt;br&gt;
+Over the tap&lt;br&gt;
+Flash Guardon&lt;br&gt;
+Prova a prendermi&lt;br&gt;
+Le regole della casa di Silvio&lt;br&gt;
+Febbre da cavillo&lt;br&gt;
+La finestra sul porcile&lt;br&gt;
+Ecce trombo&lt;br&gt;
+Scilipoti’s list&lt;br&gt;
+Transpetting&lt;br&gt;
+Arrapa Nui&lt;br&gt;
+Carfagna meccanica&lt;br&gt;
+Santoro scatenato&lt;br&gt;
+Uomini che odiano le norme&lt;br&gt;
+Tre metri sopra il Cialis&lt;br&gt;
+Era mio papi&lt;br&gt;
+Ben Dur&lt;br&gt;
+Quo evadis?&lt;br&gt;
+…&lt;/p&gt;
+&lt;p&gt;Scusate ma non ho resistito…&lt;/p&gt;
+&lt;p&gt;(lista by: &lt;a href="http://nonleggerlo.blogspot.it/" title="Non leggere questo Blog!"&gt;Non leggere questo
+Blog!&lt;/a&gt;)&lt;/p&gt;</content><category term="twitter"></category><category term="berlusconi"></category><category term="4 da lulz"></category></entry><entry><title>PHP and MySQL Web Development - Luke Welling, Laura Thomson</title><link href="/2012/02/27/php-and-mysql-web-development-luke-welling-laura-thomson/" rel="alternate"></link><published>2012-02-27T14:13:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-02-27:/2012/02/27/php-and-mysql-web-development-luke-welling-laura-thomson/</id><summary type="html">&lt;p&gt;&lt;a href="http://amzn.to/1aZ9mG6"&gt;PHP and MySQL Web Development: Luke Welling, Laura
+Thomson&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Pagine&lt;/strong&gt;: 968&lt;br&gt;
+&lt;strong&gt;Editore&lt;/strong&gt;: Addison Wesley; 4th revised edition. edizione (ottobre
+2008)&lt;br&gt;
+&lt;strong&gt;Lingua&lt;/strong&gt;: Inglese&lt;br&gt;
+&lt;strong&gt;ISBN-10&lt;/strong&gt;: 0672329166&lt;br&gt;
+&lt;strong&gt;ISBN-13&lt;/strong&gt;: 978-0672329166&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://amzn.to/1MRtgS7"&gt;Link ad
+Amazon.it&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cercavo un libro per imparare il php, ne ho trovati molti, ma questo mi
+ha colpito più degli altri.&lt;br&gt;
+Sfogliando …&lt;/p&gt;</summary><content type="html">&lt;p&gt;&lt;a href="http://amzn.to/1aZ9mG6"&gt;PHP and MySQL Web Development: Luke Welling, Laura
+Thomson&lt;/a&gt;&lt;br&gt;
+&lt;strong&gt;Pagine&lt;/strong&gt;: 968&lt;br&gt;
+&lt;strong&gt;Editore&lt;/strong&gt;: Addison Wesley; 4th revised edition. edizione (ottobre
+2008)&lt;br&gt;
+&lt;strong&gt;Lingua&lt;/strong&gt;: Inglese&lt;br&gt;
+&lt;strong&gt;ISBN-10&lt;/strong&gt;: 0672329166&lt;br&gt;
+&lt;strong&gt;ISBN-13&lt;/strong&gt;: 978-0672329166&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://amzn.to/1MRtgS7"&gt;Link ad
+Amazon.it&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Cercavo un libro per imparare il php, ne ho trovati molti, ma questo mi
+ha colpito più degli altri.&lt;br&gt;
+Sfogliando il suo indice, si può notare l’immediatezza con la quale
+questo libro ti mette in mano gli strumenti necessari per cominciare
+subito a programmare invogliandoti nella lettura per scoprire
+passo-passo e attraverso esempi concreti, tutte le possibilità di questo
+incredibile linguaggio.&lt;br&gt;
+Un pò come un papà che insegna al figlio ad andare in bicicletta, i due
+autori forniscono già nel primo capitolo le nozioni principali per
+“togliere le rotelline” e cominciare a pedalare da soli.&lt;/p&gt;
+&lt;p&gt;I &lt;strong&gt;prerequisiti&lt;/strong&gt; per capirci qualcosa sono quasi nulli: conoscenza
+dell’inglese, saper masticare un pochino di html e conoscere i
+fondamentali basilari ed elementari della programmazione&lt;/p&gt;
+&lt;p&gt;Il primo capitolo si chiama appunto “PHP Crash Course”, e ci pone come
+esercizio immediatamente il problema di processare i contenuti di un
+form per ordinare dei pezzi di ricambio su un fantomatico sito di un
+autoricambi, e in un numero ridicolo di pagine si è già in grado di
+capire come elaborare dati passati da una pagina ad un’altra.&lt;br&gt;
+Alla fine del primo capitolo sapremo già destreggiarci egregiamente
+attraverso le funzioni basilari del PHP.&lt;/p&gt;
+&lt;p&gt;Il MySQL, e più in generale i database, vengono invece spiegati da zero,
+permettendo a chiunque di poter sfruttare all’interno dei suoi progetti
+una base dati a cui appoggiarsi.&lt;/p&gt;
+&lt;p&gt;La forza di questo libro sta nel proporre esempi concreti, con problemi
+da risolvere, invece della classica gelida e asettica lista di
+definizioni, e per ogni punto offre possibilità di approfondimenti con
+rimandi alle appendici e ad altri capitoli coinvolgendo il lettore,
+accendendo la sua curiosità spingendolo alla ricerca delle nozioni che
+gli mancano per arrivare ai suoi obbiettivi.&lt;/p&gt;
+&lt;p&gt;Affrontando sempre temi reali, il testo accompagna chi legge nella
+realizzazione di un carrello per un sito di e-commerce, un software per
+gestire una mailing-list o addirittura un forum, osservando per ciascuno
+di essi i punti di forza e le debolezze, sempre con un occhio alla
+sicurezza (ad esempio come preparare la pripria applicazione ad
+eventuali attacchi DDoS o indicando quali sono i potenziali punti deboli
+che potrebbero venir sfruttati da malintenzionati per accedere a dati
+sensibili ecc.) e allegando a ciascun esempio utilissimi consigli sulle
+migliori tecniche da adottare facendo spesso anche dei distinguo
+“temporali” del tipo “Prima si faceva così e invece adesso cosà perchè…”&lt;/p&gt;
+&lt;p&gt;Insomma, il PHP da 0 a 100 in nemmeno mille pagine.&lt;br&gt;
+Questo libro lo sto adorando, ogni pagina sempre di più.&lt;/p&gt;
+&lt;p&gt;Ho cominciato veramente da zero (con però delle basi di MySQL) e prima
+leggendo tutto di seguito, e poi saltellando qui e là a seconda delle
+esigenze, mi sono veramente stupito del poco tempo che ho impiegato a
+imparare come gestire le sessioni, a comunicare con i database e
+costruire pagine dinamiche.&lt;br&gt;
+E il fatto che sia scritto in inglese non deve scoraggiare, è un inglese
+molto semplice e facilmente “decifrabile”.&lt;/p&gt;
+&lt;p&gt;Veramente consigliato!&lt;/p&gt;</content><category term="libri"></category><category term="mysql"></category><category term="php"></category><category term="programmazione"></category><category term="risorse"></category></entry><entry><title>EasyPHP: un webserver in pochi click</title><link href="/2012/02/25/easyphp-un-webserver-in-pochi-click/" rel="alternate"></link><published>2012-02-25T09:42:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-02-25:/2012/02/25/easyphp-un-webserver-in-pochi-click/</id><summary type="html">&lt;p&gt;Primi passi con la programmazione web?&lt;br&gt;
+Stiamo progettando un sito web?&lt;br&gt;
+Vogliamo prendere confidenza con un software o un CMS per la nostra
+community?&lt;/p&gt;
+&lt;p&gt;Ci serve quindi uno spazio dove “giocare”, e probabilmente non abbiamo
+bisogno di complicarci la vita andando a registrare un dominio,
+specialmente nel caso volessimo avere …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Primi passi con la programmazione web?&lt;br&gt;
+Stiamo progettando un sito web?&lt;br&gt;
+Vogliamo prendere confidenza con un software o un CMS per la nostra
+community?&lt;/p&gt;
+&lt;p&gt;Ci serve quindi uno spazio dove “giocare”, e probabilmente non abbiamo
+bisogno di complicarci la vita andando a registrare un dominio,
+specialmente nel caso volessimo avere la possibilità di lavorare anche
+offline.&lt;/p&gt;
+&lt;p&gt;Ecco che quindi ci viene incontro
+&lt;a href="http://easyphp.org/" title="EasyPHP"&gt;EasyPHP&lt;/a&gt;, una piattaforma completa che
+in qualche minuto ci permette di avere un ambiente di prova completo di
+tutto.&lt;/p&gt;
+&lt;p&gt;Una volta
+&lt;a href="http://www.easyphp.org/download.php" title="Download EasyPHP"&gt;scaricato&lt;/a&gt; e
+installato il pacchetto, avremo a disposizione il servizio dell’ultima
+versione di Apache, l’interprete PHP, un database MySql accessibile
+anche tramite PHPMyAdmin e tanto altro ancora, e non dovremo
+preoccuparci di niente perchè è tutto già configurato!&lt;/p&gt;
+&lt;p&gt;A questo punto, accedendo a &lt;a href="http://127.0.0.1/home"&gt;http://127.0.0.1/home&lt;/a&gt; oppure a
+http://localhost/home dal nostro browser, avremo sottomano il pannello
+di amministrazione di EasyPHP.&lt;/p&gt;
+&lt;p&gt;Come si potrà notare, nella Tray Bar sarà comparsa l’icona del
+programma.&lt;br&gt;
+Facendo un click destro sopra di essa e scegliendo “Esplora” si avrà
+accesso alla cartella “www” dove si possono inserire i file che saranno
+visibili all’indirizzo &lt;a href="http://127.0.0.1/"&gt;http://127.0.0.1/&lt;/a&gt; o http://localhost/.&lt;/p&gt;
+&lt;p&gt;Per quanto riguarda il database, l’installazione provvede a creare un
+utente “root” senza password, ed è gestibile tramite l’interfaccia di
+PHPMyAdmin o anche collegandosi con tool esterni come MySql Query
+Browser specificando 127.0.0.1 come ip del server.&lt;/p&gt;
+&lt;p&gt;Ed eccoci pronti a sperimentare, proprio come se fossimo su un hosting
+“vero”, con però la comodità di non dover passare per ftp o shell ssh.&lt;/p&gt;
+&lt;p&gt;Come si consiglia nel sito ufficiale però, questo è solo uno strumento
+di testing e non è adatto a sopperire alle esigenze di chi cerca un
+webserver vero e proprio per mettere online le proprie cose.&lt;br&gt;
+Per quello è bene installare e configurare tutti i componenti uno per
+uno e non accontentarsi di soluzioni già pronte per evitare di incappare
+in spiacevoli inconvenienti, specialmente per quanto riguarda la
+sicurezza dei dati.&lt;/p&gt;</content><category term="risorse"></category><category term="easyphp"></category><category term="guida"></category><category term="guide"></category></entry><entry><title>Spostare Wordpress da locale a live</title><link href="/2012/02/23/spostare-wordpress-da-locale-a-live/" rel="alternate"></link><published>2012-02-23T16:36:00+01:00</published><updated>2015-03-24T16:09:17+01:00</updated><author><name>Doc</name></author><id>tag:None,2012-02-23:/2012/02/23/spostare-wordpress-da-locale-a-live/</id><summary type="html">&lt;p&gt;Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come
+&lt;a href="http://www.wampserver.com/en/"&gt;Wamp&lt;/a&gt; o
+&lt;a href="2012-02-25_easyphp_un_webserver_in_pochi_click.md" title="EasyPHP: un webserver in pochi click"&gt;EasyPHP&lt;/a&gt;
+per fare prove ed esperimenti.&lt;br&gt;
+Ma come fare se poi si vuole rendere pubblico il proprio lavoro?&lt;br&gt;
+Spesso basta semplicemente spostare qualche file nella cartella www del
+proprio webserver e il gioco è fatto …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Chi si diverte a “smanettare” sul web spesso usa un ambiente locale come
+&lt;a href="http://www.wampserver.com/en/"&gt;Wamp&lt;/a&gt; o
+&lt;a href="2012-02-25_easyphp_un_webserver_in_pochi_click.md" title="EasyPHP: un webserver in pochi click"&gt;EasyPHP&lt;/a&gt;
+per fare prove ed esperimenti.&lt;br&gt;
+Ma come fare se poi si vuole rendere pubblico il proprio lavoro?&lt;br&gt;
+Spesso basta semplicemente spostare qualche file nella cartella www del
+proprio webserver e il gioco è fatto, altre volte bisogna lottare con
+dipendenze di file e database.&lt;/p&gt;
+&lt;p&gt;Oggi, dopo vari test, ero riuscito ad ottenere una combinazione di
+plugin ottimale per il mio Wordpress e volevo mettere online quanto
+fatto, senza rischiare di perdere nulla.&lt;/p&gt;
+&lt;p&gt;Ed ecco come ho fatto, in pochi e semplici passaggi:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Ho disabilitato TUTTI i plugin dal Wordpress nell’ambiente di prova&lt;/li&gt;
+&lt;li&gt;Ho esportato il database in un file .sql&lt;/li&gt;
+&lt;li&gt;Ho editato il file andando a sostituire tutte le occorrenze di
+    “http://127.0.0.1” con “http://miosito.it”&lt;/li&gt;
+&lt;li&gt;Ho installato un Wordpress nuovo di zecca sul mio host&lt;/li&gt;
+&lt;li&gt;Ho sostituito la cartella wp-content del nuovo Wordpress con quella
+    dell’ambiente di prova&lt;/li&gt;
+&lt;li&gt;Ho cancellato il nuovo database e l’ho sostituito con il file .sql
+    che ho esportato ed editato prima&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;em&gt;Et voilà!&lt;/em&gt;&lt;br&gt;
+Il gioco è fatto!&lt;/p&gt;
+&lt;p&gt;Dopodichè non mi è rimasto altro da fare che entrare nel pannello di
+controllo del mio nuovo Wordpress, riattivare tutti i plugin e andare a
+impostare tutte le opzioni come meglio pensavo.&lt;/p&gt;
+&lt;p&gt;Semplice, no?&lt;/p&gt;</content><category term="wordpress"></category><category term="easyphp"></category></entry></feed>
