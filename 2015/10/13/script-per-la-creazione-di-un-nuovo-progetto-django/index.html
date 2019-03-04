@@ -18,22 +18,22 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <!-- Style Meta Data -->
-    <link rel="stylesheet" href="https://ildoc.it/theme/pelican-blue/static/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="https://ildoc.it/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://ildoc.dev/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://ildoc.dev/theme/pelican-blue/static/css/pygments.css" type="text/css" />
 
     <!-- Feed Meta Data -->
-    <link href="https://ildoc.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    <link href="https://ildoc.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
     />  
     <!-- Twitter Feed -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="">
     <meta name="twitter:image" content=""> 
 <meta name="twitter:creator" content="">
-<meta name="twitter:url" content="https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/">
+<meta name="twitter:url" content="https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/">
 <meta name="twitter:title" content="ildoc's ~ Script per la creazione di un nuovo progetto Django">
 <meta name="twitter:description" content="Per semplificarmi un po&#39; la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da windows) #!/bin/bash YEAR=$(date +&#34;%Y&#34;) echo &#34;[+]Creazione env&#34; python3 -m venv /envs/$1 source /envs/$1 …">
 
-<link rel="canonical" href="https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/" />
+<link rel="canonical" href="https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/" />
 
 <!-- Facebook Meta Data -->
 <meta property="og:title" content="ildoc's ~ Script per la creazione di un nuovo progetto Django" />
@@ -43,7 +43,7 @@
 <body>
     <!-- Sidebar -->
     <aside>
-        <!--<center><a href="https://ildoc.it"><img id="avatar" src=""></a></center>-->
+        <!--<center><a href="https://ildoc.dev"><img id="avatar" src=""></a></center>-->
         <h1><a href="/">ildoc's</a></h1>
 
         <nav class="nav">
@@ -57,9 +57,9 @@
 
         <p class="social">
              <a href="https://twitter.com/il_doc" target="_blank"><img
-                        src="https://ildoc.it/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
-                        src="https://ildoc.it/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="https://ildoc.it/feeds/all.atom.xml" rel="alternate">
-                <img src="https://ildoc.it/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+                        src="https://ildoc.dev/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="https://ildoc.dev/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="https://ildoc.dev/feeds/all.atom.xml" rel="alternate">
+                <img src="https://ildoc.dev/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
 
         <p>
             <a href="https://stackexchange.com/users/1672100">
@@ -73,10 +73,10 @@
     <article>
 <section id="content">
     <article>
-        <h2 class="post_title post_detail"><a href="https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/" rel="bookmark" title="Permalink to Script per la creazione di un nuovo progetto Django">Script per la creazione di un nuovo progetto Django</a></h2>
-        <span class="post_date">mar 13 ottobre 2015</span>
-        <span>Tags : </span>          <span><a href="https://ildoc.it/tag/django.html">django </a></span>          <div class="entry-content blog-post">
-            <p>Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da <a href="https://ildoc.it/2015/03/02/django-e-virtualenv-su-windows/">windows</a>)</p>
+        <h2 class="post_title post_detail"><a href="https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/" rel="bookmark" title="Permalink to Script per la creazione di un nuovo progetto Django">Script per la creazione di un nuovo progetto Django</a></h2>
+        <span class="post_date">Tue 13 October 2015</span>
+        <span>Tags : </span>          <span><a href="https://ildoc.dev/tag/django.html">django </a></span>          <div class="entry-content blog-post">
+            <p>Per semplificarmi un po' la vita mi sono fatto un piccolo scriptino per facilitarmi la creazione di un nuovo progetto Django, con annesso ambiente virtuale (e pure un .bat per quando sviluppo da <a href="https://ildoc.dev/2015/03/02/django-e-virtualenv-su-windows/">windows</a>)</p>
 <div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 <span class="nv">YEAR</span><span class="o">=</span><span class="k">$(</span>date +<span class="s2">&quot;%Y&quot;</span><span class="k">)</span>
 
@@ -98,49 +98,49 @@ mkdir templates
 mkdir templates/admin
 
 <span class="nb">echo</span> <span class="s2">&quot;[+]Creazione .gitignore&quot;</span>
-cat <span class="s">&lt;&lt;EOF &gt; .gitignore</span>
-<span class="s">*.py[cod]</span>
-<span class="s">*.sqlite3</span>
+cat <span class="p">&amp;</span>lt<span class="p">;&amp;</span>lt<span class="p">;</span>EOF <span class="p">&amp;</span>gt<span class="p">;</span> .gitignore
+*.py<span class="o">[</span>cod<span class="o">]</span>
+*.sqlite3
 
-<span class="s">assets/</span>
-<span class="s">*/__pycache__</span>
+assets/
+*/__pycache__
 
-<span class="s">access.log</span>
-<span class="s">error.log</span>
-<span class="s">EOF</span>
+access.log
+error.log
+EOF
 
-cat <span class="s">&lt;&lt;EOF &gt; windows.bat</span>
-<span class="s">start c:\Envs\$1\Scripts\activate.bat</span>
-<span class="s">atom .</span>
-<span class="s">EOF</span>
+cat <span class="p">&amp;</span>lt<span class="p">;&amp;</span>lt<span class="p">;</span>EOF <span class="p">&amp;</span>gt<span class="p">;</span> windows.bat
+start c:<span class="se">\E</span>nvs<span class="se">\$</span><span class="m">1</span><span class="se">\S</span>cripts<span class="se">\a</span>ctivate.bat
+atom .
+EOF
 
 <span class="nb">echo</span> <span class="s2">&quot;[+]Creazione LICENSE&quot;</span>
-cat <span class="s">&lt;&lt;EOF &gt; LICENSE</span>
-<span class="s">The MIT License (MIT)</span>
+cat <span class="p">&amp;</span>lt<span class="p">;&amp;</span>lt<span class="p">;</span>EOF <span class="p">&amp;</span>gt<span class="p">;</span> LICENSE
+The MIT License <span class="o">(</span>MIT<span class="o">)</span>
 
-<span class="s">Copyright (c) $YEAR $1 (ildoc.it)</span>
+Copyright <span class="o">(</span>c<span class="o">)</span> <span class="nv">$YEAR</span> <span class="nv">$1</span> <span class="o">(</span>ildoc.it<span class="o">)</span>
 
-<span class="s">Permission is hereby granted, free of charge, to any person obtaining a copy</span>
-<span class="s">of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
-<span class="s">in the Software without restriction, including without limitation the rights</span>
-<span class="s">to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
-<span class="s">copies of the Software, and to permit persons to whom the Software is</span>
-<span class="s">furnished to do so, subject to the following conditions:</span>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files <span class="o">(</span>the <span class="s2">&quot;Software&quot;</span><span class="o">)</span>, to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to <span class="k">do</span> so, subject to the following conditions:
 
-<span class="s">The above copyright notice and this permission notice shall be included in all</span>
-<span class="s">copies or substantial portions of the Software.</span>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-<span class="s">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
-<span class="s">IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
-<span class="s">FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
-<span class="s">AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
-<span class="s">LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
-<span class="s">OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
-<span class="s">SOFTWARE.</span>
-<span class="s">EOF</span>
+THE SOFTWARE IS PROVIDED <span class="s2">&quot;AS IS&quot;</span>, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+EOF
 
 <span class="nb">echo</span> <span class="s2">&quot;[+]Creazione requirements.txt&quot;</span>
-pip freeze &gt; requirements.txt
+pip freeze <span class="p">&amp;</span>gt<span class="p">;</span> requirements.txt
 <span class="nb">echo</span> <span class="s2">&quot;[+]Init del repository&quot;</span>
 git init
 <span class="nb">echo</span> <span class="s2">&quot;[+]Commit iniziale&quot;</span>
@@ -155,28 +155,28 @@ atom .
                 <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&text=Script per la creazione di un nuovo progetto Django&via="><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+                                             href="https://twitter.com/share?url=https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&text=Script per la creazione di un nuovo progetto Django&via="><img
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
 
                 <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&hl=fr"
+                                           href="https://plus.google.com/share?url=https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
 
                 <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                                 onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                                href="https://www.facebook.com/sharer.php?u=https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&t=Script per la creazione di un nuovo progetto Django"><img
-                                src="https://ildoc.it/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+                                                href="https://www.facebook.com/sharer.php?u=https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&t=Script per la creazione di un nuovo progetto Django"><img
+                                src="https://ildoc.dev/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
 
-                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&title=Script per la creazione di un nuovo progetto Django"
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/&title=Script per la creazione di un nuovo progetto Django"
                     rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
 
                 <span class="mail"><a
-                            href="mailto:?subject=Script per la creazione di un nuovo progetto Django&amp;body=Viens découvrir un article à propos de [Script per la creazione di un nuovo progetto Django] sur le site de Doc. https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/"
+                            href="mailto:?subject=Script per la creazione di un nuovo progetto Django&amp;body=Viens découvrir un article à propos de [Script per la creazione di un nuovo progetto Django] sur le site de Doc. https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/"
                             title="Share by Email" target="_blank"><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
             </div>
         </div>
         <div class="comments">
@@ -184,8 +184,8 @@ atom .
             <div id="disqus_thread"></div>
             <script>
                 var disqus_config = function () {
-                    this.page.url = "https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/";
-                    this.page.identifier = "https://ildoc.it/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/";
+                    this.page.url = "https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/";
+                    this.page.identifier = "https://ildoc.dev/2015/10/13/script-per-la-creazione-di-un-nuovo-progetto-django/";
                 };
                 (function () {
                     var d = document,

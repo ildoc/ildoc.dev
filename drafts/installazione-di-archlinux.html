@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="italian" itemscope itemtype="http://schema.org/Person">
+
+<head>
+     <meta charset="utf-8">
+    <!-- Site Meta Data -->
+    <title>Installazione di ArchLinux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Doc">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- schema.org -->
+    <meta itemprop="name" content="ildoc's">
+    <meta itemprop="image" content="">
+    <meta itemprop="description" content="">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <!-- Style Meta Data -->
+    <link rel="stylesheet" href="https://ildoc.dev/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://ildoc.dev/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+
+    <!-- Feed Meta Data -->
+    <link href="https://ildoc.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    />  
+    <!-- Twitter Feed -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:image" content=""> 
+<meta name="twitter:creator" content="">
+<meta name="twitter:url" content="https://ildoc.dev/drafts/installazione-di-archlinux.html">
+<meta name="twitter:title" content="ildoc's ~ Installazione di ArchLinux">
+<meta name="twitter:description" content="scaricamento dell&#39;iso creazione della virtual con virtualbox mount dell&#39;iso boot arch linux x86_64 loadkeys it caricamento della tastiera italiana ping -c 3 google.com check della connessione ----- recupero dei mirror più vicini da cui scaricare i pacchetti - pacman -Syy update di pacman pacman -S reflector installazione di reflector - reflector -c …">
+
+<link rel="canonical" href="https://ildoc.dev/drafts/installazione-di-archlinux.html" />
+
+<!-- Facebook Meta Data -->
+<meta property="og:title" content="ildoc's ~ Installazione di ArchLinux" />
+<meta property="og:description" content="scaricamento dell&#39;iso creazione della virtual con virtualbox mount dell&#39;iso boot arch linux x86_64 loadkeys it caricamento della tastiera italiana ping -c 3 google.com check della connessione ----- recupero dei mirror più vicini da cui scaricare i pacchetti - pacman -Syy update di pacman pacman -S reflector installazione di reflector - reflector -c …" />
+<meta property="og:image" content="" /> </head>
+
+<body>
+    <!-- Sidebar -->
+    <aside>
+        <!--<center><a href="https://ildoc.dev"><img id="avatar" src=""></a></center>-->
+        <h1><a href="/">ildoc's</a></h1>
+
+        <nav class="nav">
+            <ul class="list-bare">
+
+                <li><a class="nav__link" href="/">Home</a></li>
+                <li><a class="nav__link" href="/archives.html">Archives</a></li>
+ 
+            </ul>
+        </nav>
+
+        <p class="social">
+             <a href="https://twitter.com/il_doc" target="_blank"><img
+                        src="https://ildoc.dev/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="https://ildoc.dev/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="https://ildoc.dev/feeds/all.atom.xml" rel="alternate">
+                <img src="https://ildoc.dev/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+
+        <p>
+            <a href="https://stackexchange.com/users/1672100">
+                <img src="https://stackexchange.com/users/flair/1672100.png" width="208" height="58" alt="profile for Doc on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Doc on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+            </a>
+        </p>
+
+    </aside>
+
+    <!-- Content -->
+    <article>
+<section id="content">
+    <article>
+        <h2 class="post_title post_detail"><a href="https://ildoc.dev/drafts/installazione-di-archlinux.html" rel="bookmark" title="Permalink to Installazione di ArchLinux">Installazione di ArchLinux</a></h2>
+        <span class="post_date">Thu 26 October 2017</span>
+        <span>Tags : </span>          <span><a href="https://ildoc.dev/tag/tutorial.html">tutorial </a></span>         <span><a href="https://ildoc.dev/tag/archlinux.html">archlinux </a></span>          <div class="entry-content blog-post">
+            <ul>
+<li>scaricamento dell'iso</li>
+<li>creazione della virtual con virtualbox</li>
+<li>mount dell'iso</li>
+<li>
+<p>boot arch linux x86_64</p>
+</li>
+<li>
+<p>loadkeys it
+caricamento della tastiera italiana</p>
+</li>
+<li>
+<p>ping -c 3 google.com
+check della connessione</p>
+</li>
+</ul>
+<p>----- recupero dei mirror più vicini da cui scaricare i pacchetti
+- pacman -Syy
+update di pacman</p>
+<ul>
+<li>pacman -S reflector
+installazione di reflector</li>
+</ul>
+<h2>- reflector -c "IT" -f 12 -l 10 -n 12 --save /etc/pacman.d/mirrorlist</h2>
+<p>------ partizionare l'hard disk
+- fdisk -l
+lista dei dischi e delle partizioni</p>
+<ul>
+<li>
+<p>cfdisk /dev/sda
+avvio del tool di partizionamento</p>
+</li>
+<li>
+<p>[selezionare tipo dos ?]</p>
+</li>
+<li>rimuovere la partizione esistenete, se c'è</li>
+<li>creare una nuova partizione</li>
+<li>impostarla come primary</li>
+<li>aggiungere il flag bootable</li>
+<li>write delle modifiche</li>
+<li>confermare con yes</li>
+<li>
+<p>uscire con quit</p>
+</li>
+<li>
+<p>fdisk -l
+controllare lista delle partizioni</p>
+</li>
+<li>
+<p>mkfs.ext4 /dev/sda1
+format della partizione con formato ext4</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>
+<p>mount /dev/sda1 /mnt
+mount della partizione</p>
+</li>
+<li>
+<p>lsblk
+check dei mounting point</p>
+</li>
+</ul>
+<p>----- installazione OS
+- pacstrap -i /mnt base base-devel
+installazione dei pacchetti base (selezionare "all" per entrambe i gruppi)</p>
+<ul>
+<li>
+<p>genfstab -U -p /mnt &gt;&gt; /mnt/etc/fstab
+generazione fstab</p>
+</li>
+<li>
+<p>cat /mnt/etc/fstab
+check del file fstab</p>
+</li>
+<li>
+<p>arch-chroot /mnt /bin/bash
+login nel sistema appena installato</p>
+</li>
+<li>
+<p>nano /etc/locale.gen</p>
+</li>
+<li>decommentare la lingua del sistema (en_US.UTF-8 UTF-8)</li>
+<li>
+<p>chiudere e salvare</p>
+</li>
+<li>
+<p>locale-gen
+generazione localizzazioni</p>
+</li>
+<li>
+<p>ls -sf /usr/share/zoneinfo/Europe/Rome /etc/localtime
+set del fuso orario</p>
+</li>
+</ul>
+<h2>- hwclock --systohc --utc</h2>
+<ul>
+<li>
+<p>echo arch &gt; /etc/hostname
+impostazione nome pc</p>
+</li>
+<li>
+<p>nano /etc/hosts</p>
+</li>
+<li>
+<p>replace degli <hostname> con il nome scelto prima</p>
+</li>
+<li>
+<p>systemctl enable dhcpcd
+abilitazione servizi di rete</p>
+</li>
+<li>
+<p>passwd
+impostazione password di root</p>
+</li>
+<li>
+<p>pacman -S grub
+installazione di grub</p>
+</li>
+<li>
+<p>grub-install /dev/sda
+installazione del bootloader</p>
+</li>
+<li>
+<p>grub-mkconfig -o /boot/grub/grub.cfg
+creazione della configurazione di grub</p>
+</li>
+<li>
+<p>exit
+logout dal sistema</p>
+</li>
+<li>
+<p>umount -R /mnt
+unmount della partizione</p>
+</li>
+<li>
+<p>rimozione iso dalla virtual</p>
+</li>
+<li>
+<p>reboot</p>
+</li>
+<li>
+<p>login come root</p>
+</li>
+<li>
+<p>useradd -m -g users -G wheel -s /bin/bash <username>
+aggiunta dell'utente</p>
+</li>
+<li>
+<p>passwd <username>
+assegnazione della password per l'utente appena creato</p>
+</li>
+<li>
+<p>EDITOR=nano visudo
+apertura del file dei sudoers</p>
+</li>
+<li>
+<p>decommentare la riga %wheel ALL=(ALL) ALL</p>
+</li>
+<li>
+<p>chiudere e salvare</p>
+</li>
+<li>
+<p>exit
+logout</p>
+</li>
+<li>
+<p>login come <username></p>
+</li>
+<li>
+<p>sudo pacman -S pluseaudio pluseaudio-alsa
+installazione pacchetti per l'audio</p>
+</li>
+<li>
+<p>sudo pacman xorg -S xorg xorg-xinit
+installazione X server</p>
+</li>
+<li>
+<p>scegliere 1 per usare la scheda grafica integrata (va bene per virtualbox)</p>
+</li>
+<li>
+<p>echo "exec gnome-session" &gt; ~/.xinitrc</p>
+</li>
+<li>
+<p>sudo pacman -S gnome
+installazione gnome</p>
+</li>
+</ul>
+<p>-sudo pacman -S gnome-extra</p>
+<ul>
+<li>startx
+start della gui</li>
+</ul>
+        </div>
+        <div class="post_list">
+            <div class="entry-social">
+                <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=https://ildoc.dev/drafts/installazione-di-archlinux.html&text=Installazione di ArchLinux&via="><img
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+
+                <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=https://ildoc.dev/drafts/installazione-di-archlinux.html&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+
+                <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                                onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                                href="https://www.facebook.com/sharer.php?u=https://ildoc.dev/drafts/installazione-di-archlinux.html&t=Installazione di ArchLinux"><img
+                                src="https://ildoc.dev/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://ildoc.dev/drafts/installazione-di-archlinux.html&title=Installazione di ArchLinux"
+                    rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+
+                <span class="mail"><a
+                            href="mailto:?subject=Installazione di ArchLinux&amp;body=Viens découvrir un article à propos de [Installazione di ArchLinux] sur le site de Doc. https://ildoc.dev/drafts/installazione-di-archlinux.html"
+                            title="Share by Email" target="_blank"><img
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+            </div>
+        </div>
+        <div class="comments">
+            <h2>Comments !</h2>
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    this.page.url = "https://ildoc.dev/drafts/installazione-di-archlinux.html";
+                    this.page.identifier = "https://ildoc.dev/drafts/installazione-di-archlinux.html";
+                };
+                (function () {
+                    var d = document,
+                        s = d.createElement('script');
+                    s.src = 'https://ildoc.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+        </div>
+    </article>
+</section>
+    </article>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+ 
+</body>
+
+</html>

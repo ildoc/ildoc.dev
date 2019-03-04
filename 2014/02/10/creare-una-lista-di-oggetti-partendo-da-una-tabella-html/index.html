@@ -18,22 +18,22 @@
 
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <!-- Style Meta Data -->
-    <link rel="stylesheet" href="https://ildoc.it/theme/pelican-blue/static/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="https://ildoc.it/theme/pelican-blue/static/css/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="https://ildoc.dev/theme/pelican-blue/static/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://ildoc.dev/theme/pelican-blue/static/css/pygments.css" type="text/css" />
 
     <!-- Feed Meta Data -->
-    <link href="https://ildoc.it/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
+    <link href="https://ildoc.dev/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ildoc's ATOM Feed"
     />  
     <!-- Twitter Feed -->
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="">
     <meta name="twitter:image" content=""> 
 <meta name="twitter:creator" content="">
-<meta name="twitter:url" content="https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/">
+<meta name="twitter:url" content="https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/">
 <meta name="twitter:title" content="ildoc's ~ Creare una lista di oggetti partendo da una tabella html">
 <meta name="twitter:description" content="Al momento sto lavorando con i Coded UI (un giorno spiegherò cosa sono e a cosa servono) e ho avuto la necessità di parsare il contenuto di una tabella html. (Abbrevierò il codice con dei [...], tanto sarebbero solo delle ripetizioni) Nella tabella ci sono dei dati filtrati e quello che …">
 
-<link rel="canonical" href="https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/" />
+<link rel="canonical" href="https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/" />
 
 <!-- Facebook Meta Data -->
 <meta property="og:title" content="ildoc's ~ Creare una lista di oggetti partendo da una tabella html" />
@@ -43,7 +43,7 @@
 <body>
     <!-- Sidebar -->
     <aside>
-        <!--<center><a href="https://ildoc.it"><img id="avatar" src=""></a></center>-->
+        <!--<center><a href="https://ildoc.dev"><img id="avatar" src=""></a></center>-->
         <h1><a href="/">ildoc's</a></h1>
 
         <nav class="nav">
@@ -57,9 +57,9 @@
 
         <p class="social">
              <a href="https://twitter.com/il_doc" target="_blank"><img
-                        src="https://ildoc.it/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
-                        src="https://ildoc.it/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="https://ildoc.it/feeds/all.atom.xml" rel="alternate">
-                <img src="https://ildoc.it/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
+                        src="https://ildoc.dev/theme/pelican-blue/static/images/icons/twitter.png"></a>             <a href="https://github.com/ildoc" target="_blank"><img
+                        src="https://ildoc.dev/theme/pelican-blue/static/images/icons/github.png"></a>               <a href="https://ildoc.dev/feeds/all.atom.xml" rel="alternate">
+                <img src="https://ildoc.dev/theme/pelican-blue/static/images/icons/rss.png"></a>          </p>
 
         <p>
             <a href="https://stackexchange.com/users/1672100">
@@ -73,9 +73,9 @@
     <article>
 <section id="content">
     <article>
-        <h2 class="post_title post_detail"><a href="https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/" rel="bookmark" title="Permalink to Creare una lista di oggetti partendo da una tabella html">Creare una lista di oggetti partendo da una tabella html</a></h2>
-        <span class="post_date">lun 10 febbraio 2014</span>
-        <span>Tags : </span>          <span><a href="https://ildoc.it/tag/c.html">c# </a></span>         <span><a href="https://ildoc.it/tag/html.html">html </a></span>         <span><a href="https://ildoc.it/tag/htmlagilitypack.html">htmlagilitypack </a></span>         <span><a href="https://ildoc.it/tag/linq.html">linq </a></span>         <span><a href="https://ildoc.it/tag/xpath.html">xpath </a></span>          <div class="entry-content blog-post">
+        <h2 class="post_title post_detail"><a href="https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/" rel="bookmark" title="Permalink to Creare una lista di oggetti partendo da una tabella html">Creare una lista di oggetti partendo da una tabella html</a></h2>
+        <span class="post_date">Mon 10 February 2014</span>
+        <span>Tags : </span>          <span><a href="https://ildoc.dev/tag/c.html">c# </a></span>         <span><a href="https://ildoc.dev/tag/html.html">html </a></span>         <span><a href="https://ildoc.dev/tag/htmlagilitypack.html">htmlagilitypack </a></span>         <span><a href="https://ildoc.dev/tag/linq.html">linq </a></span>         <span><a href="https://ildoc.dev/tag/xpath.html">xpath </a></span>          <div class="entry-content blog-post">
             <p>Al momento sto lavorando con i Coded UI (un giorno spiegherò cosa sono
 e a cosa servono) e ho avuto la necessità di parsare il contenuto di una
 tabella html.<br>
@@ -84,19 +84,19 @@ ripetizioni)</p>
 <p>Nella tabella ci sono dei dati filtrati e quello che dovevo fare era
 verificare il funzionamento del filtro.</p>
 <p>La tabella html era così:  </p>
-<div class="highlight"><pre><span></span><span class="p">&lt;</span><span class="nt">table</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid&quot;</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Name&quot;</span><span class="p">&gt;</span>aaa<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Description&quot;</span><span class="p">&gt;</span>bbb<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_IndustrySector&quot;</span><span class="p">&gt;</span>ccc<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Industry&quot;</span><span class="p">&gt;</span>ddd<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Status&quot;</span><span class="p">&gt;</span>eee<span class="p">&lt;/</span><span class="nt">td</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">td</span> <span class="na">aria-describedby</span><span class="o">=</span><span class="s">&quot;industrySegmentGrid_Version&quot;</span><span class="p">&gt;</span>fff/td&gt;
-  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">tr</span><span class="p">&gt;</span>
+<div class="highlight"><pre><span></span><span class="ni">&amp;lt;</span>table id=&quot;industrySegmentGrid&quot;<span class="ni">&amp;gt;</span>
+  <span class="ni">&amp;lt;</span>tr<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>td aria-describedby=&quot;industrySegmentGrid_Name&quot;<span class="ni">&amp;gt;</span>aaa<span class="ni">&amp;lt;</span>/td<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>td aria-describedby=&quot;industrySegmentGrid_Description&quot;<span class="ni">&amp;gt;</span>bbb<span class="ni">&amp;lt;</span>/td<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>td aria-describedby=&quot;industrySegmentGrid_IndustrySector&quot;<span class="ni">&amp;gt;</span>ccc<span class="ni">&amp;lt;</span>/td<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>td aria-describedby=&quot;industrySegmentGrid_Industry&quot;<span class="ni">&amp;gt;</span>ddd<span class="ni">&amp;lt;</span>/td<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>td aria-describedby=&quot;industrySegmentGrid_Status&quot;<span class="ni">&amp;gt;</span>eee<span class="ni">&amp;lt;</span>/td<span class="ni">&amp;gt;</span>
+    <span class="ni">&amp;lt;</span>td aria-describedby=&quot;industrySegmentGrid_Version&quot;<span class="ni">&amp;gt;</span>fff/td<span class="ni">&amp;gt;</span>
+  <span class="ni">&amp;lt;</span>/tr<span class="ni">&amp;gt;</span>
+  <span class="ni">&amp;lt;</span>tr<span class="ni">&amp;gt;</span>
     [...]
-  <span class="p">&lt;/</span><span class="nt">tr</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">table</span><span class="p">&gt;</span>
+  <span class="ni">&amp;lt;</span>/tr<span class="ni">&amp;gt;</span>
+<span class="ni">&amp;lt;</span>/table<span class="ni">&amp;gt;</span>
 </pre></div>
 
 
@@ -149,17 +149,17 @@ sfruttando la comodissima libreria
     <span class="k">foreach</span> <span class="p">(</span><span class="kt">var</span> <span class="n">tr</span> <span class="k">in</span> <span class="n">trList</span><span class="p">)</span>
     <span class="p">{</span>
         <span class="kt">var</span> <span class="n">td</span> <span class="p">=</span> <span class="n">tr</span><span class="p">.</span><span class="n">Descendants</span><span class="p">(</span><span class="s">&quot;td&quot;</span><span class="p">);</span>
-        <span class="k">if</span> <span class="p">(</span><span class="n">td</span><span class="p">.</span><span class="n">Count</span><span class="p">()</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">td</span><span class="p">.</span><span class="n">Count</span><span class="p">()</span> <span class="p">&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="m">0</span><span class="p">)</span>
         <span class="p">{</span>
             <span class="n">Results</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span>
                 <span class="k">new</span> <span class="nf">IndustrySegment</span><span class="p">(</span>
-                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Name&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
-                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Description&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
-                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Notes&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
-                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_IndustrySector&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
-                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Industry&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
-                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Status&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
-                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Version&quot;</span><span class="p">).</span><span class="n">InnerText</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Name&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Description&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Notes&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_IndustrySector&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Industry&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Status&quot;</span><span class="p">).</span><span class="n">InnerText</span><span class="p">,</span>
+                    <span class="n">td</span><span class="p">.</span><span class="n">First</span><span class="p">(</span><span class="n">x</span> <span class="p">=&amp;</span><span class="n">gt</span><span class="p">;</span> <span class="n">x</span><span class="p">.</span><span class="n">Attributes</span><span class="p">[</span><span class="s">&quot;aria-describedby&quot;</span><span class="p">].</span><span class="n">Value</span> <span class="p">==</span> <span class="s">&quot;industrySegmentGrid_Version&quot;</span><span class="p">).</span><span class="n">InnerText</span>
                     <span class="p">)</span>
                 <span class="p">);</span>
         <span class="p">}</span>
@@ -176,28 +176,28 @@ sfruttando la comodissima libreria
                 <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&text=Creare una lista di oggetti partendo da una tabella html&via="><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
+                                             href="https://twitter.com/share?url=https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&text=Creare una lista di oggetti partendo da una tabella html&via="><img
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/twitter-s.png"></a></span>
 
                 <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&hl=fr"
+                                           href="https://plus.google.com/share?url=https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/google-s.png"></a></span>
 
                 <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                                 onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                                href="https://www.facebook.com/sharer.php?u=https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&t=Creare una lista di oggetti partendo da una tabella html"><img
-                                src="https://ildoc.it/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
+                                                href="https://www.facebook.com/sharer.php?u=https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&t=Creare una lista di oggetti partendo da una tabella html"><img
+                                src="https://ildoc.dev/theme/pelican-blue/static/images/icons/facebook-s.png"></a></span>
 
-                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&title=Creare una lista di oggetti partendo da una tabella html"
+                <a target="_blank" title="Linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/&title=Creare una lista di oggetti partendo da una tabella html"
                     rel="nofollow" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/linkedin-s.png"></a>
 
                 <span class="mail"><a
-                            href="mailto:?subject=Creare una lista di oggetti partendo da una tabella html&amp;body=Viens découvrir un article à propos de [Creare una lista di oggetti partendo da una tabella html] sur le site de Doc. https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/"
+                            href="mailto:?subject=Creare una lista di oggetti partendo da una tabella html&amp;body=Viens découvrir un article à propos de [Creare una lista di oggetti partendo da una tabella html] sur le site de Doc. https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/"
                             title="Share by Email" target="_blank"><img
-                            src="https://ildoc.it/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
+                            src="https://ildoc.dev/theme/pelican-blue/static/images/icons/mail-s.png"></a></span>
             </div>
         </div>
         <div class="comments">
@@ -205,8 +205,8 @@ sfruttando la comodissima libreria
             <div id="disqus_thread"></div>
             <script>
                 var disqus_config = function () {
-                    this.page.url = "https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/";
-                    this.page.identifier = "https://ildoc.it/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/";
+                    this.page.url = "https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/";
+                    this.page.identifier = "https://ildoc.dev/2014/02/10/creare-una-lista-di-oggetti-partendo-da-una-tabella-html/";
                 };
                 (function () {
                     var d = document,
